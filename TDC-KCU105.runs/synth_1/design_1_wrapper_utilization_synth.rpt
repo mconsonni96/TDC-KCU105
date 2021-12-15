@@ -1,0 +1,236 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Wed Dec 15 12:18:09 2021
+| Host         : mconsonni-All-Series running 64-bit Ubuntu 20.04.3 LTS
+| Command      : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+| Design       : design_1_wrapper
+| Device       : xcku040ffva1156-2
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. CLB Logic
+1.1 Summary of Registers by Type
+2. BLOCKRAM
+3. ARITHMETIC
+4. I/O
+5. CLOCK
+6. ADVANCED
+7. CONFIGURATION
+8. Primitives
+9. Black Boxes
+10. Instantiated Netlists
+
+1. CLB Logic
+------------
+
++-------------------------+------+-------+-----------+-------+
+|        Site Type        | Used | Fixed | Available | Util% |
++-------------------------+------+-------+-----------+-------+
+| CLB LUTs*               |    0 |     0 |    242400 |  0.00 |
+|   LUT as Logic          |    0 |     0 |    242400 |  0.00 |
+|   LUT as Memory         |    0 |     0 |    112800 |  0.00 |
+| CLB Registers           |    0 |     0 |    484800 |  0.00 |
+|   Register as Flip Flop |    0 |     0 |    484800 |  0.00 |
+|   Register as Latch     |    0 |     0 |    484800 |  0.00 |
+| CARRY8                  |    0 |     0 |     30300 |  0.00 |
+| F7 Muxes                |    0 |     0 |    121200 |  0.00 |
+| F8 Muxes                |    0 |     0 |     60600 |  0.00 |
+| F9 Muxes                |    0 |     0 |     30300 |  0.00 |
++-------------------------+------+-------+-----------+-------+
+* Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
+
+
+1.1 Summary of Registers by Type
+--------------------------------
+
++-------+--------------+-------------+--------------+
+| Total | Clock Enable | Synchronous | Asynchronous |
++-------+--------------+-------------+--------------+
+| 0     |            _ |           - |            - |
+| 0     |            _ |           - |          Set |
+| 0     |            _ |           - |        Reset |
+| 0     |            _ |         Set |            - |
+| 0     |            _ |       Reset |            - |
+| 0     |          Yes |           - |            - |
+| 0     |          Yes |           - |          Set |
+| 0     |          Yes |           - |        Reset |
+| 0     |          Yes |         Set |            - |
+| 0     |          Yes |       Reset |            - |
++-------+--------------+-------------+--------------+
+
+
+2. BLOCKRAM
+-----------
+
++----------------+------+-------+-----------+-------+
+|    Site Type   | Used | Fixed | Available | Util% |
++----------------+------+-------+-----------+-------+
+| Block RAM Tile |    0 |     0 |       600 |  0.00 |
+|   RAMB36/FIFO* |    0 |     0 |       600 |  0.00 |
+|   RAMB18       |    0 |     0 |      1200 |  0.00 |
++----------------+------+-------+-----------+-------+
+* Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E2 or one FIFO18E2. However, if a FIFO18E2 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E2
+
+
+3. ARITHMETIC
+-------------
+
++-----------+------+-------+-----------+-------+
+| Site Type | Used | Fixed | Available | Util% |
++-----------+------+-------+-----------+-------+
+| DSPs      |    0 |     0 |      1920 |  0.00 |
++-----------+------+-------+-----------+-------+
+
+
+4. I/O
+------
+
++------------+------+-------+-----------+-------+
+|  Site Type | Used | Fixed | Available | Util% |
++------------+------+-------+-----------+-------+
+| Bonded IOB |    9 |     0 |       520 |  1.73 |
++------------+------+-------+-----------+-------+
+
+
+5. CLOCK
+--------
+
++----------------------+------+-------+-----------+-------+
+|       Site Type      | Used | Fixed | Available | Util% |
++----------------------+------+-------+-----------+-------+
+| GLOBAL CLOCK BUFFERs |    0 |     0 |       480 |  0.00 |
+|   BUFGCE             |    0 |     0 |       240 |  0.00 |
+|   BUFGCE_DIV         |    0 |     0 |        40 |  0.00 |
+|   BUFG_GT            |    0 |     0 |       120 |  0.00 |
+|   BUFGCTRL*          |    0 |     0 |        80 |  0.00 |
+| PLLE3_ADV            |    0 |     0 |        20 |  0.00 |
+| MMCME3_ADV           |    0 |     0 |        10 |  0.00 |
++----------------------+------+-------+-----------+-------+
+* Note: Each used BUFGCTRL counts as two GLOBAL CLOCK BUFFERs. This table does not include global clocking resources, only buffer cell usage. See the Clock Utilization Report (report_clock_utilization) for detailed accounting of global clocking resource availability.
+
+
+6. ADVANCED
+-----------
+
++-----------------+------+-------+-----------+-------+
+|    Site Type    | Used | Fixed | Available | Util% |
++-----------------+------+-------+-----------+-------+
+| GTHE3_CHANNEL   |    0 |     0 |        20 |  0.00 |
+| GTHE3_COMMON    |    0 |     0 |         5 |  0.00 |
+| IBUFDS_GTE3     |    0 |     0 |        10 |  0.00 |
+| OBUFDS_GTE3     |    0 |     0 |        10 |  0.00 |
+| OBUFDS_GTE3_ADV |    0 |     0 |        10 |  0.00 |
+| PCIE_3_1        |    0 |     0 |         3 |  0.00 |
+| SYSMONE1        |    0 |     0 |         1 |  0.00 |
++-----------------+------+-------+-----------+-------+
+
+
+7. CONFIGURATION
+----------------
+
++-------------+------+-------+-----------+-------+
+|  Site Type  | Used | Fixed | Available | Util% |
++-------------+------+-------+-----------+-------+
+| BSCANE2     |    0 |     0 |         4 |  0.00 |
+| DNA_PORTE2  |    0 |     0 |         1 |  0.00 |
+| EFUSE_USR   |    0 |     0 |         1 |  0.00 |
+| FRAME_ECCE3 |    0 |     0 |         1 |  0.00 |
+| ICAPE3      |    0 |     0 |         2 |  0.00 |
+| MASTER_JTAG |    0 |     0 |         1 |  0.00 |
+| STARTUPE3   |    0 |     0 |         1 |  0.00 |
++-------------+------+-------+-----------+-------+
+
+
+8. Primitives
+-------------
+
++----------+------+---------------------+
+| Ref Name | Used | Functional Category |
++----------+------+---------------------+
+| INBUF    |    8 |                 I/O |
+| IBUFCTRL |    8 |              Others |
+| OBUFT    |    7 |                 I/O |
+| OBUF     |    1 |                 I/O |
++----------+------+---------------------+
+
+
+9. Black Boxes
+--------------
+
++--------------------------------------+------+
+|               Ref Name               | Used |
++--------------------------------------+------+
+| design_1_xbar_3                      |    1 |
+| design_1_xbar_2                      |    1 |
+| design_1_util_vector_logic_1_0       |    1 |
+| design_1_util_vector_logic_0_1       |    1 |
+| design_1_util_vector_logic_0_0       |    1 |
+| design_1_system_management_wiz_0_0   |    1 |
+| design_1_proc_sys_reset_1_0          |    1 |
+| design_1_clk_wiz_0_1                 |    1 |
+| design_1_blk_mem_gen_0_0             |    1 |
+| design_1_axis_broadcaster_1_0        |    1 |
+| design_1_axis_broadcaster_0_1        |    1 |
+| design_1_axis_broadcaster_0_0        |    1 |
+| design_1_axi_quad_spi_0_0            |    1 |
+| design_1_axi_iic_0_0                 |    1 |
+| design_1_axi_bram_ctrl_0_0           |    1 |
+| design_1_auto_ss_slidr_0             |    1 |
+| design_1_auto_pc_3                   |    1 |
+| design_1_auto_pc_2                   |    1 |
+| design_1_auto_pc_1                   |    1 |
+| design_1_auto_pc_0                   |    1 |
+| design_1_TDCChannelSlice_2_0         |    1 |
+| design_1_TDCChannelSlice_1_0         |    1 |
+| design_1_TDCChannelSlice_0_0         |    1 |
+| design_1_StartStopGenerator_0_0      |    1 |
+| design_1_MME_0_0                     |    1 |
+| design_1_CoarseTreeDistributor_0_0   |    1 |
+| design_1_BeltBus_TTM_0_0             |    1 |
+| design_1_BeltBus_TDCHistogrammer_1_0 |    1 |
+| design_1_BeltBus_TDCHistogrammer_0_0 |    1 |
+| design_1_BeltBus_TDCCounter_0_0      |    1 |
+| design_1_BeltBus_NodeInserter_0_5    |    1 |
+| design_1_BeltBus_NodeInserter_0_4    |    1 |
+| design_1_BeltBus_NodeInserter_0_3    |    1 |
+| design_1_AXI4_TDC_Wrapper_0_0        |    1 |
+| design_1_AXI4_BitstreamUpdater_0_0   |    1 |
+| design_1_AXI4_AXIToIIC_0_0           |    1 |
+| design_1_AXI4Stream_XUS_Virtu_0_2    |    1 |
+| design_1_AXI4Stream_XUS_Virtu_0_1    |    1 |
+| design_1_AXI4Stream_XUS_Virtu_0_0    |    1 |
+| design_1_AXI4Stream_UART_1_0         |    1 |
+| design_1_AXI4Stream_Synchroni_0_2    |    1 |
+| design_1_AXI4Stream_Synchroni_0_1    |    1 |
+| design_1_AXI4Stream_Synchroni_0_0    |    1 |
+| design_1_AXI4Stream_QSPI_Prog_0_0    |    1 |
+| design_1_AXI4Stream_PeriodMet_0_0    |    1 |
+| design_1_AXI4Stream_OverflowC_0_2    |    1 |
+| design_1_AXI4Stream_OverflowC_0_1    |    1 |
+| design_1_AXI4Stream_OverflowC_0_0    |    1 |
+| design_1_AXI4Stream_MuxDebugg_0_0    |    1 |
+| design_1_AXI4Stream_MagicCali_0_2    |    1 |
+| design_1_AXI4Stream_MagicCali_0_1    |    1 |
+| design_1_AXI4Stream_MagicCali_0_0    |    1 |
+| design_1_AXI4Stream_IperDecod_0_2    |    1 |
+| design_1_AXI4Stream_IperDecod_0_1    |    1 |
+| design_1_AXI4Stream_IperDecod_0_0    |    1 |
+| design_1_AXI4Stream_CoarseExt_0_2    |    1 |
+| design_1_AXI4Stream_CoarseExt_0_1    |    1 |
+| design_1_AXI4Stream_CoarseExt_0_0    |    1 |
++--------------------------------------+------+
+
+
+10. Instantiated Netlists
+-------------------------
+
++----------+------+
+| Ref Name | Used |
++----------+------+
+
+

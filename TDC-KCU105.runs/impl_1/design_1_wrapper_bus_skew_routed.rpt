@@ -1,0 +1,1405 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date              : Wed Dec 15 12:29:50 2021
+| Host              : mconsonni-All-Series running 64-bit Ubuntu 20.04.3 LTS
+| Command           : report_bus_skew -warn_on_violation -file design_1_wrapper_bus_skew_routed.rpt -pb design_1_wrapper_bus_skew_routed.pb -rpx design_1_wrapper_bus_skew_routed.rpx
+| Design            : design_1_wrapper
+| Device            : xcku040-ffva1156
+| Speed File        : -2  PRODUCTION 1.25 12-04-2018
+| Temperature Grade : E
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+Table of Contents
+-----------------
+1. Bus Skew Report Summary
+2. Bus Skew Report Per Constraint
+
+1. Bus Skew Report Summary
+--------------------------
+
+Id  Position  From                            To                              Corner  Requirement(ns)  Actual(ns)  Slack(ns)
+--  --------  ------------------------------  ------------------------------  ------  ---------------  ----------  ---------
+1   14        [get_cells [list {design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[0]} {design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]} {design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]} {design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]}]]
+                                              [get_cells [list {design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]}]]
+                                                                              Slow              2.500       0.846      1.654
+2   16        [get_cells [list {design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]} {design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[1]} {design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]} {design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]}]]
+                                              [get_cells [list {design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]}]]
+                                                                              Slow              2.500       0.789      1.711
+3   22        [get_cells [list {design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[0]} {design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]} {design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]} {design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]}]]
+                                              [get_cells [list {design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]}]]
+                                                                              Slow              2.500       0.807      1.693
+4   24        [get_cells [list {design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]} {design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[1]} {design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]} {design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]}]]
+                                              [get_cells [list {design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]}]]
+                                                                              Slow              2.500       0.813      1.687
+5   30        [get_cells [list {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[0]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[4]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[5]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[6]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[7]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[8]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[9]}]]
+                                              [get_cells [list {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][9]}]]
+                                                                              Slow             10.000       0.727      9.273
+6   32        [get_cells [list {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[1]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[4]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[5]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[6]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[7]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[8]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[9]}]]
+                                              [get_cells [list {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][9]}]]
+                                                                              Slow             10.000       0.707      9.293
+7   38        [get_cells {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[0]}]
+                                              [get_cells {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[0]}]
+                                                                              NA               40.000          NA         NA
+8   40        [get_cells {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[0]}]
+                                              [get_cells [list {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[0]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[1]}]]
+                                                                              NA               40.000          NA         NA
+9   42        [get_cells [list {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[20]} \
+          {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[10]} \
+          {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[11]} \
+          {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[21]} \
+          {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[22]} \
+          {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[23]} \
+          {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[28]} \
+          {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[29]} \
+          {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[26]} \
+          {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[18]} \
+          {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[19]} \
+          {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[27]}]]
+                                              [get_cells [list {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[20]} \
+          {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[10]} \
+          {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[11]} \
+          {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[21]} \
+          {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[22]} \
+          {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[23]} \
+          {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[28]} \
+          {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[29]} \
+          {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[26]} \
+          {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[18]} \
+          {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[19]} \
+          {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[27]}]]
+                                                                              Slow              5.000       1.121      3.879
+10  44        [get_cells [list {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[20]} \
+          {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[10]} \
+          {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[11]} \
+          {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[21]} \
+          {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[22]} \
+          {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[23]} \
+          {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[28]} \
+          {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[29]} \
+          {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[26]} \
+          {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[18]} \
+          {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[19]} \
+          {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[27]}]]
+                                              [get_cells [list {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[20]} \
+          {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[10]} \
+          {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[11]} \
+          {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[21]} \
+          {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[22]} \
+          {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[23]} \
+          {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[28]} \
+          {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[29]} \
+          {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[26]} \
+          {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[18]} \
+          {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[19]} \
+          {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[27]}]]
+                                                                              Slow              5.000       1.464      3.536
+11  46        [get_cells [list {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[20]} \
+          {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[10]} \
+          {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[11]} \
+          {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[21]} \
+          {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[22]} \
+          {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[23]} \
+          {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[28]} \
+          {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[29]} \
+          {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[26]} \
+          {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[18]} \
+          {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[19]} \
+          {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[27]}]]
+                                              [get_cells [list {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[20]} \
+          {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[10]} \
+          {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[11]} \
+          {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[21]} \
+          {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[22]} \
+          {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[23]} \
+          {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[28]} \
+          {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[29]} \
+          {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[26]} \
+          {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[18]} \
+          {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[19]} \
+          {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[27]}]]
+                                                                              Slow              5.000       1.577      3.423
+
+
+2. Bus Skew Report Per Constraint
+---------------------------------
+
+Id: 1
+set_bus_skew -from [get_cells [list {design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[0]} {design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]} {design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]} {design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]}]] -to [get_cells [list {design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]}]] 2.500
+Requirement: 2.500ns
+Endpoints: 4
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+clk_out1_design_1_clk_wiz_0_1
+                      clk_out2_design_1_clk_wiz_0_1
+                                            design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+                                                                            design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+                                                                                                            Slow         0.846      1.654
+
+
+Slack (MET) :             1.654ns  (requirement - actual skew)
+  Endpoint Source:        design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_1)
+  Endpoint Destination:   design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out2_design_1_clk_wiz_0_1)
+  Reference Source:       design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_1)
+  Reference Destination:  design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out2_design_1_clk_wiz_0_1)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            2.500ns
+  Endpoint Relative Delay:    1.310ns
+  Reference Relative Delay:   0.329ns
+  Relative CRPR:              0.392ns
+  Uncertainty:                0.257ns
+  Actual Bus Skew:            0.846ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_design_1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    G10                                               0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.001     0.001    design_1_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y59 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.521     0.522 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.090     0.612    design_1_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    G10                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_I_O)
+                                                      0.000     0.612 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.865     1.477    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_1
+    MMCME3_ADV_X1Y2      MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.439    -2.962 r  design_1_i/clk_wiz_0/inst/mmcme3_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.437    -2.525    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_1
+    BUFGCE_X1Y49         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.083    -2.442 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+    X2Y2 (CLOCK_ROOT)    net (fo=20995, routed)       2.014    -0.428    design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
+    SLICE_X77Y132        FDRE                                         r  design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X77Y132        FDRE (Prop_DFF_SLICEL_C_Q)
+                                                      0.114    -0.314 r  design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]/Q
+                         net (fo=1, routed)           0.732     0.418    design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[2]
+    SLICE_X75Y132        FDRE                                         r  design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_design_1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    G10                                               0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.001     0.001    design_1_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y59 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.324     0.325 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.051     0.376    design_1_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    G10                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_I_O)
+                                                      0.000     0.376 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.778     1.154    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_1
+    MMCME3_ADV_X1Y2      MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT1)
+                                                     -4.040    -2.886 r  design_1_i/clk_wiz_0/inst/mmcme3_adv_inst/CLKOUT1
+                         net (fo=1, routed)           0.372    -2.514    design_1_i/clk_wiz_0/inst/clk_out2_design_1_clk_wiz_0_1
+    BUFGCE_X1Y48         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.075    -2.439 r  design_1_i/clk_wiz_0/inst/clkout2_buf/O
+    X2Y2 (CLOCK_ROOT)    net (fo=9650, routed)        1.563    -0.876    design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
+    SLICE_X75Y132        FDRE                                         r  design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/C
+                         clock pessimism             -0.075    -0.952    
+    SLICE_X75Y132        FDRE (Setup_HFF2_SLICEM_C_D)
+                                                      0.060    -0.892    design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]
+  -------------------------------------------------------------------
+                         data arrival                           0.418    
+                         clock arrival                         -0.892    
+  -------------------------------------------------------------------
+                         relative delay                         1.310    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_design_1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    G10                                               0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.001     0.001    design_1_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y59 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.324     0.325 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.051     0.376    design_1_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    G10                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_I_O)
+                                                      0.000     0.376 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.778     1.154    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_1
+    MMCME3_ADV_X1Y2      MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.040    -2.886 r  design_1_i/clk_wiz_0/inst/mmcme3_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.372    -2.514    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_1
+    BUFGCE_X1Y49         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.075    -2.439 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+    X2Y2 (CLOCK_ROOT)    net (fo=20995, routed)       1.785    -0.654    design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
+    SLICE_X77Y131        FDRE                                         r  design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X77Y131        FDRE (Prop_DFF_SLICEL_C_Q)
+                                                      0.104    -0.550 r  design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[0]/Q
+                         net (fo=1, routed)           0.485    -0.065    design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[0]
+    SLICE_X77Y131        FDRE                                         r  design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_design_1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    G10                                               0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.001     0.001    design_1_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y59 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.521     0.522 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.090     0.612    design_1_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    G10                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_I_O)
+                                                      0.000     0.612 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.865     1.477    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_1
+    MMCME3_ADV_X1Y2      MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT1)
+                                                     -4.439    -2.962 r  design_1_i/clk_wiz_0/inst/mmcme3_adv_inst/CLKOUT1
+                         net (fo=1, routed)           0.437    -2.525    design_1_i/clk_wiz_0/inst/clk_out2_design_1_clk_wiz_0_1
+    BUFGCE_X1Y48         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.083    -2.442 r  design_1_i/clk_wiz_0/inst/clkout2_buf/O
+    X2Y2 (CLOCK_ROOT)    net (fo=9650, routed)        1.864    -0.578    design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
+    SLICE_X77Y131        FDRE                                         r  design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/C
+                         clock pessimism              0.075    -0.502    
+    SLICE_X77Y131        FDRE (Hold_HFF2_SLICEL_C_D)
+                                                      0.108    -0.394    design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]
+  -------------------------------------------------------------------
+                         data arrival                          -0.065    
+                         clock arrival                         -0.394    
+  -------------------------------------------------------------------
+                         relative delay                         0.329    
+
+
+
+Id: 2
+set_bus_skew -from [get_cells [list {design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]} {design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[1]} {design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]} {design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]}]] -to [get_cells [list {design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]}]] 2.500
+Requirement: 2.500ns
+Endpoints: 4
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+clk_out2_design_1_clk_wiz_0_1
+                      clk_out1_design_1_clk_wiz_0_1
+                                            design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+                                                                            design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+                                                                                                            Slow         0.789      1.711
+
+
+Slack (MET) :             1.711ns  (requirement - actual skew)
+  Endpoint Source:        design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out2_design_1_clk_wiz_0_1)
+  Endpoint Destination:   design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_1)
+  Reference Source:       design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out2_design_1_clk_wiz_0_1)
+  Reference Destination:  design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_1)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            2.500ns
+  Endpoint Relative Delay:    0.832ns
+  Reference Relative Delay:  -0.014ns
+  Relative CRPR:              0.314ns
+  Uncertainty:                0.257ns
+  Actual Bus Skew:            0.789ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_design_1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    G10                                               0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.001     0.001    design_1_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y59 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.521     0.522 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.090     0.612    design_1_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    G10                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_I_O)
+                                                      0.000     0.612 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.865     1.477    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_1
+    MMCME3_ADV_X1Y2      MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT1)
+                                                     -4.439    -2.962 r  design_1_i/clk_wiz_0/inst/mmcme3_adv_inst/CLKOUT1
+                         net (fo=1, routed)           0.437    -2.525    design_1_i/clk_wiz_0/inst/clk_out2_design_1_clk_wiz_0_1
+    BUFGCE_X1Y48         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.083    -2.442 r  design_1_i/clk_wiz_0/inst/clkout2_buf/O
+    X2Y2 (CLOCK_ROOT)    net (fo=9650, routed)        1.778    -0.664    design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
+    SLICE_X75Y131        FDRE                                         r  design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X75Y131        FDRE (Prop_AFF_SLICEM_C_Q)
+                                                      0.115    -0.549 r  design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]/Q
+                         net (fo=1, routed)           0.639     0.090    design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[3]
+    SLICE_X74Y131        FDRE                                         r  design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_design_1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    G10                                               0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.001     0.001    design_1_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y59 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.324     0.325 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.051     0.376    design_1_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    G10                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_I_O)
+                                                      0.000     0.376 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.778     1.154    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_1
+    MMCME3_ADV_X1Y2      MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.040    -2.886 r  design_1_i/clk_wiz_0/inst/mmcme3_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.372    -2.514    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_1
+    BUFGCE_X1Y49         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.075    -2.439 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+    X2Y2 (CLOCK_ROOT)    net (fo=20995, routed)       1.713    -0.726    design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
+    SLICE_X74Y131        FDRE                                         r  design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/C
+                         clock pessimism             -0.075    -0.802    
+    SLICE_X74Y131        FDRE (Setup_HFF2_SLICEL_C_D)
+                                                      0.060    -0.742    design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]
+  -------------------------------------------------------------------
+                         data arrival                           0.090    
+                         clock arrival                         -0.742    
+  -------------------------------------------------------------------
+                         relative delay                         0.832    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_design_1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    G10                                               0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.001     0.001    design_1_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y59 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.324     0.325 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.051     0.376    design_1_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    G10                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_I_O)
+                                                      0.000     0.376 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.778     1.154    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_1
+    MMCME3_ADV_X1Y2      MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT1)
+                                                     -4.040    -2.886 r  design_1_i/clk_wiz_0/inst/mmcme3_adv_inst/CLKOUT1
+                         net (fo=1, routed)           0.372    -2.514    design_1_i/clk_wiz_0/inst/clk_out2_design_1_clk_wiz_0_1
+    BUFGCE_X1Y48         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.075    -2.439 r  design_1_i/clk_wiz_0/inst/clkout2_buf/O
+    X2Y2 (CLOCK_ROOT)    net (fo=9650, routed)        1.641    -0.798    design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
+    SLICE_X76Y131        FDRE                                         r  design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X76Y131        FDRE (Prop_HFF_SLICEM_C_Q)
+                                                      0.104    -0.694 r  design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]/Q
+                         net (fo=1, routed)           0.462    -0.232    design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[0]
+    SLICE_X76Y129        FDRE                                         r  design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_design_1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    G10                                               0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.001     0.001    design_1_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y59 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.521     0.522 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.090     0.612    design_1_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    G10                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_I_O)
+                                                      0.000     0.612 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.865     1.477    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_1
+    MMCME3_ADV_X1Y2      MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.439    -2.962 r  design_1_i/clk_wiz_0/inst/mmcme3_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.437    -2.525    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_1
+    BUFGCE_X1Y49         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.083    -2.442 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+    X2Y2 (CLOCK_ROOT)    net (fo=20995, routed)       2.039    -0.403    design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
+    SLICE_X76Y129        FDRE                                         r  design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/C
+                         clock pessimism              0.075    -0.327    
+    SLICE_X76Y129        FDRE (Hold_DFF2_SLICEM_C_D)
+                                                      0.109    -0.218    design_1_i/TDC_Calib/TDC/Ch1/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]
+  -------------------------------------------------------------------
+                         data arrival                          -0.232    
+                         clock arrival                         -0.218    
+  -------------------------------------------------------------------
+                         relative delay                        -0.014    
+
+
+
+Id: 3
+set_bus_skew -from [get_cells [list {design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[0]} {design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]} {design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]} {design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]}]] -to [get_cells [list {design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]}]] 2.500
+Requirement: 2.500ns
+Endpoints: 4
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+clk_out1_design_1_clk_wiz_0_1
+                      clk_out2_design_1_clk_wiz_0_1
+                                            design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+                                                                            design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+                                                                                                            Slow         0.807      1.693
+
+
+Slack (MET) :             1.693ns  (requirement - actual skew)
+  Endpoint Source:        design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_1)
+  Endpoint Destination:   design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out2_design_1_clk_wiz_0_1)
+  Reference Source:       design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_1)
+  Reference Destination:  design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out2_design_1_clk_wiz_0_1)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            2.500ns
+  Endpoint Relative Delay:    1.211ns
+  Reference Relative Delay:   0.312ns
+  Relative CRPR:              0.349ns
+  Uncertainty:                0.257ns
+  Actual Bus Skew:            0.807ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_design_1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    G10                                               0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.001     0.001    design_1_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y59 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.521     0.522 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.090     0.612    design_1_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    G10                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_I_O)
+                                                      0.000     0.612 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.865     1.477    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_1
+    MMCME3_ADV_X1Y2      MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.439    -2.962 r  design_1_i/clk_wiz_0/inst/mmcme3_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.437    -2.525    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_1
+    BUFGCE_X1Y49         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.083    -2.442 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+    X2Y2 (CLOCK_ROOT)    net (fo=20995, routed)       2.031    -0.411    design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
+    SLICE_X79Y137        FDRE                                         r  design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X79Y137        FDRE (Prop_DFF2_SLICEM_C_Q)
+                                                      0.117    -0.294 r  design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]/Q
+                         net (fo=1, routed)           0.692     0.398    design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[1]
+    SLICE_X77Y137        FDRE                                         r  design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_design_1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    G10                                               0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.001     0.001    design_1_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y59 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.324     0.325 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.051     0.376    design_1_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    G10                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_I_O)
+                                                      0.000     0.376 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.778     1.154    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_1
+    MMCME3_ADV_X1Y2      MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT1)
+                                                     -4.040    -2.886 r  design_1_i/clk_wiz_0/inst/mmcme3_adv_inst/CLKOUT1
+                         net (fo=1, routed)           0.372    -2.514    design_1_i/clk_wiz_0/inst/clk_out2_design_1_clk_wiz_0_1
+    BUFGCE_X1Y48         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.075    -2.439 r  design_1_i/clk_wiz_0/inst/clkout2_buf/O
+    X2Y2 (CLOCK_ROOT)    net (fo=9650, routed)        1.639    -0.800    design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
+    SLICE_X77Y137        FDRE                                         r  design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/C
+                         clock pessimism             -0.075    -0.876    
+    SLICE_X77Y137        FDRE (Setup_DFF2_SLICEL_C_D)
+                                                      0.063    -0.813    design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]
+  -------------------------------------------------------------------
+                         data arrival                           0.398    
+                         clock arrival                         -0.813    
+  -------------------------------------------------------------------
+                         relative delay                         1.211    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_design_1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    G10                                               0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.001     0.001    design_1_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y59 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.324     0.325 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.051     0.376    design_1_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    G10                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_I_O)
+                                                      0.000     0.376 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.778     1.154    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_1
+    MMCME3_ADV_X1Y2      MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.040    -2.886 r  design_1_i/clk_wiz_0/inst/mmcme3_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.372    -2.514    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_1
+    BUFGCE_X1Y49         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.075    -2.439 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+    X2Y2 (CLOCK_ROOT)    net (fo=20995, routed)       1.794    -0.645    design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
+    SLICE_X78Y134        FDRE                                         r  design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X78Y134        FDRE (Prop_EFF_SLICEM_C_Q)
+                                                      0.103    -0.542 r  design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]/Q
+                         net (fo=1, routed)           0.440    -0.102    design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[3]
+    SLICE_X78Y134        FDRE                                         r  design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_design_1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    G10                                               0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.001     0.001    design_1_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y59 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.521     0.522 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.090     0.612    design_1_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    G10                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_I_O)
+                                                      0.000     0.612 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.865     1.477    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_1
+    MMCME3_ADV_X1Y2      MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT1)
+                                                     -4.439    -2.962 r  design_1_i/clk_wiz_0/inst/mmcme3_adv_inst/CLKOUT1
+                         net (fo=1, routed)           0.437    -2.525    design_1_i/clk_wiz_0/inst/clk_out2_design_1_clk_wiz_0_1
+    BUFGCE_X1Y48         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.083    -2.442 r  design_1_i/clk_wiz_0/inst/clkout2_buf/O
+    X2Y2 (CLOCK_ROOT)    net (fo=9650, routed)        1.843    -0.599    design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
+    SLICE_X78Y134        FDRE                                         r  design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/C
+                         clock pessimism              0.075    -0.523    
+    SLICE_X78Y134        FDRE (Hold_DFF2_SLICEM_C_D)
+                                                      0.109    -0.414    design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]
+  -------------------------------------------------------------------
+                         data arrival                          -0.102    
+                         clock arrival                         -0.414    
+  -------------------------------------------------------------------
+                         relative delay                         0.312    
+
+
+
+Id: 4
+set_bus_skew -from [get_cells [list {design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]} {design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[1]} {design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]} {design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]}]] -to [get_cells [list {design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]}]] 2.500
+Requirement: 2.500ns
+Endpoints: 4
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+clk_out2_design_1_clk_wiz_0_1
+                      clk_out1_design_1_clk_wiz_0_1
+                                            design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+                                                                            design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+                                                                                                            Slow         0.813      1.687
+
+
+Slack (MET) :             1.687ns  (requirement - actual skew)
+  Endpoint Source:        design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out2_design_1_clk_wiz_0_1)
+  Endpoint Destination:   design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_1)
+  Reference Source:       design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out2_design_1_clk_wiz_0_1)
+  Reference Destination:  design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_1)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            2.500ns
+  Endpoint Relative Delay:    0.768ns
+  Reference Relative Delay:  -0.137ns
+  Relative CRPR:              0.349ns
+  Uncertainty:                0.257ns
+  Actual Bus Skew:            0.813ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_design_1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    G10                                               0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.001     0.001    design_1_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y59 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.521     0.522 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.090     0.612    design_1_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    G10                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_I_O)
+                                                      0.000     0.612 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.865     1.477    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_1
+    MMCME3_ADV_X1Y2      MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT1)
+                                                     -4.439    -2.962 r  design_1_i/clk_wiz_0/inst/mmcme3_adv_inst/CLKOUT1
+                         net (fo=1, routed)           0.437    -2.525    design_1_i/clk_wiz_0/inst/clk_out2_design_1_clk_wiz_0_1
+    BUFGCE_X1Y48         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.083    -2.442 r  design_1_i/clk_wiz_0/inst/clkout2_buf/O
+    X2Y2 (CLOCK_ROOT)    net (fo=9650, routed)        1.839    -0.603    design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
+    SLICE_X78Y139        FDRE                                         r  design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X78Y139        FDRE (Prop_AFF_SLICEM_C_Q)
+                                                      0.115    -0.488 r  design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]/Q
+                         net (fo=1, routed)           0.592     0.104    design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[3]
+    SLICE_X78Y139        FDRE                                         r  design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_design_1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    G10                                               0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.001     0.001    design_1_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y59 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.324     0.325 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.051     0.376    design_1_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    G10                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_I_O)
+                                                      0.000     0.376 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.778     1.154    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_1
+    MMCME3_ADV_X1Y2      MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.040    -2.886 r  design_1_i/clk_wiz_0/inst/mmcme3_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.372    -2.514    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_1
+    BUFGCE_X1Y49         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.075    -2.439 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+    X2Y2 (CLOCK_ROOT)    net (fo=20995, routed)       1.791    -0.648    design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
+    SLICE_X78Y139        FDRE                                         r  design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/C
+                         clock pessimism             -0.075    -0.724    
+    SLICE_X78Y139        FDRE (Setup_HFF2_SLICEM_C_D)
+                                                      0.060    -0.664    design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]
+  -------------------------------------------------------------------
+                         data arrival                           0.104    
+                         clock arrival                         -0.664    
+  -------------------------------------------------------------------
+                         relative delay                         0.768    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_design_1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    G10                                               0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.001     0.001    design_1_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y59 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.324     0.325 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.051     0.376    design_1_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    G10                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_I_O)
+                                                      0.000     0.376 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.778     1.154    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_1
+    MMCME3_ADV_X1Y2      MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT1)
+                                                     -4.040    -2.886 r  design_1_i/clk_wiz_0/inst/mmcme3_adv_inst/CLKOUT1
+                         net (fo=1, routed)           0.372    -2.514    design_1_i/clk_wiz_0/inst/clk_out2_design_1_clk_wiz_0_1
+    BUFGCE_X1Y48         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.075    -2.439 r  design_1_i/clk_wiz_0/inst/clkout2_buf/O
+    X2Y2 (CLOCK_ROOT)    net (fo=9650, routed)        1.646    -0.793    design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
+    SLICE_X80Y138        FDRE                                         r  design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X80Y138        FDRE (Prop_CFF_SLICEL_C_Q)
+                                                      0.103    -0.690 r  design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]/Q
+                         net (fo=1, routed)           0.342    -0.348    design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[2]
+    SLICE_X81Y140        FDRE                                         r  design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_design_1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    G10                                               0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.001     0.001    design_1_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y59 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.521     0.522 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.090     0.612    design_1_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    G10                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_I_O)
+                                                      0.000     0.612 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.865     1.477    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_1
+    MMCME3_ADV_X1Y2      MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.439    -2.962 r  design_1_i/clk_wiz_0/inst/mmcme3_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.437    -2.525    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_1
+    BUFGCE_X1Y49         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.083    -2.442 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+    X2Y2 (CLOCK_ROOT)    net (fo=20995, routed)       2.046    -0.396    design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
+    SLICE_X81Y140        FDRE                                         r  design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/C
+                         clock pessimism              0.075    -0.320    
+    SLICE_X81Y140        FDRE (Hold_DFF2_SLICEM_C_D)
+                                                      0.109    -0.211    design_1_i/TDC_Calib/TDC/Ch2/AXI4Stream_CoarseExt_0/U0/Inst_AXI4Stream_CoarseExtensionCoreWrapper_CEC/Inst_CoarseExtensionCore/Inst_FIFO_Synchronizer/Inst_xpm_fifo_async/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]
+  -------------------------------------------------------------------
+                         data arrival                          -0.348    
+                         clock arrival                         -0.211    
+  -------------------------------------------------------------------
+                         relative delay                        -0.137    
+
+
+
+Id: 5
+set_bus_skew -from [get_cells [list {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[0]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[4]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[5]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[6]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[7]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[8]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[9]}]] -to [get_cells [list {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][9]}]] 10.000
+Requirement: 10.000ns
+Endpoints: 10
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+aclk                  clk_out1_design_1_clk_wiz_0_1
+                                            design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+                                                                            design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]/D
+                                                                                                            Slow         0.727      9.273
+
+
+Slack (MET) :             9.273ns  (requirement - actual skew)
+  Endpoint Source:        design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by aclk)
+  Endpoint Destination:   design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_1)
+  Reference Source:       design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[7]/C
+                            (rising edge-triggered cell FDRE clocked by aclk)
+  Reference Destination:  design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_1)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            10.000ns
+  Endpoint Relative Delay:    3.180ns
+  Reference Relative Delay:   2.590ns
+  Relative CRPR:              0.000ns
+  Uncertainty:                0.137ns
+  Actual Bus Skew:            0.727ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock aclk rise edge)       0.000     0.000 r  
+    BUFGCE_X1Y49         BUFGCE                       0.000     0.000 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+    X2Y2 (CLOCK_ROOT)    net (fo=20995, routed)       2.109     2.109    design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
+    SLICE_X91Y154        FDRE                                         r  design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X91Y154        FDRE (Prop_DFF2_SLICEL_C_Q)
+                                                      0.117     2.226 r  design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]/Q
+                         net (fo=1, routed)           0.683     2.909    design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[1]
+    SLICE_X91Y154        FDRE                                         r  design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_design_1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    G10                                               0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.001     0.001    design_1_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y59 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.324     0.325 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.051     0.376    design_1_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    G10                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_I_O)
+                                                      0.000     0.376 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.778     1.154    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_1
+    MMCME3_ADV_X1Y2      MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.040    -2.886 r  design_1_i/clk_wiz_0/inst/mmcme3_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.372    -2.514    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_1
+    BUFGCE_X1Y49         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.075    -2.439 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+    X2Y2 (CLOCK_ROOT)    net (fo=20995, routed)       1.864    -0.575    design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
+    SLICE_X91Y154        FDRE                                         r  design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/C
+                         clock pessimism              0.242    -0.333    
+    SLICE_X91Y154        FDRE (Setup_CFF2_SLICEL_C_D)
+                                                      0.062    -0.271    design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]
+  -------------------------------------------------------------------
+                         data arrival                           2.909    
+                         clock arrival                         -0.271    
+  -------------------------------------------------------------------
+                         relative delay                         3.180    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock aclk rise edge)       0.000     0.000 r  
+    BUFGCE_X1Y49         BUFGCE                       0.000     0.000 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+    X2Y2 (CLOCK_ROOT)    net (fo=20995, routed)       1.863     1.863    design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
+    SLICE_X92Y156        FDRE                                         r  design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X92Y156        FDRE (Prop_DFF_SLICEL_C_Q)
+                                                      0.104     1.967 r  design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[7]/Q
+                         net (fo=1, routed)           0.266     2.233    design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[7]
+    SLICE_X90Y156        FDRE                                         r  design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_design_1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    G10                                               0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.001     0.001    design_1_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y59 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.521     0.522 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.090     0.612    design_1_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    G10                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_I_O)
+                                                      0.000     0.612 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.865     1.477    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_1
+    MMCME3_ADV_X1Y2      MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.439    -2.962 r  design_1_i/clk_wiz_0/inst/mmcme3_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.437    -2.525    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_1
+    BUFGCE_X1Y49         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.083    -2.442 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+    X2Y2 (CLOCK_ROOT)    net (fo=20995, routed)       2.086    -0.356    design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
+    SLICE_X90Y156        FDRE                                         r  design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]/C
+                         clock pessimism             -0.108    -0.464    
+    SLICE_X90Y156        FDRE (Hold_GFF2_SLICEL_C_D)
+                                                      0.107    -0.357    design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]
+  -------------------------------------------------------------------
+                         data arrival                           2.233    
+                         clock arrival                         -0.357    
+  -------------------------------------------------------------------
+                         relative delay                         2.590    
+
+
+
+Id: 6
+set_bus_skew -from [get_cells [list {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[1]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[4]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[5]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[6]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[7]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[8]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[9]}]] -to [get_cells [list {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][9]}]] 10.000
+Requirement: 10.000ns
+Endpoints: 10
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+clk_out1_design_1_clk_wiz_0_1
+                      aclk                  design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/D
+                                                                            design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][9]/D
+                                                                                                            Slow         0.707      9.293
+
+
+Slack (MET) :             9.293ns  (requirement - actual skew)
+  Endpoint Source:        design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[5]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_1)
+  Endpoint Destination:   design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/D
+                            (rising edge-triggered cell FDRE clocked by aclk)
+  Reference Source:       design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[9]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_1)
+  Reference Destination:  design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][9]/D
+                            (rising edge-triggered cell FDRE clocked by aclk)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            10.000ns
+  Endpoint Relative Delay:   -1.551ns
+  Reference Relative Delay:  -2.120ns
+  Relative CRPR:              0.000ns
+  Uncertainty:                0.137ns
+  Actual Bus Skew:            0.707ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_design_1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    G10                                               0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.001     0.001    design_1_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y59 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.521     0.522 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.090     0.612    design_1_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    G10                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_I_O)
+                                                      0.000     0.612 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.865     1.477    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_1
+    MMCME3_ADV_X1Y2      MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.439    -2.962 r  design_1_i/clk_wiz_0/inst/mmcme3_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.437    -2.525    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_1
+    BUFGCE_X1Y49         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.083    -2.442 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+    X2Y2 (CLOCK_ROOT)    net (fo=20995, routed)       2.121    -0.321    design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
+    SLICE_X92Y154        FDRE                                         r  design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X92Y154        FDRE (Prop_CFF2_SLICEL_C_Q)
+                                                      0.117    -0.204 r  design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[5]/Q
+                         net (fo=1, routed)           0.689     0.485    design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[5]
+    SLICE_X94Y154        FDRE                                         r  design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock aclk rise edge)       0.000     0.000 r  
+    BUFGCE_X1Y49         BUFGCE                       0.000     0.000 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+    X2Y2 (CLOCK_ROOT)    net (fo=20995, routed)       1.868     1.868    design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
+    SLICE_X94Y154        FDRE                                         r  design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/C
+                         clock pessimism              0.108     1.976    
+    SLICE_X94Y154        FDRE (Setup_HFF2_SLICEM_C_D)
+                                                      0.060     2.036    design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]
+  -------------------------------------------------------------------
+                         data arrival                           0.485    
+                         clock arrival                          2.036    
+  -------------------------------------------------------------------
+                         relative delay                        -1.551    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_design_1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    G10                                               0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.001     0.001    design_1_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y59 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.324     0.325 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.051     0.376    design_1_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    G10                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_I_O)
+                                                      0.000     0.376 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.778     1.154    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_1
+    MMCME3_ADV_X1Y2      MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.040    -2.886 r  design_1_i/clk_wiz_0/inst/mmcme3_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.372    -2.514    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_1
+    BUFGCE_X1Y49         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.075    -2.439 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+    X2Y2 (CLOCK_ROOT)    net (fo=20995, routed)       1.870    -0.569    design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
+    SLICE_X95Y154        FDRE                                         r  design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[9]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X95Y154        FDRE (Prop_AFF_SLICEL_C_Q)
+                                                      0.104    -0.465 r  design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[9]/Q
+                         net (fo=1, routed)           0.377    -0.088    design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[9]
+    SLICE_X95Y154        FDRE                                         r  design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][9]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock aclk rise edge)       0.000     0.000 r  
+    BUFGCE_X1Y49         BUFGCE                       0.000     0.000 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+    X2Y2 (CLOCK_ROOT)    net (fo=20995, routed)       2.117     2.117    design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
+    SLICE_X95Y154        FDRE                                         r  design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][9]/C
+                         clock pessimism             -0.192     1.925    
+    SLICE_X95Y154        FDRE (Hold_GFF2_SLICEL_C_D)
+                                                      0.107     2.032    design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/CT_Generation.Inst_DebugMemoryUnitCT/Inst_Memory_FIFO/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][9]
+  -------------------------------------------------------------------
+                         data arrival                          -0.088    
+                         clock arrival                          2.032    
+  -------------------------------------------------------------------
+                         relative delay                        -2.120    
+
+
+
+Id: 7
+set_bus_skew -from [get_cells {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[0]}] -to [get_cells {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[0]}] 40.000
+Requirement: 40.000ns
+Endpoints: 1
+No bus skew paths found.
+
+
+Id: 8
+set_bus_skew -from [get_cells {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[0]}] -to [get_cells [list {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[0]} {design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/MagicCalibrator_Debugger_inst/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[1]}]] 40.000
+Requirement: 40.000ns
+Endpoints: 1
+No bus skew paths found.
+
+
+Id: 9
+set_bus_skew -from [get_cells [list {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[20]} \
+          {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[10]} \
+          {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[11]} \
+          {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[21]} \
+          {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[22]} \
+          {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[23]} \
+          {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[28]} \
+          {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[29]} \
+          {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[26]} \
+          {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[18]} \
+          {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[19]} \
+          {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[27]}]] -to [get_cells [list {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[20]} \
+          {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[10]} \
+          {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[11]} \
+          {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[21]} \
+          {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[22]} \
+          {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[23]} \
+          {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[28]} \
+          {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[29]} \
+          {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[26]} \
+          {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[18]} \
+          {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[19]} \
+          {design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[27]}]] 5.000
+Requirement: 5.000ns
+Endpoints: 12
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+clk_out1_design_1_clk_wiz_0_1
+                      clk_out2_design_1_clk_wiz_0_1
+                                            design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[21]/D
+                                                                            design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[22]/D
+                                                                                                            Slow         1.121      3.879
+
+
+Slack (MET) :             3.879ns  (requirement - actual skew)
+  Endpoint Source:        design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[21]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_1)
+  Endpoint Destination:   design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[21]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out2_design_1_clk_wiz_0_1)
+  Reference Source:       design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[22]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_1)
+  Reference Destination:  design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[22]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out2_design_1_clk_wiz_0_1)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            5.000ns
+  Endpoint Relative Delay:    1.480ns
+  Reference Relative Delay:   0.223ns
+  Relative CRPR:              0.393ns
+  Uncertainty:                0.257ns
+  Actual Bus Skew:            1.121ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_design_1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    G10                                               0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.001     0.001    design_1_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y59 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.521     0.522 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.090     0.612    design_1_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    G10                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_I_O)
+                                                      0.000     0.612 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.865     1.477    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_1
+    MMCME3_ADV_X1Y2      MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.439    -2.962 r  design_1_i/clk_wiz_0/inst/mmcme3_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.437    -2.525    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_1
+    BUFGCE_X1Y49         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.083    -2.442 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+    X2Y2 (CLOCK_ROOT)    net (fo=20995, routed)       2.005    -0.437    design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_clk
+    SLICE_X77Y148        FDRE                                         r  design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[21]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X77Y148        FDRE (Prop_GFF_SLICEL_C_Q)
+                                                      0.114    -0.323 r  design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[21]/Q
+                         net (fo=1, routed)           0.908     0.585    design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff[21]
+    SLICE_X67Y141        FDRE                                         r  design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[21]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_design_1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    G10                                               0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.001     0.001    design_1_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y59 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.324     0.325 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.051     0.376    design_1_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    G10                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_I_O)
+                                                      0.000     0.376 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.778     1.154    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_1
+    MMCME3_ADV_X1Y2      MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT1)
+                                                     -4.040    -2.886 r  design_1_i/clk_wiz_0/inst/mmcme3_adv_inst/CLKOUT1
+                         net (fo=1, routed)           0.372    -2.514    design_1_i/clk_wiz_0/inst/clk_out2_design_1_clk_wiz_0_1
+    BUFGCE_X1Y48         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.075    -2.439 r  design_1_i/clk_wiz_0/inst/clkout2_buf/O
+    X2Y2 (CLOCK_ROOT)    net (fo=9650, routed)        1.560    -0.879    design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_clk
+    SLICE_X67Y141        FDRE                                         r  design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[21]/C
+                         clock pessimism             -0.075    -0.955    
+    SLICE_X67Y141        FDRE (Setup_HFF2_SLICEM_C_D)
+                                                      0.060    -0.895    design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[21]
+  -------------------------------------------------------------------
+                         data arrival                           0.585    
+                         clock arrival                         -0.895    
+  -------------------------------------------------------------------
+                         relative delay                         1.480    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_design_1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    G10                                               0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.001     0.001    design_1_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y59 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.324     0.325 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.051     0.376    design_1_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    G10                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_I_O)
+                                                      0.000     0.376 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.778     1.154    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_1
+    MMCME3_ADV_X1Y2      MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.040    -2.886 r  design_1_i/clk_wiz_0/inst/mmcme3_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.372    -2.514    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_1
+    BUFGCE_X1Y49         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.075    -2.439 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+    X2Y2 (CLOCK_ROOT)    net (fo=20995, routed)       1.768    -0.671    design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_clk
+    SLICE_X77Y147        FDRE                                         r  design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[22]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X77Y147        FDRE (Prop_EFF2_SLICEL_C_Q)
+                                                      0.106    -0.565 r  design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[22]/Q
+                         net (fo=1, routed)           0.382    -0.183    design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff[22]
+    SLICE_X77Y147        FDRE                                         r  design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[22]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_design_1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    G10                                               0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.001     0.001    design_1_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y59 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.521     0.522 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.090     0.612    design_1_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    G10                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_I_O)
+                                                      0.000     0.612 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.865     1.477    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_1
+    MMCME3_ADV_X1Y2      MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT1)
+                                                     -4.439    -2.962 r  design_1_i/clk_wiz_0/inst/mmcme3_adv_inst/CLKOUT1
+                         net (fo=1, routed)           0.437    -2.525    design_1_i/clk_wiz_0/inst/clk_out2_design_1_clk_wiz_0_1
+    BUFGCE_X1Y48         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.083    -2.442 r  design_1_i/clk_wiz_0/inst/clkout2_buf/O
+    X2Y2 (CLOCK_ROOT)    net (fo=9650, routed)        1.853    -0.589    design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_clk
+    SLICE_X77Y147        FDRE                                         r  design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[22]/C
+                         clock pessimism              0.075    -0.513    
+    SLICE_X77Y147        FDRE (Hold_AFF2_SLICEL_C_D)
+                                                      0.107    -0.406    design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[22]
+  -------------------------------------------------------------------
+                         data arrival                          -0.183    
+                         clock arrival                         -0.406    
+  -------------------------------------------------------------------
+                         relative delay                         0.223    
+
+
+
+Id: 10
+set_bus_skew -from [get_cells [list {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[20]} \
+          {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[10]} \
+          {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[11]} \
+          {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[21]} \
+          {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[22]} \
+          {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[23]} \
+          {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[28]} \
+          {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[29]} \
+          {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[26]} \
+          {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[18]} \
+          {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[19]} \
+          {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[27]}]] -to [get_cells [list {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[20]} \
+          {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[10]} \
+          {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[11]} \
+          {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[21]} \
+          {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[22]} \
+          {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[23]} \
+          {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[28]} \
+          {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[29]} \
+          {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[26]} \
+          {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[18]} \
+          {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[19]} \
+          {design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[27]}]] 5.000
+Requirement: 5.000ns
+Endpoints: 12
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+clk_out1_design_1_clk_wiz_0_1
+                      clk_out2_design_1_clk_wiz_0_1
+                                            design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[26]/D
+                                                                            design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[29]/D
+                                                                                                            Slow         1.464      3.536
+
+
+Slack (MET) :             3.536ns  (requirement - actual skew)
+  Endpoint Source:        design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[26]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_1)
+  Endpoint Destination:   design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[26]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out2_design_1_clk_wiz_0_1)
+  Reference Source:       design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[29]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_1)
+  Reference Destination:  design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[29]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out2_design_1_clk_wiz_0_1)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            5.000ns
+  Endpoint Relative Delay:    1.820ns
+  Reference Relative Delay:   0.298ns
+  Relative CRPR:              0.315ns
+  Uncertainty:                0.257ns
+  Actual Bus Skew:            1.464ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_design_1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    G10                                               0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.001     0.001    design_1_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y59 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.521     0.522 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.090     0.612    design_1_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    G10                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_I_O)
+                                                      0.000     0.612 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.865     1.477    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_1
+    MMCME3_ADV_X1Y2      MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.439    -2.962 r  design_1_i/clk_wiz_0/inst/mmcme3_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.437    -2.525    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_1
+    BUFGCE_X1Y49         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.083    -2.442 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+    X2Y2 (CLOCK_ROOT)    net (fo=20995, routed)       2.012    -0.430    design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_clk
+    SLICE_X76Y161        FDRE                                         r  design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[26]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X76Y161        FDRE (Prop_EFF_SLICEM_C_Q)
+                                                      0.114    -0.316 r  design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[26]/Q
+                         net (fo=1, routed)           1.197     0.881    design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff[26]
+    SLICE_X53Y154        FDRE                                         r  design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[26]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_design_1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    G10                                               0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.001     0.001    design_1_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y59 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.324     0.325 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.051     0.376    design_1_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    G10                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_I_O)
+                                                      0.000     0.376 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.778     1.154    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_1
+    MMCME3_ADV_X1Y2      MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT1)
+                                                     -4.040    -2.886 r  design_1_i/clk_wiz_0/inst/mmcme3_adv_inst/CLKOUT1
+                         net (fo=1, routed)           0.372    -2.514    design_1_i/clk_wiz_0/inst/clk_out2_design_1_clk_wiz_0_1
+    BUFGCE_X1Y48         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.075    -2.439 r  design_1_i/clk_wiz_0/inst/clkout2_buf/O
+    X2Y2 (CLOCK_ROOT)    net (fo=9650, routed)        1.516    -0.923    design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_clk
+    SLICE_X53Y154        FDRE                                         r  design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[26]/C
+                         clock pessimism             -0.075    -0.999    
+    SLICE_X53Y154        FDRE (Setup_EFF_SLICEM_C_D)
+                                                      0.060    -0.939    design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[26]
+  -------------------------------------------------------------------
+                         data arrival                           0.881    
+                         clock arrival                         -0.939    
+  -------------------------------------------------------------------
+                         relative delay                         1.820    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_design_1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    G10                                               0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.001     0.001    design_1_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y59 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.324     0.325 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.051     0.376    design_1_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    G10                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_I_O)
+                                                      0.000     0.376 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.778     1.154    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_1
+    MMCME3_ADV_X1Y2      MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.040    -2.886 r  design_1_i/clk_wiz_0/inst/mmcme3_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.372    -2.514    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_1
+    BUFGCE_X1Y49         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.075    -2.439 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+    X2Y2 (CLOCK_ROOT)    net (fo=20995, routed)       1.711    -0.728    design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_clk
+    SLICE_X75Y161        FDRE                                         r  design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[29]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X75Y161        FDRE (Prop_EFF2_SLICEM_C_Q)
+                                                      0.106    -0.622 r  design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[29]/Q
+                         net (fo=1, routed)           0.449    -0.173    design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff[29]
+    SLICE_X73Y160        FDRE                                         r  design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[29]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_design_1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    G10                                               0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.001     0.001    design_1_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y59 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.521     0.522 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.090     0.612    design_1_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    G10                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_I_O)
+                                                      0.000     0.612 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.865     1.477    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_1
+    MMCME3_ADV_X1Y2      MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT1)
+                                                     -4.439    -2.962 r  design_1_i/clk_wiz_0/inst/mmcme3_adv_inst/CLKOUT1
+                         net (fo=1, routed)           0.437    -2.525    design_1_i/clk_wiz_0/inst/clk_out2_design_1_clk_wiz_0_1
+    BUFGCE_X1Y48         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.083    -2.442 r  design_1_i/clk_wiz_0/inst/clkout2_buf/O
+    X2Y2 (CLOCK_ROOT)    net (fo=9650, routed)        1.789    -0.653    design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_clk
+    SLICE_X73Y160        FDRE                                         r  design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[29]/C
+                         clock pessimism              0.075    -0.577    
+    SLICE_X73Y160        FDRE (Hold_EFF2_SLICEL_C_D)
+                                                      0.106    -0.471    design_1_i/TDC_Calib/TDC/Ch1/TDCChannelSlice_1/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[29]
+  -------------------------------------------------------------------
+                         data arrival                          -0.173    
+                         clock arrival                         -0.471    
+  -------------------------------------------------------------------
+                         relative delay                         0.298    
+
+
+
+Id: 11
+set_bus_skew -from [get_cells [list {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[20]} \
+          {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[10]} \
+          {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[11]} \
+          {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[21]} \
+          {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[22]} \
+          {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[23]} \
+          {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[28]} \
+          {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[29]} \
+          {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[26]} \
+          {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[18]} \
+          {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[19]} \
+          {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[27]}]] -to [get_cells [list {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[20]} \
+          {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[10]} \
+          {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[11]} \
+          {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[21]} \
+          {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[22]} \
+          {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[23]} \
+          {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[28]} \
+          {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[29]} \
+          {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[26]} \
+          {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[18]} \
+          {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[19]} \
+          {design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[27]}]] 5.000
+Requirement: 5.000ns
+Endpoints: 12
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+clk_out1_design_1_clk_wiz_0_1
+                      clk_out2_design_1_clk_wiz_0_1
+                                            design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[21]/D
+                                                                            design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[23]/D
+                                                                                                            Slow         1.577      3.423
+
+
+Slack (MET) :             3.423ns  (requirement - actual skew)
+  Endpoint Source:        design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[21]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_1)
+  Endpoint Destination:   design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[21]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out2_design_1_clk_wiz_0_1)
+  Reference Source:       design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[23]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_1)
+  Reference Destination:  design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[23]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out2_design_1_clk_wiz_0_1)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            5.000ns
+  Endpoint Relative Delay:    1.919ns
+  Reference Relative Delay:   0.284ns
+  Relative CRPR:              0.316ns
+  Uncertainty:                0.257ns
+  Actual Bus Skew:            1.577ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_design_1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    G10                                               0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.001     0.001    design_1_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y59 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.521     0.522 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.090     0.612    design_1_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    G10                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_I_O)
+                                                      0.000     0.612 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.865     1.477    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_1
+    MMCME3_ADV_X1Y2      MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.439    -2.962 r  design_1_i/clk_wiz_0/inst/mmcme3_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.437    -2.525    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_1
+    BUFGCE_X1Y49         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.083    -2.442 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+    X2Y2 (CLOCK_ROOT)    net (fo=20995, routed)       2.029    -0.413    design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_clk
+    SLICE_X76Y162        FDRE                                         r  design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[21]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X76Y162        FDRE (Prop_CFF2_SLICEM_C_Q)
+                                                      0.117    -0.296 r  design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[21]/Q
+                         net (fo=1, routed)           1.275     0.979    design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff[21]
+    SLICE_X55Y150        FDRE                                         r  design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[21]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_design_1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    G10                                               0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.001     0.001    design_1_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y59 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.324     0.325 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.051     0.376    design_1_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    G10                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_I_O)
+                                                      0.000     0.376 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.778     1.154    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_1
+    MMCME3_ADV_X1Y2      MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT1)
+                                                     -4.040    -2.886 r  design_1_i/clk_wiz_0/inst/mmcme3_adv_inst/CLKOUT1
+                         net (fo=1, routed)           0.372    -2.514    design_1_i/clk_wiz_0/inst/clk_out2_design_1_clk_wiz_0_1
+    BUFGCE_X1Y48         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.075    -2.439 r  design_1_i/clk_wiz_0/inst/clkout2_buf/O
+    X2Y2 (CLOCK_ROOT)    net (fo=9650, routed)        1.514    -0.925    design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_clk
+    SLICE_X55Y150        FDRE                                         r  design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[21]/C
+                         clock pessimism             -0.075    -1.001    
+    SLICE_X55Y150        FDRE (Setup_AFF2_SLICEM_C_D)
+                                                      0.061    -0.940    design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[21]
+  -------------------------------------------------------------------
+                         data arrival                           0.979    
+                         clock arrival                         -0.940    
+  -------------------------------------------------------------------
+                         relative delay                         1.919    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_design_1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    G10                                               0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.001     0.001    design_1_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y59 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.324     0.325 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.051     0.376    design_1_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    G10                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_I_O)
+                                                      0.000     0.376 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.778     1.154    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_1
+    MMCME3_ADV_X1Y2      MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
+                                                     -4.040    -2.886 r  design_1_i/clk_wiz_0/inst/mmcme3_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.372    -2.514    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_1
+    BUFGCE_X1Y49         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.075    -2.439 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+    X2Y2 (CLOCK_ROOT)    net (fo=20995, routed)       1.712    -0.727    design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_clk
+    SLICE_X74Y161        FDRE                                         r  design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[23]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X74Y161        FDRE (Prop_EFF_SLICEL_C_Q)
+                                                      0.103    -0.624 r  design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff_reg[23]/Q
+                         net (fo=1, routed)           0.404    -0.220    design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/src_hsdata_ff[23]
+    SLICE_X74Y161        FDRE                                         r  design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[23]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_design_1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    G10                                               0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.001     0.001    design_1_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y59 DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.521     0.522 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.090     0.612    design_1_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    G10                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_I_O)
+                                                      0.000     0.612 r  design_1_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.865     1.477    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_1
+    MMCME3_ADV_X1Y2      MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT1)
+                                                     -4.439    -2.962 r  design_1_i/clk_wiz_0/inst/mmcme3_adv_inst/CLKOUT1
+                         net (fo=1, routed)           0.437    -2.525    design_1_i/clk_wiz_0/inst/clk_out2_design_1_clk_wiz_0_1
+    BUFGCE_X1Y48         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.083    -2.442 r  design_1_i/clk_wiz_0/inst/clkout2_buf/O
+    X2Y2 (CLOCK_ROOT)    net (fo=9650, routed)        1.755    -0.687    design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_clk
+    SLICE_X74Y161        FDRE                                         r  design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[23]/C
+                         clock pessimism              0.075    -0.611    
+    SLICE_X74Y161        FDRE (Hold_BFF_SLICEL_C_D)
+                                                      0.107    -0.504    design_1_i/TDC_Calib/TDC/Ch2/TDCChannelSlice_2/U0/inst_cdc_self_handshake_from_axi_to_tdc/Inst_xpm_cdc_handshake/dest_hsdata_ff_reg[23]
+  -------------------------------------------------------------------
+                         data arrival                          -0.220    
+                         clock arrival                         -0.504    
+  -------------------------------------------------------------------
+                         relative delay                         0.284    
+
+
+

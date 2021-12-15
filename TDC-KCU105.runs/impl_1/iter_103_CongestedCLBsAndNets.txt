@@ -1,0 +1,8 @@
+List of CLB Tiles
+CLE_M_X45Y230
+CLEL_R_X45Y230
+
+List of Congested Nets
+design_1_i/MME_0/U0/AXI4Stream_PacketFetcher_0/U0/multicobs_decoder_inst/COBS_DECODERS[0].COBS_DECODER_I_OUTPUT_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/doutb[7]
+design_1_i/MME_0/U0/AXI4Stream_PacketFetcher_0/U0/crc_generator_inst/Q[24]
+

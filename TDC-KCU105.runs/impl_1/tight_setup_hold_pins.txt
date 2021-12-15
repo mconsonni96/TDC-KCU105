@@ -1,0 +1,29 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][1]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][1]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[1]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][1]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[3]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][0]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][0]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][0]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[0]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[4]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][3]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][2]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][3]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][3]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][2]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][6]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][2]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][4]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][4]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][6]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][4]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[2]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][7]/D|
+|                     aclk |                     aclk |             design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[7]/D|
+|                     aclk |                     aclk |              design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][7]/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
