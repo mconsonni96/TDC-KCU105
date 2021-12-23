@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date         : Wed Dec 15 11:25:19 2021
+| Date         : Thu Dec 23 12:12:20 2021
 | Host         : mconsonni-All-Series running 64-bit Ubuntu 20.04.3 LTS
 | Command      : report_utilization -file design_1_AXI4Stream_XUS_Virtu_0_0_utilization_synth.rpt -pb design_1_AXI4Stream_XUS_Virtu_0_0_utilization_synth.pb
 | Design       : design_1_AXI4Stream_XUS_Virtu_0_0
@@ -31,14 +31,14 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| CLB LUTs*               |   50 |     0 |    242400 |  0.02 |
-|   LUT as Logic          |   50 |     0 |    242400 |  0.02 |
+| CLB LUTs*               |   46 |     0 |    242400 |  0.02 |
+|   LUT as Logic          |   46 |     0 |    242400 |  0.02 |
 |   LUT as Memory         |    0 |     0 |    112800 |  0.00 |
-| CLB Registers           | 1060 |     0 |    484800 |  0.22 |
-|   Register as Flip Flop | 1060 |     0 |    484800 |  0.22 |
+| CLB Registers           | 4116 |     0 |    484800 |  0.85 |
+|   Register as Flip Flop | 4116 |     0 |    484800 |  0.85 |
 |   Register as Latch     |    0 |     0 |    484800 |  0.00 |
-| CARRY8                  |  160 |     0 |     30300 |  0.53 |
-| F7 Muxes                |   20 |     0 |    121200 |  0.02 |
+| CARRY8                  |  576 |     0 |     30300 |  1.90 |
+| F7 Muxes                |   16 |     0 |    121200 |  0.01 |
 | F8 Muxes                |    8 |     0 |     60600 |  0.01 |
 | F9 Muxes                |    0 |     0 |     30300 |  0.00 |
 +-------------------------+------+-------+-----------+-------+
@@ -60,7 +60,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 1060  |          Yes |       Reset |            - |
+| 4116  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -152,10 +152,10 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     | 1060 |            Register |
-| CARRY8   |  160 |                 CLB |
-| LUT6     |   45 |                 CLB |
-| MUXF7    |   20 |                 CLB |
+| FDRE     | 4116 |            Register |
+| CARRY8   |  576 |                 CLB |
+| LUT6     |   41 |                 CLB |
+| MUXF7    |   16 |                 CLB |
 | MUXF8    |    8 |                 CLB |
 | LUT5     |    4 |                 CLB |
 | LUT1     |    1 |                 CLB |

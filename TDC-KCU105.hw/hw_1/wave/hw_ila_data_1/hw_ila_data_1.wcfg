@@ -10,96 +10,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="7fs"></ZoomEndTime>
+      <ZoomEndTime time="1025fs"></ZoomEndTime>
       <Cursor1Time time="0fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="352"></NameColumnWidth>
-      <ValueColumnWidth column_width="92"></ValueColumnWidth>
+      <NameColumnWidth column_width="306"></NameColumnWidth>
+      <ValueColumnWidth column_width="66"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="2" />
-   <wvobject type="group" fp_name="group1">
-      <obj_property name="label">slot_0 : AXI4Stream_UART_1_M00_AXIS_RX : Interface</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="isExpanded"></obj_property>
-      <wvobject type="group" fp_name="group2">
-         <obj_property name="label">slot_0 : AXI4Stream_UART_1_M00_AXIS_RX : T Channel</obj_property>
-         <obj_property name="DisplayName">label</obj_property>
-         <obj_property name="isExpanded"></obj_property>
-         <wvobject type="logic" fp_name="design_1_i/system_ila_0/U0/net_slot_0_axis_tvalid">
-            <obj_property name="DisplayName">label</obj_property>
-            <obj_property name="ElementShortName">design_1_i/system_ila_0/U0/net_slot_0_axis_tvalid</obj_property>
-            <obj_property name="ObjectShortName">net_slot_0_axis_tvalid</obj_property>
-            <obj_property name="label">slot_0 : AXI4Stream_UART_1_M00_AXIS_RX : TVALID</obj_property>
-            <obj_property name="LABELRADIX">true</obj_property>
-            <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-         </wvobject>
-         <wvobject type="logic" fp_name="design_1_i/system_ila_0/U0/net_slot_0_axis_tready">
-            <obj_property name="DisplayName">label</obj_property>
-            <obj_property name="ElementShortName">design_1_i/system_ila_0/U0/net_slot_0_axis_tready</obj_property>
-            <obj_property name="ObjectShortName">net_slot_0_axis_tready</obj_property>
-            <obj_property name="label">slot_0 : AXI4Stream_UART_1_M00_AXIS_RX : TREADY</obj_property>
-            <obj_property name="LABELRADIX">true</obj_property>
-            <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-         </wvobject>
-         <wvobject type="logic" fp_name="design_1_i/system_ila_0/U0/net_slot_0_axis_tlast">
-            <obj_property name="DisplayName">label</obj_property>
-            <obj_property name="ElementShortName">design_1_i/system_ila_0/U0/net_slot_0_axis_tlast</obj_property>
-            <obj_property name="ObjectShortName">net_slot_0_axis_tlast</obj_property>
-            <obj_property name="label">slot_0 : AXI4Stream_UART_1_M00_AXIS_RX : TLAST</obj_property>
-            <obj_property name="LABELRADIX">true</obj_property>
-            <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-         </wvobject>
-         <wvobject type="array" fp_name="design_1_i/system_ila_0/U0/net_slot_0_axis_tdata">
-            <obj_property name="DisplayName">label</obj_property>
-            <obj_property name="ElementShortName">design_1_i/system_ila_0/U0/net_slot_0_axis_tdata[31:0]</obj_property>
-            <obj_property name="ObjectShortName">net_slot_0_axis_tdata[31:0]</obj_property>
-            <obj_property name="label">slot_0 : AXI4Stream_UART_1_M00_AXIS_RX : TDATA</obj_property>
-            <obj_property name="Radix">HEXRADIX</obj_property>
-            <obj_property name="LABELRADIX">true</obj_property>
-            <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-         </wvobject>
-      </wvobject>
-   </wvobject>
-   <wvobject type="group" fp_name="group7">
-      <obj_property name="label">slot_1 : MME_0_M_AXIS : Interface</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-      <wvobject type="group" fp_name="group8">
-         <obj_property name="label">slot_1 : MME_0_M_AXIS : T Channel</obj_property>
-         <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="logic" fp_name="design_1_i/system_ila_0/U0/net_slot_1_axis_tvalid">
-            <obj_property name="DisplayName">label</obj_property>
-            <obj_property name="ElementShortName">design_1_i/system_ila_0/U0/net_slot_1_axis_tvalid</obj_property>
-            <obj_property name="ObjectShortName">net_slot_1_axis_tvalid</obj_property>
-            <obj_property name="label">slot_1 : MME_0_M_AXIS : TVALID</obj_property>
-            <obj_property name="LABELRADIX">true</obj_property>
-            <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-         </wvobject>
-         <wvobject type="logic" fp_name="design_1_i/system_ila_0/U0/net_slot_1_axis_tready">
-            <obj_property name="DisplayName">label</obj_property>
-            <obj_property name="ElementShortName">design_1_i/system_ila_0/U0/net_slot_1_axis_tready</obj_property>
-            <obj_property name="ObjectShortName">net_slot_1_axis_tready</obj_property>
-            <obj_property name="label">slot_1 : MME_0_M_AXIS : TREADY</obj_property>
-            <obj_property name="LABELRADIX">true</obj_property>
-            <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-         </wvobject>
-         <wvobject type="logic" fp_name="design_1_i/system_ila_0/U0/net_slot_1_axis_tlast">
-            <obj_property name="DisplayName">label</obj_property>
-            <obj_property name="ElementShortName">design_1_i/system_ila_0/U0/net_slot_1_axis_tlast</obj_property>
-            <obj_property name="ObjectShortName">net_slot_1_axis_tlast</obj_property>
-            <obj_property name="label">slot_1 : MME_0_M_AXIS : TLAST</obj_property>
-            <obj_property name="LABELRADIX">true</obj_property>
-            <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-         </wvobject>
-         <wvobject type="array" fp_name="design_1_i/system_ila_0/U0/net_slot_1_axis_tdata">
-            <obj_property name="DisplayName">label</obj_property>
-            <obj_property name="ElementShortName">design_1_i/system_ila_0/U0/net_slot_1_axis_tdata[31:0]</obj_property>
-            <obj_property name="ObjectShortName">net_slot_1_axis_tdata[31:0]</obj_property>
-            <obj_property name="label">slot_1 : MME_0_M_AXIS : TDATA</obj_property>
-            <obj_property name="Radix">HEXRADIX</obj_property>
-            <obj_property name="LABELRADIX">true</obj_property>
-            <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-         </wvobject>
-      </wvobject>
-   </wvobject>
+   <WVObjectSize size="0" />
+   <wave_markers>
+   </wave_markers>
 </wave_config>

@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-// Date        : Fri Dec  3 13:13:27 2021
+// Date        : Wed Dec  1 16:47:40 2021
 // Host        : mconsonni-All-Series running 64-bit Ubuntu 20.04.3 LTS
 // Command     : write_verilog -force -mode synth_stub -rename_top design_1_AXI4Stream_MagicCali_0_2 -prefix
 //               design_1_AXI4Stream_MagicCali_0_2_ design_1_AXI4Stream_MagicCali_0_2_stub.v

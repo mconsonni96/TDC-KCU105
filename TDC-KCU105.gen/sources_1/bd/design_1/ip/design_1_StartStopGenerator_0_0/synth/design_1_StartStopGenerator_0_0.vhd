@@ -56,7 +56,6 @@ USE ieee.numeric_std.ALL;
 ENTITY design_1_StartStopGenerator_0_0 IS
   PORT (
     reset : IN STD_LOGIC;
-    clk_in : IN STD_LOGIC;
     StartOut : OUT STD_LOGIC;
     StopOut : OUT STD_LOGIC
   );
@@ -90,8 +89,6 @@ ARCHITECTURE design_1_StartStopGenerator_0_0_arch OF design_1_StartStopGenerator
   ATTRIBUTE IP_DEFINITION_SOURCE OF design_1_StartStopGenerator_0_0_arch: ARCHITECTURE IS "package_project";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
-  ATTRIBUTE X_INTERFACE_PARAMETER OF clk_in: SIGNAL IS "XIL_INTERFACENAME clk_in, ASSOCIATED_RESET reset, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_clk_wiz_0_1_clk_out1, INSERT_VIP 0";
-  ATTRIBUTE X_INTERFACE_INFO OF clk_in: SIGNAL IS "xilinx.com:signal:clock:1.0 clk_in CLK";
   ATTRIBUTE X_INTERFACE_PARAMETER OF reset: SIGNAL IS "XIL_INTERFACENAME reset, POLARITY ACTIVE_HIGH, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF reset: SIGNAL IS "xilinx.com:signal:reset:1.0 reset RST";
 BEGIN
@@ -99,14 +96,14 @@ BEGIN
     GENERIC MAP (
       NUM_CARRY_BLOCK => 8,
       TUNING_MODE => false,
-      HALF_DIVIDER => 5,
+      HALF_DIVIDER => 1400,
       DIVIDER_INIT => 0,
-      CLK_SELECT => "EXTERNAL",
+      CLK_SELECT => "RING OSCILLATOR",
       START_STOP_DALAY_NUM_CARRY_BLOCK => 4
     )
     PORT MAP (
       reset => reset,
-      clk_in => clk_in,
+      clk_in => '0',
       Divider => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 16)),
       StartOut => StartOut,
       StopOut => StopOut

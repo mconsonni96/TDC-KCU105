@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Dec 15 12:15:02 2021" VIVADOVERSION="2020.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Dec 23 12:10:13 2021" VIVADOVERSION="2020.2">
 
   <SYSTEMINFO ARCH="kintexu" BOARD="xilinx.com:kcu105:part0:1.7" DEVICE="xcku040" NAME="bd_cd85" PACKAGE="ffva1156" SPEEDGRADE="-2"/>
 
@@ -50,46 +50,6 @@
     <PORT DIR="O" NAME="Packetizer_packet_error" SIGIS="undef" SIGNAME="AXI4Stream_Packetizer_0_packet_error">
       <CONNECTIONS>
         <CONNECTION INSTANCE="AXI4Stream_Packetizer_0" PORT="packet_error"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="7" NAME="S_AXIS_AUX_tdest" RIGHT="0" SIGIS="undef" SIGNAME="AXI4Stream_DataMover_MM2S_0_s_axis_aux_tdest">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="AXI4Stream_DataMover_MM2S_0" PORT="s_axis_aux_tdest"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="55" NAME="S_AXIS_AUX_tdata" RIGHT="0" SIGIS="undef" SIGNAME="AXI4Stream_DataMover_MM2S_0_s_axis_aux_tdata">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="AXI4Stream_DataMover_MM2S_0" PORT="s_axis_aux_tdata"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="S_AXIS_AUX_tvalid" SIGIS="undef" SIGNAME="AXI4Stream_DataMover_MM2S_0_s_axis_aux_tvalid">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="AXI4Stream_DataMover_MM2S_0" PORT="s_axis_aux_tvalid"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="S_AXIS_AUX_tready" SIGIS="undef" SIGNAME="AXI4Stream_DataMover_MM2S_0_s_axis_aux_tready">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="AXI4Stream_DataMover_MM2S_0" PORT="s_axis_aux_tready"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="M_AXIS_tvalid" SIGIS="undef" SIGNAME="axis_dwidth_converter_0_m_axis_tvalid">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="axis_dwidth_converter_0" PORT="m_axis_tvalid"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="M_AXIS_tready" SIGIS="undef" SIGNAME="axis_dwidth_converter_0_m_axis_tready">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="axis_dwidth_converter_0" PORT="m_axis_tready"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="7" NAME="M_AXIS_tdata" RIGHT="0" SIGIS="undef" SIGNAME="axis_dwidth_converter_0_m_axis_tdata">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="axis_dwidth_converter_0" PORT="m_axis_tdata"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="M_AXIS_tlast" SIGIS="undef" SIGNAME="axis_dwidth_converter_0_m_axis_tlast">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="axis_dwidth_converter_0" PORT="m_axis_tlast"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="O" LEFT="0" NAME="PTE_OUTPUT_tvalid" RIGHT="0" SIGIS="undef" SIGNAME="axis_interconnect_0_xbar_m_axis_tvalid">
@@ -160,6 +120,46 @@
     <PORT DIR="I" NAME="M_AXIS_AUX_tready" SIGIS="undef" SIGNAME="AXI4Stream_DataMover_MM2S_0_m_axis_aux_tready">
       <CONNECTIONS>
         <CONNECTION INSTANCE="AXI4Stream_DataMover_MM2S_0" PORT="m_axis_aux_tready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="7" NAME="S_AXIS_AUX_tdest" RIGHT="0" SIGIS="undef" SIGNAME="AXI4Stream_DataMover_MM2S_0_s_axis_aux_tdest">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="AXI4Stream_DataMover_MM2S_0" PORT="s_axis_aux_tdest"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="55" NAME="S_AXIS_AUX_tdata" RIGHT="0" SIGIS="undef" SIGNAME="AXI4Stream_DataMover_MM2S_0_s_axis_aux_tdata">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="AXI4Stream_DataMover_MM2S_0" PORT="s_axis_aux_tdata"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="S_AXIS_AUX_tvalid" SIGIS="undef" SIGNAME="AXI4Stream_DataMover_MM2S_0_s_axis_aux_tvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="AXI4Stream_DataMover_MM2S_0" PORT="s_axis_aux_tvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="S_AXIS_AUX_tready" SIGIS="undef" SIGNAME="AXI4Stream_DataMover_MM2S_0_s_axis_aux_tready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="AXI4Stream_DataMover_MM2S_0" PORT="s_axis_aux_tready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="M_AXIS_tvalid" SIGIS="undef" SIGNAME="axis_dwidth_converter_0_m_axis_tvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axis_dwidth_converter_0" PORT="m_axis_tvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="M_AXIS_tready" SIGIS="undef" SIGNAME="axis_dwidth_converter_0_m_axis_tready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axis_dwidth_converter_0" PORT="m_axis_tready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="M_AXIS_tdata" RIGHT="0" SIGIS="undef" SIGNAME="axis_dwidth_converter_0_m_axis_tdata">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axis_dwidth_converter_0" PORT="m_axis_tdata"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="M_AXIS_tlast" SIGIS="undef" SIGNAME="axis_dwidth_converter_0_m_axis_tlast">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axis_dwidth_converter_0" PORT="m_axis_tlast"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" LEFT="7" NAME="S_AXIS_tdata" RIGHT="0" SIGIS="undef" SIGNAME="AXI4Stream_multicobs_upsizer_0_s_axis_tdata">

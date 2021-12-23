@@ -59,7 +59,7 @@ ENTITY design_1_AXI4Stream_XUS_Virtu_0_1 IS
     clk : IN STD_LOGIC;
     AsyncInput : IN STD_LOGIC;
     m00_axis_undeco_tvalid : OUT STD_LOGIC;
-    m00_axis_undeco_tdata : OUT STD_LOGIC_VECTOR(1023 DOWNTO 0);
+    m00_axis_undeco_tdata : OUT STD_LOGIC_VECTOR(4095 DOWNTO 0);
     ValidPositionTap : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
     ValidNumberOfTdl : IN STD_LOGIC_VECTOR(31 DOWNTO 0)
   );
@@ -123,7 +123,7 @@ ARCHITECTURE design_1_AXI4Stream_XUS_Virtu_0_1_arch OF design_1_AXI4Stream_XUS_V
       clk : IN STD_LOGIC;
       AsyncInput : IN STD_LOGIC;
       m00_axis_undeco_tvalid : OUT STD_LOGIC;
-      m00_axis_undeco_tdata : OUT STD_LOGIC_VECTOR(1023 DOWNTO 0);
+      m00_axis_undeco_tdata : OUT STD_LOGIC_VECTOR(4095 DOWNTO 0);
       ValidPositionTap : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
       ValidNumberOfTdl : IN STD_LOGIC_VECTOR(31 DOWNTO 0)
     );
@@ -141,11 +141,11 @@ ARCHITECTURE design_1_AXI4Stream_XUS_Virtu_0_1_arch OF design_1_AXI4Stream_XUS_V
   ATTRIBUTE X_INTERFACE_PARAMETER OF ValidPositionTap: SIGNAL IS "XIL_INTERFACENAME ValidPositionTap, LAYERED_METADATA undef";
   ATTRIBUTE X_INTERFACE_INFO OF ValidPositionTap: SIGNAL IS "xilinx.com:signal:data:1.0 ValidPositionTap DATA";
   ATTRIBUTE X_INTERFACE_INFO OF m00_axis_undeco_tdata: SIGNAL IS "xilinx.com:interface:axis:1.0 M00_AXIS_Undeco TDATA";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF m00_axis_undeco_tvalid: SIGNAL IS "XIL_INTERFACENAME M00_AXIS_Undeco, TDATA_NUM_BYTES 128, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 0, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 400000000, PHASE 0.0, CLK_DOMAIN design_1_clk_wiz_0_1_clk_out1, LAYERED_METADATA undef, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF m00_axis_undeco_tvalid: SIGNAL IS "XIL_INTERFACENAME M00_AXIS_Undeco, TDATA_NUM_BYTES 512, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 0, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 600000000, PHASE 0.0, CLK_DOMAIN design_1_clk_wiz_0_1_clk_out1, LAYERED_METADATA undef, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF m00_axis_undeco_tvalid: SIGNAL IS "xilinx.com:interface:axis:1.0 M00_AXIS_Undeco TVALID";
   ATTRIBUTE X_INTERFACE_PARAMETER OF AsyncInput: SIGNAL IS "XIL_INTERFACENAME AsyncInput, LAYERED_METADATA undef";
   ATTRIBUTE X_INTERFACE_INFO OF AsyncInput: SIGNAL IS "xilinx.com:signal:data:1.0 AsyncInput DATA";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF clk: SIGNAL IS "XIL_INTERFACENAME clk, ASSOCIATED_RESET reset, ASSOCIATED_BUSIF M00_AXIS_Undeco, FREQ_HZ 400000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_clk_wiz_0_1_clk_out1, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF clk: SIGNAL IS "XIL_INTERFACENAME clk, ASSOCIATED_RESET reset, ASSOCIATED_BUSIF M00_AXIS_Undeco, FREQ_HZ 600000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_clk_wiz_0_1_clk_out1, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF clk: SIGNAL IS "xilinx.com:signal:clock:1.0 clk CLK";
   ATTRIBUTE X_INTERFACE_PARAMETER OF reset: SIGNAL IS "XIL_INTERFACENAME reset, POLARITY ACTIVE_HIGH, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF reset: SIGNAL IS "xilinx.com:signal:reset:1.0 reset RST";
@@ -153,8 +153,8 @@ BEGIN
   U0 : AXI4Stream_XUS_VirtualTDL
     GENERIC MAP (
       SIM_VS_IMP => "IMP",
-      NUM_TAP_TDL => 256,
-      NUM_TAP_PRE_TDL => 64,
+      NUM_TAP_TDL => 1024,
+      NUM_TAP_PRE_TDL => 128,
       TYPE_TDL_0 => "C",
       TYPE_TDL_1 => "C",
       TYPE_TDL_2 => "C",
@@ -176,9 +176,9 @@ BEGIN
       FILE_PATH_NAME_O_DELAY => "/home/nicola/Documents/Vivado/Projects/Time-to-Digital_Converter/TappedDelayLine/TappedDelayLine.srcs/sim_1/new/CO_O_Delay.txt",
       NUMBER_OF_TDL => 4,
       BUFFERING_STAGE => false,
-      MIN_VALID_TAP_POS => -64,
-      STEP_VALID_TAP_POS => 8,
-      MAX_VALID_TAP_POS => 255,
+      MIN_VALID_TAP_POS => -128,
+      STEP_VALID_TAP_POS => 32,
+      MAX_VALID_TAP_POS => 1023,
       VALID_POSITION_TAP_INIT => 0,
       VALID_NUMBER_OF_TDL_INIT => 0,
       OFFSET_TAP_TDL_0 => 0,
@@ -197,8 +197,8 @@ BEGIN
       OFFSET_TAP_TDL_13 => 0,
       OFFSET_TAP_TDL_14 => 0,
       OFFSET_TAP_TDL_15 => 0,
-      BIT_SMP_TDL => 256,
-      BIT_SMP_PRE_TDL => 64
+      BIT_SMP_TDL => 1024,
+      BIT_SMP_PRE_TDL => 128
     )
     PORT MAP (
       reset => reset,

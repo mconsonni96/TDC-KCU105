@@ -12,28 +12,28 @@ TYPE_EDGE_ARRAY_3	=	DN
 
 NUMBER_OF_TDL	=	4
 
-BIT_TDL	=	256
+BIT_TDL	=	1024
 BIT_BUBBLE	=	16
-BIT_DECO	=	8
+BIT_DECO	=	10
 
-BIT_SUB_INT	=	10
+BIT_SUB_INT	=	12
 
 ======================================================
 
 ====================== DECO T2B =====================
 
-BIT_THERMO_DECOT2B	=	256
+BIT_THERMO_DECOT2B	=	1024
 
-BIT_BIN_DECOT2B	=	8
+BIT_BIN_DECOT2B	=	10
 
 ======================================================
 
 ================== DECODER PIPELINE ==================
 
-DECO_PIPELINE	=	7
+DECO_PIPELINE	=	9
 
 SUB_INTERPOLATION_PIPELINE	=	1
-COARSE_PIPELINE	=	8
+COARSE_PIPELINE	=	10
 
 ======================================================
 

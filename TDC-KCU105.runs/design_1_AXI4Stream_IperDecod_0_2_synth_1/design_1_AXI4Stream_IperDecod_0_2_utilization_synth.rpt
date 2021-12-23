@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date         : Wed Dec 15 11:27:09 2021
+| Date         : Thu Dec 23 12:14:53 2021
 | Host         : mconsonni-All-Series running 64-bit Ubuntu 20.04.3 LTS
 | Command      : report_utilization -file design_1_AXI4Stream_IperDecod_0_2_utilization_synth.rpt -pb design_1_AXI4Stream_IperDecod_0_2_utilization_synth.pb
 | Design       : design_1_AXI4Stream_IperDecod_0_2
@@ -31,13 +31,13 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| CLB LUTs*               | 1613 |     0 |    242400 |  0.67 |
-|   LUT as Logic          | 1613 |     0 |    242400 |  0.67 |
+| CLB LUTs*               | 6251 |     0 |    242400 |  2.58 |
+|   LUT as Logic          | 6251 |     0 |    242400 |  2.58 |
 |   LUT as Memory         |    0 |     0 |    112800 |  0.00 |
-| CLB Registers           | 2033 |     0 |    484800 |  0.42 |
-|   Register as Flip Flop | 2033 |     0 |    484800 |  0.42 |
+| CLB Registers           | 8177 |     0 |    484800 |  1.69 |
+|   Register as Flip Flop | 8177 |     0 |    484800 |  1.69 |
 |   Register as Latch     |    0 |     0 |    484800 |  0.00 |
-| CARRY8                  |   34 |     0 |     30300 |  0.11 |
+| CARRY8                  |  158 |     0 |     30300 |  0.52 |
 | F7 Muxes                |    0 |     0 |    121200 |  0.00 |
 | F8 Muxes                |    0 |     0 |     60600 |  0.00 |
 | F9 Muxes                |    0 |     0 |     30300 |  0.00 |
@@ -58,7 +58,7 @@ Table of Contents
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
-| 2033  |          Yes |           - |        Reset |
+| 8177  |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
 | 0     |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
@@ -152,13 +152,13 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDCE     | 2033 |            Register |
-| LUT4     |  996 |                 CLB |
-| LUT6     |  440 |                 CLB |
-| LUT2     |  433 |                 CLB |
-| LUT3     |  168 |                 CLB |
-| LUT5     |   72 |                 CLB |
-| CARRY8   |   34 |                 CLB |
+| FDCE     | 8177 |            Register |
+| LUT4     | 3976 |                 CLB |
+| LUT6     | 1784 |                 CLB |
+| LUT2     | 1775 |                 CLB |
+| LUT3     |  648 |                 CLB |
+| LUT5     |  264 |                 CLB |
+| CARRY8   |  158 |                 CLB |
 +----------+------+---------------------+
 
 

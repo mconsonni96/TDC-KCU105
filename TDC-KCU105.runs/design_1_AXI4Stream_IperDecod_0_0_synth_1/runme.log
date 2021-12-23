@@ -12,6 +12,6 @@ source design_1_AXI4Stream_IperDecod_0_0.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/mconsonni/Utility_Ip_Core'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2020.2/data/ip'.
-INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_AXI4Stream_IperDecod_0_0, cache-ID = 422b7df3f21d5a87.
-config_ip_cache: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 2418.027 ; gain = 0.000 ; free physical = 4843 ; free virtual = 11394
-INFO: [Common 17-206] Exiting Vivado at Wed Dec 15 11:27:42 2021...
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_AXI4Stream_IperDecod_0_0, cache-ID = 10902bbcdd507bda.
+config_ip_cache: Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 2425.996 ; gain = 0.000 ; free physical = 7019 ; free virtual = 11022
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 23 12:15:33 2021...
