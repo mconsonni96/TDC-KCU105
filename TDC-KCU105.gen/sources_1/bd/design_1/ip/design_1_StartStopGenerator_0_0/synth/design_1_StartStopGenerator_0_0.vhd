@@ -1,4 +1,4 @@
--- (c) Copyright 1995-2021 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 1995-2022 Xilinx, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
 -- of Xilinx, Inc. and is protected under U.S. and
@@ -96,7 +96,7 @@ BEGIN
     GENERIC MAP (
       NUM_CARRY_BLOCK => 8,
       TUNING_MODE => false,
-      HALF_DIVIDER => 1400,
+      HALF_DIVIDER => 100,
       DIVIDER_INIT => 0,
       CLK_SELECT => "RING OSCILLATOR",
       START_STOP_DALAY_NUM_CARRY_BLOCK => 4

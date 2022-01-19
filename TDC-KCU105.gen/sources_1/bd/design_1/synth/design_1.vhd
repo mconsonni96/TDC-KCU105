@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
---Date        : Thu Dec 23 12:10:11 2021
+--Date        : Mon Jan 17 10:13:12 2022
 --Host        : mconsonni-All-Series running 64-bit Ubuntu 20.04.3 LTS
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -1937,8 +1937,6 @@ architecture STRUCTURE of Sync_imp_ZFT08U is
   signal BeltBus_NodeInserter_0_M00_BB_TREADY : STD_LOGIC;
   signal BeltBus_NodeInserter_0_M00_BB_TVALID : STD_LOGIC;
   signal CalibEventIn_1 : STD_LOGIC;
-  attribute DEBUG : string;
-  attribute DEBUG of CalibEventIn_1 : signal is "true";
   signal CoarseCounter_CTD_1 : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal Conn1_TDATA : STD_LOGIC;
   signal Conn1_TREADY : STD_LOGIC;
@@ -4697,7 +4695,6 @@ entity TDC_imp_1FS8XU8 is
     M01_AXIS_DebugCT_tlast : out STD_LOGIC;
     M01_AXIS_DebugCT_tvalid : out STD_LOGIC;
     Res : out STD_LOGIC_VECTOR ( 0 to 0 );
-    StartOut : out STD_LOGIC;
     clk_BB : in STD_LOGIC;
     clk_TDC : in STD_LOGIC;
     dout : out STD_LOGIC_VECTOR ( 194 downto 0 );
@@ -4813,10 +4810,6 @@ architecture STRUCTURE of TDC_imp_1FS8XU8 is
   signal Din_1_1 : STD_LOGIC_VECTOR ( 221 downto 0 );
   signal Net : STD_LOGIC_VECTOR ( 56 downto 0 );
   signal StartStopGenerator_0_StartOut : STD_LOGIC;
-  attribute DEBUG : string;
-  attribute DEBUG of StartStopGenerator_0_StartOut : signal is "true";
-  attribute MARK_DEBUG : boolean;
-  attribute MARK_DEBUG of StartStopGenerator_0_StartOut : signal is std.standard.true;
   signal StartStopGenerator_0_StopOut : STD_LOGIC;
   signal Sync_read_reg1 : STD_LOGIC_VECTOR ( 64 downto 0 );
   signal TDCChannelSlice_1_read_reg : STD_LOGIC_VECTOR ( 64 downto 0 );
@@ -4852,7 +4845,6 @@ begin
   M01_AXIS_DebugCT_tvalid <= BeltBus_TDL_Channel_1_M01_AXIS_DebugCT_TVALID;
   Net(56 downto 0) <= Din(56 downto 0);
   Res(0) <= util_vector_logic_0_Res(0);
-  StartOut <= StartStopGenerator_0_StartOut;
   clk_BB_1 <= clk_BB;
   clk_TDC_1 <= clk_TDC;
   dout(194 downto 0) <= xlconcat_0_dout(194 downto 0);
@@ -7686,7 +7678,6 @@ entity TDC_Calib_imp_4BAZB9 is
     S00_AXI_wready : out STD_LOGIC_VECTOR ( 0 to 0 );
     S00_AXI_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
     S00_AXI_wvalid : in STD_LOGIC_VECTOR ( 0 to 0 );
-    StartOut : out STD_LOGIC;
     clk_BB : in STD_LOGIC;
     clk_TDC : in STD_LOGIC;
     reset : in STD_LOGIC;
@@ -7815,9 +7806,6 @@ architecture STRUCTURE of TDC_Calib_imp_4BAZB9 is
   signal TDC_M01_AXIS_DebugCT_TLAST : STD_LOGIC;
   signal TDC_M01_AXIS_DebugCT_TVALID : STD_LOGIC;
   signal TDC_Res : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal TDC_StartOut : STD_LOGIC;
-  attribute DEBUG : string;
-  attribute DEBUG of TDC_StartOut : signal is "true";
   signal TDC_dout : STD_LOGIC_VECTOR ( 194 downto 0 );
   signal clk_TDC_1 : STD_LOGIC;
   signal clk_wiz_0_clk_out1 : STD_LOGIC;
@@ -7862,7 +7850,6 @@ begin
   S00_AXI_rresp(1 downto 0) <= S00_AXI_1_RRESP(1 downto 0);
   S00_AXI_rvalid(0) <= S00_AXI_1_RVALID;
   S00_AXI_wready(0) <= S00_AXI_1_WREADY;
-  StartOut <= TDC_StartOut;
   clk_TDC_1 <= clk_TDC;
   clk_wiz_0_clk_out1 <= clk_BB;
   proc_sys_reset_0_peripheral_aresetn <= resetn;
@@ -7949,7 +7936,6 @@ TDC: entity work.TDC_imp_1FS8XU8
       M01_AXIS_DebugCT_tlast => TDC_M01_AXIS_DebugCT_TLAST,
       M01_AXIS_DebugCT_tvalid => TDC_M01_AXIS_DebugCT_TVALID,
       Res(0) => TDC_Res(0),
-      StartOut => TDC_StartOut,
       clk_BB => clk_wiz_0_clk_out1,
       clk_TDC => clk_TDC_1,
       dout(194 downto 0) => TDC_dout(194 downto 0),
@@ -7989,7 +7975,7 @@ entity design_1 is
     sysclk_125_clk_p : in STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=99,numReposBlks=73,numNonXlnxBlks=38,numHierBlks=26,maxHierDepth=3,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=98,numReposBlks=72,numNonXlnxBlks=38,numHierBlks=26,maxHierDepth=3,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of design_1 : entity is "design_1.hwdef";
 end design_1;
@@ -8321,12 +8307,6 @@ architecture STRUCTURE of design_1 is
     peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component design_1_rst_design_1_416M_0;
-  component design_1_system_ila_0_0 is
-  port (
-    clk : in STD_LOGIC;
-    probe0 : in STD_LOGIC_VECTOR ( 0 to 0 )
-  );
-  end component design_1_system_ila_0_0;
   signal AXI4Stream_UART_1_M00_AXIS_RX_TDATA : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal AXI4Stream_UART_1_M00_AXIS_RX_TREADY : STD_LOGIC;
   signal AXI4Stream_UART_1_M00_AXIS_RX_TVALID : STD_LOGIC;
@@ -8408,9 +8388,6 @@ architecture STRUCTURE of design_1 is
   signal S03_AXIS_1_TVALID : STD_LOGIC_VECTOR ( 0 to 0 );
   signal TDC_Calib_M00_AXIS_TDATA : STD_LOGIC_VECTOR ( 39 downto 0 );
   signal TDC_Calib_M00_AXIS_TVALID : STD_LOGIC;
-  signal TDC_Calib_StartOut : STD_LOGIC;
-  attribute DEBUG : string;
-  attribute DEBUG of TDC_Calib_StartOut : signal is "true";
   signal TDC_M00_BB_TDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal TDC_M00_BB_TVALID : STD_LOGIC;
   signal axi_interconnect_0_M00_AXI_ARADDR : STD_LOGIC_VECTOR ( 30 downto 0 );
@@ -9141,7 +9118,6 @@ TDC_Calib: entity work.TDC_Calib_imp_4BAZB9
       S00_AXI_wready(0) => axi_interconnect_0_M04_AXI_WREADY(0),
       S00_AXI_wstrb(3 downto 0) => axi_interconnect_0_M04_AXI_WSTRB(3 downto 0),
       S00_AXI_wvalid(0) => axi_interconnect_0_M04_AXI_WVALID(0),
-      StartOut => TDC_Calib_StartOut,
       clk_BB => clk_wiz_0_clk_out1,
       clk_TDC => clk_TDC_1,
       reset => proc_sys_reset_1_peripheral_reset(0),
@@ -9528,11 +9504,6 @@ rst_design_1_416M: component design_1_rst_design_1_416M_0
       peripheral_aresetn(0) => NLW_rst_design_1_416M_peripheral_aresetn_UNCONNECTED(0),
       peripheral_reset(0) => NLW_rst_design_1_416M_peripheral_reset_UNCONNECTED(0),
       slowest_sync_clk => clk_wiz_0_clk_out1
-    );
-system_ila_0: component design_1_system_ila_0_0
-     port map (
-      clk => clk_wiz_0_clk_out1,
-      probe0(0) => TDC_Calib_StartOut
     );
 system_management_wiz_0: component design_1_system_management_wiz_0_0
      port map (
