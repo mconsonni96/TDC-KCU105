@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
---Date        : Tue Feb  8 11:27:58 2022
+--Date        : Tue Feb  8 15:53:09 2022
 --Host        : mconsonni-All-Series running 64-bit Ubuntu 20.04.3 LTS
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -501,6 +501,8 @@ entity Ch1_imp_1JE4URC is
     CalibEventIn : in STD_LOGIC;
     Calibrated : out STD_LOGIC;
     CoarseCounter_CTD : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    M00_AXIS_TimeStamp_tdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    M00_AXIS_TimeStamp_tvalid : out STD_LOGIC;
     M00_BB_tdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
     M00_BB_tready : in STD_LOGIC;
     M00_BB_tvalid : out STD_LOGIC;
@@ -512,6 +514,8 @@ entity Ch1_imp_1JE4URC is
     S00_BB_tvalid : in STD_LOGIC;
     clk_BB : in STD_LOGIC;
     clk_TDC : in STD_LOGIC;
+    m00_axis_beltbus_tdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    m00_axis_beltbus_tvalid : out STD_LOGIC;
     read_reg : out STD_LOGIC_VECTOR ( 64 downto 0 );
     reset_TDC : in STD_LOGIC;
     write_debug_reg_0 : in STD_LOGIC_VECTOR ( 73 downto 0 );
@@ -649,12 +653,22 @@ architecture STRUCTURE of Ch1_imp_1JE4URC is
   signal AXI4Stream_IperDecod_0_M00_AXIS_SubInt_TVALID : STD_LOGIC;
   signal AXI4Stream_MagicCali_0_Calibrated : STD_LOGIC;
   signal AXI4Stream_MagicCali_0_M00_AXIS_TimeStamp_TDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
+  attribute DEBUG : string;
+  attribute DEBUG of AXI4Stream_MagicCali_0_M00_AXIS_TimeStamp_TDATA : signal is "true";
+  attribute MARK_DEBUG : boolean;
+  attribute MARK_DEBUG of AXI4Stream_MagicCali_0_M00_AXIS_TimeStamp_TDATA : signal is std.standard.true;
   signal AXI4Stream_MagicCali_0_M00_AXIS_TimeStamp_TVALID : STD_LOGIC;
+  attribute DEBUG of AXI4Stream_MagicCali_0_M00_AXIS_TimeStamp_TVALID : signal is "true";
+  attribute MARK_DEBUG of AXI4Stream_MagicCali_0_M00_AXIS_TimeStamp_TVALID : signal is std.standard.true;
   signal AXI4Stream_MagicCali_0_M01_AXIS_DebugCT_TDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal AXI4Stream_MagicCali_0_M01_AXIS_DebugCT_TLAST : STD_LOGIC;
   signal AXI4Stream_MagicCali_0_M01_AXIS_DebugCT_TVALID : STD_LOGIC;
   signal AXI4Stream_OverflowC_0_M00_AXIS_BeltBus_TDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
+  attribute DEBUG of AXI4Stream_OverflowC_0_M00_AXIS_BeltBus_TDATA : signal is "true";
+  attribute MARK_DEBUG of AXI4Stream_OverflowC_0_M00_AXIS_BeltBus_TDATA : signal is std.standard.true;
   signal AXI4Stream_OverflowC_0_M00_AXIS_BeltBus_TVALID : STD_LOGIC;
+  attribute DEBUG of AXI4Stream_OverflowC_0_M00_AXIS_BeltBus_TVALID : signal is "true";
+  attribute MARK_DEBUG of AXI4Stream_OverflowC_0_M00_AXIS_BeltBus_TVALID : signal is std.standard.true;
   signal AXI4Stream_Synchroni_0_M00_AXIS_TDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal AXI4Stream_Synchroni_0_M00_AXIS_TVALID : STD_LOGIC;
   signal AXI4Stream_XUS_Virtu_0_M00_AXIS_Undeco_TDATA : STD_LOGIC_VECTOR ( 4095 downto 0 );
@@ -693,6 +707,8 @@ begin
   CalibEventIn_1 <= CalibEventIn;
   Calibrated <= AXI4Stream_MagicCali_0_Calibrated;
   CoarseCounter_CTD_1(7 downto 0) <= CoarseCounter_CTD(7 downto 0);
+  M00_AXIS_TimeStamp_tdata(31 downto 0) <= AXI4Stream_MagicCali_0_M00_AXIS_TimeStamp_TDATA(31 downto 0);
+  M00_AXIS_TimeStamp_tvalid <= AXI4Stream_MagicCali_0_M00_AXIS_TimeStamp_TVALID;
   M00_BB_tdata(31 downto 0) <= BeltBus_NodeInserter_0_M00_BB_TDATA(31 downto 0);
   M00_BB_tvalid <= BeltBus_NodeInserter_0_M00_BB_TVALID;
   M01_AXIS_DebugCT_tdata(31 downto 0) <= AXI4Stream_MagicCali_0_M01_AXIS_DebugCT_TDATA(31 downto 0);
@@ -703,6 +719,8 @@ begin
   S00_BB_tready <= S00_BB_1_TREADY;
   clk_BB_1 <= clk_BB;
   clk_TDC_1 <= clk_TDC;
+  m00_axis_beltbus_tdata(31 downto 0) <= AXI4Stream_OverflowC_0_M00_AXIS_BeltBus_TDATA(31 downto 0);
+  m00_axis_beltbus_tvalid <= AXI4Stream_OverflowC_0_M00_AXIS_BeltBus_TVALID;
   read_reg(64 downto 0) <= TDCChannelSlice_1_read_reg(64 downto 0);
   reset_TDC_1 <= reset_TDC;
   write_debug_reg_0_1(73 downto 0) <= write_debug_reg_0(73 downto 0);
@@ -4681,6 +4699,8 @@ entity TDC_imp_1FS8XU8 is
   port (
     Din : in STD_LOGIC_VECTOR ( 59 downto 0 );
     Din_1 : in STD_LOGIC_VECTOR ( 221 downto 0 );
+    M00_AXIS_TimeStamp_tdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    M00_AXIS_TimeStamp_tvalid : out STD_LOGIC;
     M00_AXIS_tdata : out STD_LOGIC_VECTOR ( 39 downto 0 );
     M00_AXIS_tvalid : out STD_LOGIC;
     M00_BB_tdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -4698,6 +4718,8 @@ entity TDC_imp_1FS8XU8 is
     clk_BB : in STD_LOGIC;
     clk_TDC : in STD_LOGIC;
     dout : out STD_LOGIC_VECTOR ( 194 downto 0 );
+    m00_axis_beltbus_tdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    m00_axis_beltbus_tvalid : out STD_LOGIC;
     reset_0 : in STD_LOGIC
   );
 end TDC_imp_1FS8XU8;
@@ -4805,6 +4827,15 @@ architecture STRUCTURE of TDC_imp_1FS8XU8 is
   signal CoarseTreeDistributor_0_CoarseCounter_CTD_0 : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal CoarseTreeDistributor_0_CoarseCounter_CTD_1 : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal CoarseTreeDistributor_0_CoarseCounter_CTD_2 : STD_LOGIC_VECTOR ( 7 downto 0 );
+  signal Conn1_TDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
+  attribute DEBUG : string;
+  attribute DEBUG of Conn1_TDATA : signal is "true";
+  signal Conn1_TVALID : STD_LOGIC;
+  attribute DEBUG of Conn1_TVALID : signal is "true";
+  signal Conn2_TDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
+  attribute DEBUG of Conn2_TDATA : signal is "true";
+  signal Conn2_TVALID : STD_LOGIC;
+  attribute DEBUG of Conn2_TVALID : signal is "true";
   signal Conn4_TDATA : STD_LOGIC_VECTOR ( 39 downto 0 );
   signal Conn4_TVALID : STD_LOGIC;
   signal Din_1_1 : STD_LOGIC_VECTOR ( 221 downto 0 );
@@ -4830,6 +4861,8 @@ architecture STRUCTURE of TDC_imp_1FS8XU8 is
   signal NLW_Sync_S00_BB_0_tready_UNCONNECTED : STD_LOGIC;
 begin
   Din_1_1(221 downto 0) <= Din_1(221 downto 0);
+  M00_AXIS_TimeStamp_tdata(31 downto 0) <= Conn1_TDATA(31 downto 0);
+  M00_AXIS_TimeStamp_tvalid <= Conn1_TVALID;
   M00_AXIS_tdata(39 downto 0) <= Conn4_TDATA(39 downto 0);
   M00_AXIS_tvalid <= Conn4_TVALID;
   M00_BB_tdata(31 downto 0) <= BeltBus_TDL_Channel_2_M00_BB_TDATA(31 downto 0);
@@ -4848,12 +4881,16 @@ begin
   clk_BB_1 <= clk_BB;
   clk_TDC_1 <= clk_TDC;
   dout(194 downto 0) <= xlconcat_0_dout(194 downto 0);
+  m00_axis_beltbus_tdata(31 downto 0) <= Conn2_TDATA(31 downto 0);
+  m00_axis_beltbus_tvalid <= Conn2_TVALID;
   reset_0_1 <= reset_0;
 Ch1: entity work.Ch1_imp_1JE4URC
      port map (
       CalibEventIn => StartStopGenerator_0_StopOut,
       Calibrated => BeltBus_TDL_Channel_TDC_1_Calibrated,
       CoarseCounter_CTD(7 downto 0) => CoarseTreeDistributor_0_CoarseCounter_CTD_1(7 downto 0),
+      M00_AXIS_TimeStamp_tdata(31 downto 0) => Conn1_TDATA(31 downto 0),
+      M00_AXIS_TimeStamp_tvalid => Conn1_TVALID,
       M00_BB_tdata(31 downto 0) => BeltBus_TDL_Channel_1_M00_BB_TDATA(31 downto 0),
       M00_BB_tready => BeltBus_TDL_Channel_1_M00_BB_TREADY,
       M00_BB_tvalid => BeltBus_TDL_Channel_1_M00_BB_TVALID,
@@ -4865,6 +4902,8 @@ Ch1: entity work.Ch1_imp_1JE4URC
       S00_BB_tvalid => BeltBus_TDL_Channel_0_M00_BB_TVALID,
       clk_BB => clk_BB_1,
       clk_TDC => clk_TDC_1,
+      m00_axis_beltbus_tdata(31 downto 0) => Conn2_TDATA(31 downto 0),
+      m00_axis_beltbus_tvalid => Conn2_TVALID,
       read_reg(64 downto 0) => TDCChannelSlice_1_read_reg(64 downto 0),
       reset_TDC => reset_TDC_1(0),
       write_debug_reg_0(73 downto 0) => xlslice_4_Dout(73 downto 0),
@@ -7644,6 +7683,8 @@ entity TDC_Calib_imp_4BAZB9 is
     M00_AXIS_Autopush_tdata : out STD_LOGIC_VECTOR ( 55 downto 0 );
     M00_AXIS_Autopush_tready : in STD_LOGIC_VECTOR ( 0 to 0 );
     M00_AXIS_Autopush_tvalid : out STD_LOGIC_VECTOR ( 0 to 0 );
+    M00_AXIS_TimeStamp_tdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    M00_AXIS_TimeStamp_tvalid : out STD_LOGIC;
     M00_AXIS_tdata : out STD_LOGIC_VECTOR ( 39 downto 0 );
     M00_AXIS_tvalid : out STD_LOGIC;
     M00_BB_tdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -7680,6 +7721,8 @@ entity TDC_Calib_imp_4BAZB9 is
     S00_AXI_wvalid : in STD_LOGIC_VECTOR ( 0 to 0 );
     clk_BB : in STD_LOGIC;
     clk_TDC : in STD_LOGIC;
+    m00_axis_beltbus_tdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    m00_axis_beltbus_tvalid : out STD_LOGIC;
     reset : in STD_LOGIC;
     reset_0 : in STD_LOGIC;
     resetn : in STD_LOGIC
@@ -7762,6 +7805,15 @@ architecture STRUCTURE of TDC_Calib_imp_4BAZB9 is
   signal AXI4_TDC_Wrapper_0_MUX_sel : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal AXI4_TDC_Wrapper_0_TDC_DEBUG_PROP_WPORT : STD_LOGIC_VECTOR ( 221 downto 0 );
   signal AXI4_TDC_Wrapper_0_TDC_PROP_WPORT : STD_LOGIC_VECTOR ( 59 downto 0 );
+  signal Conn1_TDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
+  attribute DEBUG : string;
+  attribute DEBUG of Conn1_TDATA : signal is "true";
+  signal Conn1_TVALID : STD_LOGIC;
+  attribute DEBUG of Conn1_TVALID : signal is "true";
+  signal Conn2_TDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
+  attribute DEBUG of Conn2_TDATA : signal is "true";
+  signal Conn2_TVALID : STD_LOGIC;
+  attribute DEBUG of Conn2_TVALID : signal is "true";
   signal Conn3_TDATA : STD_LOGIC_VECTOR ( 39 downto 0 );
   signal Conn3_TVALID : STD_LOGIC;
   signal Net : STD_LOGIC;
@@ -7815,6 +7867,8 @@ begin
   AXI4_TDC_Wrapper_0_M00_AXIS_Autopush_TREADY(0) <= M00_AXIS_Autopush_tready(0);
   M00_AXIS_Autopush_tdata(55 downto 0) <= AXI4_TDC_Wrapper_0_M00_AXIS_Autopush_TDATA(55 downto 0);
   M00_AXIS_Autopush_tvalid(0) <= AXI4_TDC_Wrapper_0_M00_AXIS_Autopush_TVALID;
+  M00_AXIS_TimeStamp_tdata(31 downto 0) <= Conn1_TDATA(31 downto 0);
+  M00_AXIS_TimeStamp_tvalid <= Conn1_TVALID;
   M00_AXIS_tdata(39 downto 0) <= Conn3_TDATA(39 downto 0);
   M00_AXIS_tvalid <= Conn3_TVALID;
   M00_BB_tdata(31 downto 0) <= TDC_M00_BB_TDATA(31 downto 0);
@@ -7852,6 +7906,8 @@ begin
   S00_AXI_wready(0) <= S00_AXI_1_WREADY;
   clk_TDC_1 <= clk_TDC;
   clk_wiz_0_clk_out1 <= clk_BB;
+  m00_axis_beltbus_tdata(31 downto 0) <= Conn2_TDATA(31 downto 0);
+  m00_axis_beltbus_tvalid <= Conn2_TVALID;
   reset_0_1 <= reset_0;
   resetn_1 <= resetn;
 AXI4Stream_MuxDebugg_0: component design_1_AXI4Stream_MuxDebugg_0_0
@@ -7922,6 +7978,8 @@ TDC: entity work.TDC_imp_1FS8XU8
      port map (
       Din(59 downto 0) => AXI4_TDC_Wrapper_0_TDC_PROP_WPORT(59 downto 0),
       Din_1(221 downto 0) => AXI4_TDC_Wrapper_0_TDC_DEBUG_PROP_WPORT(221 downto 0),
+      M00_AXIS_TimeStamp_tdata(31 downto 0) => Conn1_TDATA(31 downto 0),
+      M00_AXIS_TimeStamp_tvalid => Conn1_TVALID,
       M00_AXIS_tdata(39 downto 0) => Conn3_TDATA(39 downto 0),
       M00_AXIS_tvalid => Conn3_TVALID,
       M00_BB_tdata(31 downto 0) => TDC_M00_BB_TDATA(31 downto 0),
@@ -7939,6 +7997,8 @@ TDC: entity work.TDC_imp_1FS8XU8
       clk_BB => clk_wiz_0_clk_out1,
       clk_TDC => clk_TDC_1,
       dout(194 downto 0) => TDC_dout(194 downto 0),
+      m00_axis_beltbus_tdata(31 downto 0) => Conn2_TDATA(31 downto 0),
+      m00_axis_beltbus_tvalid => Conn2_TVALID,
       reset_0 => reset_0_1
     );
 end STRUCTURE;
@@ -7974,10 +8034,10 @@ entity design_1 is
     sysclk_125_clk_n : in STD_LOGIC;
     sysclk_125_clk_p : in STD_LOGIC
   );
-  attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=97,numReposBlks=71,numNonXlnxBlks=38,numHierBlks=26,maxHierDepth=3,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}";
-  attribute HW_HANDOFF : string;
-  attribute HW_HANDOFF of design_1 : entity is "design_1.hwdef";
+  attribute core_generation_info : string;
+  attribute core_generation_info of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=98,numReposBlks=72,numNonXlnxBlks=38,numHierBlks=26,maxHierDepth=3,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}";
+  attribute hw_handoff : string;
+  attribute hw_handoff of design_1 : entity is "design_1.hwdef";
 end design_1;
 
 architecture STRUCTURE of design_1 is
@@ -8293,6 +8353,18 @@ architecture STRUCTURE of design_1 is
     buffer_overflow : out STD_LOGIC
   );
   end component design_1_BeltBus_TTM_0_0;
+  component design_1_system_ila_0_0 is
+  port (
+    clk : in STD_LOGIC;
+    SLOT_0_AXIS_tdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    SLOT_0_AXIS_tlast : in STD_LOGIC;
+    SLOT_0_AXIS_tvalid : in STD_LOGIC;
+    SLOT_1_AXIS_tdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    SLOT_1_AXIS_tlast : in STD_LOGIC;
+    SLOT_1_AXIS_tvalid : in STD_LOGIC;
+    resetn : in STD_LOGIC
+  );
+  end component design_1_system_ila_0_0;
   signal AXI4Stream_UART_1_M00_AXIS_RX_TDATA : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal AXI4Stream_UART_1_M00_AXIS_RX_TREADY : STD_LOGIC;
   signal AXI4Stream_UART_1_M00_AXIS_RX_TVALID : STD_LOGIC;
@@ -8324,6 +8396,25 @@ architecture STRUCTURE of design_1 is
   signal BitstreamUpdater_QSPI_spi_flash_SS_I : STD_LOGIC;
   signal BitstreamUpdater_QSPI_spi_flash_SS_O : STD_LOGIC;
   signal BitstreamUpdater_QSPI_spi_flash_SS_T : STD_LOGIC;
+  signal Conn1_TDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
+  attribute CONN_BUS_INFO : string;
+  attribute CONN_BUS_INFO of Conn1_TDATA : signal is "Conn1 xilinx.com:interface:axis:1.0 None TDATA";
+  attribute DEBUG : string;
+  attribute DEBUG of Conn1_TDATA : signal is "true";
+  attribute DONT_TOUCH : boolean;
+  attribute DONT_TOUCH of Conn1_TDATA : signal is std.standard.true;
+  signal Conn1_TVALID : STD_LOGIC;
+  attribute CONN_BUS_INFO of Conn1_TVALID : signal is "Conn1 xilinx.com:interface:axis:1.0 None TVALID";
+  attribute DEBUG of Conn1_TVALID : signal is "true";
+  attribute DONT_TOUCH of Conn1_TVALID : signal is std.standard.true;
+  signal Conn_TDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
+  attribute CONN_BUS_INFO of Conn_TDATA : signal is "Conn xilinx.com:interface:axis:1.0 None TDATA";
+  attribute DEBUG of Conn_TDATA : signal is "true";
+  attribute DONT_TOUCH of Conn_TDATA : signal is std.standard.true;
+  signal Conn_TVALID : STD_LOGIC;
+  attribute CONN_BUS_INFO of Conn_TVALID : signal is "Conn xilinx.com:interface:axis:1.0 None TVALID";
+  attribute DEBUG of Conn_TVALID : signal is "true";
+  attribute DONT_TOUCH of Conn_TVALID : signal is std.standard.true;
   signal IIC_IIC_0_SCL_I : STD_LOGIC;
   signal IIC_IIC_0_SCL_O : STD_LOGIC;
   signal IIC_IIC_0_SCL_T : STD_LOGIC;
@@ -8648,34 +8739,34 @@ architecture STRUCTURE of design_1 is
   signal NLW_system_management_wiz_0_eos_out_UNCONNECTED : STD_LOGIC;
   signal NLW_system_management_wiz_0_ip2intc_irpt_UNCONNECTED : STD_LOGIC;
   signal NLW_system_management_wiz_0_channel_out_UNCONNECTED : STD_LOGIC_VECTOR ( 5 downto 0 );
-  attribute X_INTERFACE_INFO : string;
-  attribute X_INTERFACE_INFO of IIC_0_scl_i : signal is "xilinx.com:interface:iic:1.0 IIC_0 SCL_I";
-  attribute X_INTERFACE_INFO of IIC_0_scl_o : signal is "xilinx.com:interface:iic:1.0 IIC_0 SCL_O";
-  attribute X_INTERFACE_INFO of IIC_0_scl_t : signal is "xilinx.com:interface:iic:1.0 IIC_0 SCL_T";
-  attribute X_INTERFACE_INFO of IIC_0_sda_i : signal is "xilinx.com:interface:iic:1.0 IIC_0 SDA_I";
-  attribute X_INTERFACE_INFO of IIC_0_sda_o : signal is "xilinx.com:interface:iic:1.0 IIC_0 SDA_O";
-  attribute X_INTERFACE_INFO of IIC_0_sda_t : signal is "xilinx.com:interface:iic:1.0 IIC_0 SDA_T";
-  attribute X_INTERFACE_INFO of rs232_uart_rxd : signal is "xilinx.com:interface:uart:1.0 rs232_uart RxD";
-  attribute X_INTERFACE_INFO of rs232_uart_txd : signal is "xilinx.com:interface:uart:1.0 rs232_uart TxD";
-  attribute X_INTERFACE_INFO of spi_flash_io0_i : signal is "xilinx.com:interface:spi:1.0 spi_flash IO0_I";
-  attribute X_INTERFACE_INFO of spi_flash_io0_o : signal is "xilinx.com:interface:spi:1.0 spi_flash IO0_O";
-  attribute X_INTERFACE_INFO of spi_flash_io0_t : signal is "xilinx.com:interface:spi:1.0 spi_flash IO0_T";
-  attribute X_INTERFACE_INFO of spi_flash_io1_i : signal is "xilinx.com:interface:spi:1.0 spi_flash IO1_I";
-  attribute X_INTERFACE_INFO of spi_flash_io1_o : signal is "xilinx.com:interface:spi:1.0 spi_flash IO1_O";
-  attribute X_INTERFACE_INFO of spi_flash_io1_t : signal is "xilinx.com:interface:spi:1.0 spi_flash IO1_T";
-  attribute X_INTERFACE_INFO of spi_flash_io2_i : signal is "xilinx.com:interface:spi:1.0 spi_flash IO2_I";
-  attribute X_INTERFACE_INFO of spi_flash_io2_o : signal is "xilinx.com:interface:spi:1.0 spi_flash IO2_O";
-  attribute X_INTERFACE_INFO of spi_flash_io2_t : signal is "xilinx.com:interface:spi:1.0 spi_flash IO2_T";
-  attribute X_INTERFACE_INFO of spi_flash_io3_i : signal is "xilinx.com:interface:spi:1.0 spi_flash IO3_I";
-  attribute X_INTERFACE_INFO of spi_flash_io3_o : signal is "xilinx.com:interface:spi:1.0 spi_flash IO3_O";
-  attribute X_INTERFACE_INFO of spi_flash_io3_t : signal is "xilinx.com:interface:spi:1.0 spi_flash IO3_T";
-  attribute X_INTERFACE_INFO of spi_flash_ss_i : signal is "xilinx.com:interface:spi:1.0 spi_flash SS_I";
-  attribute X_INTERFACE_INFO of spi_flash_ss_o : signal is "xilinx.com:interface:spi:1.0 spi_flash SS_O";
-  attribute X_INTERFACE_INFO of spi_flash_ss_t : signal is "xilinx.com:interface:spi:1.0 spi_flash SS_T";
-  attribute X_INTERFACE_INFO of sysclk_125_clk_n : signal is "xilinx.com:interface:diff_clock:1.0 sysclk_125 CLK_N";
-  attribute X_INTERFACE_PARAMETER : string;
-  attribute X_INTERFACE_PARAMETER of sysclk_125_clk_n : signal is "XIL_INTERFACENAME sysclk_125, CAN_DEBUG false, FREQ_HZ 125000000";
-  attribute X_INTERFACE_INFO of sysclk_125_clk_p : signal is "xilinx.com:interface:diff_clock:1.0 sysclk_125 CLK_P";
+  attribute x_interface_info : string;
+  attribute x_interface_info of IIC_0_scl_i : signal is "xilinx.com:interface:iic:1.0 IIC_0 SCL_I";
+  attribute x_interface_info of IIC_0_scl_o : signal is "xilinx.com:interface:iic:1.0 IIC_0 SCL_O";
+  attribute x_interface_info of IIC_0_scl_t : signal is "xilinx.com:interface:iic:1.0 IIC_0 SCL_T";
+  attribute x_interface_info of IIC_0_sda_i : signal is "xilinx.com:interface:iic:1.0 IIC_0 SDA_I";
+  attribute x_interface_info of IIC_0_sda_o : signal is "xilinx.com:interface:iic:1.0 IIC_0 SDA_O";
+  attribute x_interface_info of IIC_0_sda_t : signal is "xilinx.com:interface:iic:1.0 IIC_0 SDA_T";
+  attribute x_interface_info of rs232_uart_rxd : signal is "xilinx.com:interface:uart:1.0 rs232_uart RxD";
+  attribute x_interface_info of rs232_uart_txd : signal is "xilinx.com:interface:uart:1.0 rs232_uart TxD";
+  attribute x_interface_info of spi_flash_io0_i : signal is "xilinx.com:interface:spi:1.0 spi_flash IO0_I";
+  attribute x_interface_info of spi_flash_io0_o : signal is "xilinx.com:interface:spi:1.0 spi_flash IO0_O";
+  attribute x_interface_info of spi_flash_io0_t : signal is "xilinx.com:interface:spi:1.0 spi_flash IO0_T";
+  attribute x_interface_info of spi_flash_io1_i : signal is "xilinx.com:interface:spi:1.0 spi_flash IO1_I";
+  attribute x_interface_info of spi_flash_io1_o : signal is "xilinx.com:interface:spi:1.0 spi_flash IO1_O";
+  attribute x_interface_info of spi_flash_io1_t : signal is "xilinx.com:interface:spi:1.0 spi_flash IO1_T";
+  attribute x_interface_info of spi_flash_io2_i : signal is "xilinx.com:interface:spi:1.0 spi_flash IO2_I";
+  attribute x_interface_info of spi_flash_io2_o : signal is "xilinx.com:interface:spi:1.0 spi_flash IO2_O";
+  attribute x_interface_info of spi_flash_io2_t : signal is "xilinx.com:interface:spi:1.0 spi_flash IO2_T";
+  attribute x_interface_info of spi_flash_io3_i : signal is "xilinx.com:interface:spi:1.0 spi_flash IO3_I";
+  attribute x_interface_info of spi_flash_io3_o : signal is "xilinx.com:interface:spi:1.0 spi_flash IO3_O";
+  attribute x_interface_info of spi_flash_io3_t : signal is "xilinx.com:interface:spi:1.0 spi_flash IO3_T";
+  attribute x_interface_info of spi_flash_ss_i : signal is "xilinx.com:interface:spi:1.0 spi_flash SS_I";
+  attribute x_interface_info of spi_flash_ss_o : signal is "xilinx.com:interface:spi:1.0 spi_flash SS_O";
+  attribute x_interface_info of spi_flash_ss_t : signal is "xilinx.com:interface:spi:1.0 spi_flash SS_T";
+  attribute x_interface_info of sysclk_125_clk_n : signal is "xilinx.com:interface:diff_clock:1.0 sysclk_125 CLK_N";
+  attribute x_interface_parameter : string;
+  attribute x_interface_parameter of sysclk_125_clk_n : signal is "XIL_INTERFACENAME sysclk_125, CAN_DEBUG false, FREQ_HZ 125000000";
+  attribute x_interface_info of sysclk_125_clk_p : signal is "xilinx.com:interface:diff_clock:1.0 sysclk_125 CLK_P";
 begin
   AXI4Stream_UART_1_UART_RxD <= rs232_uart_rxd;
   BitstreamUpdater_QSPI_spi_flash_IO0_I <= spi_flash_io0_i;
@@ -9065,6 +9156,8 @@ TDC_Calib: entity work.TDC_Calib_imp_4BAZB9
       M00_AXIS_Autopush_tdata(55 downto 0) => S03_AXIS_1_TDATA(55 downto 0),
       M00_AXIS_Autopush_tready(0) => S03_AXIS_1_TREADY(0),
       M00_AXIS_Autopush_tvalid(0) => S03_AXIS_1_TVALID(0),
+      M00_AXIS_TimeStamp_tdata(31 downto 0) => Conn_TDATA(31 downto 0),
+      M00_AXIS_TimeStamp_tvalid => Conn_TVALID,
       M00_AXIS_tdata(39 downto 0) => TDC_Calib_M00_AXIS_TDATA(39 downto 0),
       M00_AXIS_tvalid => TDC_Calib_M00_AXIS_TVALID,
       M00_BB_tdata(31 downto 0) => TDC_M00_BB_TDATA(31 downto 0),
@@ -9101,6 +9194,8 @@ TDC_Calib: entity work.TDC_Calib_imp_4BAZB9
       S00_AXI_wvalid(0) => axi_interconnect_0_M04_AXI_WVALID(0),
       clk_BB => clk_wiz_0_clk_out1,
       clk_TDC => clk_TDC_1,
+      m00_axis_beltbus_tdata(31 downto 0) => Conn1_TDATA(31 downto 0),
+      m00_axis_beltbus_tvalid => Conn1_TVALID,
       reset => proc_sys_reset_1_peripheral_reset(0),
       reset_0 => proc_sys_reset_0_peripheral_aresetn(0),
       resetn => proc_sys_reset_0_peripheral_aresetn(0)
@@ -9472,6 +9567,17 @@ proc_sys_reset_1: component design_1_proc_sys_reset_1_0
       peripheral_aresetn(0) => proc_sys_reset_0_peripheral_aresetn(0),
       peripheral_reset(0) => proc_sys_reset_1_peripheral_reset(0),
       slowest_sync_clk => clk_wiz_0_clk_out1
+    );
+system_ila_0: component design_1_system_ila_0_0
+     port map (
+      SLOT_0_AXIS_tdata(31 downto 0) => Conn_TDATA(31 downto 0),
+      SLOT_0_AXIS_tlast => '0',
+      SLOT_0_AXIS_tvalid => Conn_TVALID,
+      SLOT_1_AXIS_tdata(31 downto 0) => Conn1_TDATA(31 downto 0),
+      SLOT_1_AXIS_tlast => '0',
+      SLOT_1_AXIS_tvalid => Conn1_TVALID,
+      clk => clk_wiz_0_clk_out1,
+      resetn => proc_sys_reset_0_peripheral_aresetn(0)
     );
 system_management_wiz_0: component design_1_system_management_wiz_0_0
      port map (

@@ -128,7 +128,7 @@
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.TDC_CH_DEBUG_WPORT_WIDTH">74</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.TDC_CH_RPORT_WIDTH">65</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.TDC_CH_WPORT_WIDTH">20</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.TDC_DISABLE_DEBUG_PORTS_READOUT">true</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.TDC_DISABLE_DEBUG_PORTS_READOUT">false</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.TDC_ENABLE_DEBUG_PORTS">true</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_ENABLEMENT.TDC_DISABLE_DEBUG_PORTS_READOUT">true</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.AXI4_LENGTH">32</spirit:configurableElementValue>
@@ -167,7 +167,7 @@
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.TDC_CH_DEBUG_WPORT_WIDTH">74</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.TDC_CH_RPORT_WIDTH">65</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.TDC_CH_WPORT_WIDTH">20</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.TDC_DISABLE_DEBUG_PORTS_READOUT">true</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.TDC_DISABLE_DEBUG_PORTS_READOUT">false</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.TDC_ENABLE_DEBUG_PORTS">true</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PROJECT_PARAM.ARCHITECTURE">kintexu</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PROJECT_PARAM.BASE_BOARD_PART">xilinx.com:kcu105:part0:1.7</spirit:configurableElementValue>

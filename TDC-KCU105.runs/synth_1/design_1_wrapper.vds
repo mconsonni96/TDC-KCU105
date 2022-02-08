@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Tue Feb  8 11:29:36 2022
-# Process ID: 28403
+# Start of session at: Tue Feb  8 15:56:04 2022
+# Process ID: 404966
 # Current directory: /home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1
 # Command line: vivado -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: /home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/design_1_wrapper.vds
@@ -21,9 +21,9 @@ INFO: [Common 17-1540] The version limit for your license is '2021.05' and has e
 INFO: [Device 21-403] Loading part xcku040-ffva1156-2-e
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 28461
+INFO: [Synth 8-7075] Helper process launched with PID 405019
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2639.859 ; gain = 205.719 ; free physical = 7973 ; free virtual = 11342
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2675.605 ; gain = 217.688 ; free physical = 1993 ; free virtual = 6519
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:30]
 INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'IIC_0_scl_iobuf' of component 'IOBUF' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:90]
@@ -34,125 +34,125 @@ INFO: [Synth 8-6157] synthesizing module 'IOBUF' [/opt/Xilinx/Vivado/2020.2/scri
 	Parameter SLEW bound to: SLOW - type: string 
 INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (1#1) [/opt/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242]
 INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'IIC_0_sda_iobuf' of component 'IOBUF' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:97]
-INFO: [Synth 8-3491] module 'design_1' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:7949' bound to instance 'design_1_i' of component 'design_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:104]
-INFO: [Synth 8-638] synthesizing module 'design_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:7983]
-INFO: [Synth 8-3491] module 'design_1_AXI4Stream_UART_1_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4Stream_UART_1_0_stub.vhdl:5' bound to instance 'AXI4Stream_UART_1' of component 'design_1_AXI4Stream_UART_1_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:8705]
-INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_UART_1_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4Stream_UART_1_0_stub.vhdl:25]
-INFO: [Synth 8-3491] module 'design_1_BeltBus_TDCCounter_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_BeltBus_TDCCounter_0_0_stub.vhdl:5' bound to instance 'BeltBus_TDCCounter_0' of component 'design_1_BeltBus_TDCCounter_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:8722]
-INFO: [Synth 8-638] synthesizing module 'design_1_BeltBus_TDCCounter_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_BeltBus_TDCCounter_0_0_stub.vhdl:37]
-INFO: [Synth 8-3491] module 'design_1_BeltBus_TDCHistogrammer_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_BeltBus_TDCHistogrammer_0_0_stub.vhdl:5' bound to instance 'BeltBus_TDCHistogrammer_0' of component 'design_1_BeltBus_TDCHistogrammer_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:8751]
-INFO: [Synth 8-638] synthesizing module 'design_1_BeltBus_TDCHistogrammer_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_BeltBus_TDCHistogrammer_0_0_stub.vhdl:41]
-INFO: [Synth 8-3491] module 'design_1_BeltBus_TDCHistogrammer_1_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_BeltBus_TDCHistogrammer_1_0_stub.vhdl:5' bound to instance 'BeltBus_TDCHistogrammer_1' of component 'design_1_BeltBus_TDCHistogrammer_1_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:8784]
-INFO: [Synth 8-638] synthesizing module 'design_1_BeltBus_TDCHistogrammer_1_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_BeltBus_TDCHistogrammer_1_0_stub.vhdl:41]
-INFO: [Synth 8-3491] module 'design_1_BeltBus_TTM_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_BeltBus_TTM_0_0_stub.vhdl:5' bound to instance 'BeltBus_TTM_0' of component 'design_1_BeltBus_TTM_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:8817]
-INFO: [Synth 8-638] synthesizing module 'design_1_BeltBus_TTM_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_BeltBus_TTM_0_0_stub.vhdl:52]
+INFO: [Synth 8-3491] module 'design_1' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:8009' bound to instance 'design_1_i' of component 'design_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'design_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:8043]
+INFO: [Synth 8-3491] module 'design_1_AXI4Stream_UART_1_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4Stream_UART_1_0_stub.vhdl:5' bound to instance 'AXI4Stream_UART_1' of component 'design_1_AXI4Stream_UART_1_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:8796]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_UART_1_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4Stream_UART_1_0_stub.vhdl:25]
+INFO: [Synth 8-3491] module 'design_1_BeltBus_TDCCounter_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_BeltBus_TDCCounter_0_0_stub.vhdl:5' bound to instance 'BeltBus_TDCCounter_0' of component 'design_1_BeltBus_TDCCounter_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:8813]
+INFO: [Synth 8-638] synthesizing module 'design_1_BeltBus_TDCCounter_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_BeltBus_TDCCounter_0_0_stub.vhdl:37]
+INFO: [Synth 8-3491] module 'design_1_BeltBus_TDCHistogrammer_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_BeltBus_TDCHistogrammer_0_0_stub.vhdl:5' bound to instance 'BeltBus_TDCHistogrammer_0' of component 'design_1_BeltBus_TDCHistogrammer_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:8842]
+INFO: [Synth 8-638] synthesizing module 'design_1_BeltBus_TDCHistogrammer_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_BeltBus_TDCHistogrammer_0_0_stub.vhdl:41]
+INFO: [Synth 8-3491] module 'design_1_BeltBus_TDCHistogrammer_1_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_BeltBus_TDCHistogrammer_1_0_stub.vhdl:5' bound to instance 'BeltBus_TDCHistogrammer_1' of component 'design_1_BeltBus_TDCHistogrammer_1_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:8875]
+INFO: [Synth 8-638] synthesizing module 'design_1_BeltBus_TDCHistogrammer_1_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_BeltBus_TDCHistogrammer_1_0_stub.vhdl:41]
+INFO: [Synth 8-3491] module 'design_1_BeltBus_TTM_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_BeltBus_TTM_0_0_stub.vhdl:5' bound to instance 'BeltBus_TTM_0' of component 'design_1_BeltBus_TTM_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:8908]
+INFO: [Synth 8-638] synthesizing module 'design_1_BeltBus_TTM_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_BeltBus_TTM_0_0_stub.vhdl:52]
 INFO: [Synth 8-638] synthesizing module 'BitstreamUpdater_QSPI_imp_H27KY3' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:65]
-INFO: [Synth 8-3491] module 'design_1_AXI4Stream_QSPI_Prog_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4Stream_QSPI_Prog_0_0_stub.vhdl:5' bound to instance 'AXI4Stream_QSPI_Prog_0' of component 'design_1_AXI4Stream_QSPI_Prog_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:348]
-INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_QSPI_Prog_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4Stream_QSPI_Prog_0_0_stub.vhdl:49]
-INFO: [Synth 8-3491] module 'design_1_AXI4_BitstreamUpdater_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4_BitstreamUpdater_0_0_stub.vhdl:5' bound to instance 'AXI4_BitstreamUpdater_0' of component 'design_1_AXI4_BitstreamUpdater_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:389]
-INFO: [Synth 8-638] synthesizing module 'design_1_AXI4_BitstreamUpdater_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4_BitstreamUpdater_0_0_stub.vhdl:50]
-INFO: [Synth 8-3491] module 'design_1_axi_quad_spi_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_axi_quad_spi_0_0_stub.vhdl:5' bound to instance 'axi_quad_spi_0' of component 'design_1_axi_quad_spi_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:431]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_quad_spi_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_axi_quad_spi_0_0_stub.vhdl:71]
+INFO: [Synth 8-3491] module 'design_1_AXI4Stream_QSPI_Prog_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4Stream_QSPI_Prog_0_0_stub.vhdl:5' bound to instance 'AXI4Stream_QSPI_Prog_0' of component 'design_1_AXI4Stream_QSPI_Prog_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:348]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_QSPI_Prog_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4Stream_QSPI_Prog_0_0_stub.vhdl:49]
+INFO: [Synth 8-3491] module 'design_1_AXI4_BitstreamUpdater_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4_BitstreamUpdater_0_0_stub.vhdl:5' bound to instance 'AXI4_BitstreamUpdater_0' of component 'design_1_AXI4_BitstreamUpdater_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:389]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4_BitstreamUpdater_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4_BitstreamUpdater_0_0_stub.vhdl:50]
+INFO: [Synth 8-3491] module 'design_1_axi_quad_spi_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_axi_quad_spi_0_0_stub.vhdl:5' bound to instance 'axi_quad_spi_0' of component 'design_1_axi_quad_spi_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:431]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_quad_spi_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_axi_quad_spi_0_0_stub.vhdl:71]
 INFO: [Synth 8-256] done synthesizing module 'BitstreamUpdater_QSPI_imp_H27KY3' (2#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:65]
-INFO: [Synth 8-638] synthesizing module 'IIC_imp_ABWIMD' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:1203]
-INFO: [Synth 8-3491] module 'design_1_AXI4_AXIToIIC_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4_AXIToIIC_0_0_stub.vhdl:5' bound to instance 'AXI4_AXIToIIC_0' of component 'design_1_AXI4_AXIToIIC_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:1401]
-INFO: [Synth 8-638] synthesizing module 'design_1_AXI4_AXIToIIC_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4_AXIToIIC_0_0_stub.vhdl:67]
-INFO: [Synth 8-3491] module 'design_1_axi_iic_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_axi_iic_0_0_stub.vhdl:5' bound to instance 'axi_iic_0' of component 'design_1_axi_iic_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:1462]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_iic_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_axi_iic_0_0_stub.vhdl:38]
-INFO: [Synth 8-256] done synthesizing module 'IIC_imp_ABWIMD' (3#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:1203]
-INFO: [Synth 8-3491] module 'design_1_MME_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_MME_0_0_stub.vhdl:5' bound to instance 'MME_0' of component 'design_1_MME_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:8957]
-INFO: [Synth 8-638] synthesizing module 'design_1_MME_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_MME_0_0_stub.vhdl:74]
-INFO: [Synth 8-638] synthesizing module 'Master_imp_1J78S86' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:1539]
-INFO: [Synth 8-3491] module 'design_1_axi_bram_ctrl_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_axi_bram_ctrl_0_0_stub.vhdl:5' bound to instance 'axi_bram_ctrl_0' of component 'design_1_axi_bram_ctrl_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:1681]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_bram_ctrl_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_axi_bram_ctrl_0_0_stub.vhdl:55]
-INFO: [Synth 8-3491] module 'design_1_blk_mem_gen_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_blk_mem_gen_0_0_stub.vhdl:5' bound to instance 'blk_mem_gen_0' of component 'design_1_blk_mem_gen_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:1728]
-INFO: [Synth 8-638] synthesizing module 'design_1_blk_mem_gen_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_blk_mem_gen_0_0_stub.vhdl:17]
-INFO: [Synth 8-256] done synthesizing module 'Master_imp_1J78S86' (4#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:1539]
-INFO: [Synth 8-638] synthesizing module 'TDC_Calib_imp_4BAZB9' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:7689]
-INFO: [Synth 8-3491] module 'design_1_AXI4Stream_MuxDebugg_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4Stream_MuxDebugg_0_0_stub.vhdl:5' bound to instance 'AXI4Stream_MuxDebugg_0' of component 'design_1_AXI4Stream_MuxDebugg_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:7857]
-INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_MuxDebugg_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4Stream_MuxDebugg_0_0_stub.vhdl:26]
-INFO: [Synth 8-3491] module 'design_1_AXI4_TDC_Wrapper_0_2' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4_TDC_Wrapper_0_2_stub.vhdl:5' bound to instance 'AXI4_TDC_Wrapper_0' of component 'design_1_AXI4_TDC_Wrapper_0_2' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:7875]
-INFO: [Synth 8-638] synthesizing module 'design_1_AXI4_TDC_Wrapper_0_2' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4_TDC_Wrapper_0_2_stub.vhdl:54]
-INFO: [Synth 8-638] synthesizing module 'TDC_imp_1FS8XU8' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4705]
-INFO: [Synth 8-638] synthesizing module 'Ch1_imp_1JE4URC' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:522]
-INFO: [Synth 8-3491] module 'design_1_AXI4Stream_CoarseExt_0_1' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4Stream_CoarseExt_0_1_stub.vhdl:5' bound to instance 'AXI4Stream_CoarseExt_0' of component 'design_1_AXI4Stream_CoarseExt_0_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:710]
-INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_CoarseExt_0_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4Stream_CoarseExt_0_1_stub.vhdl:20]
-INFO: [Synth 8-3491] module 'design_1_AXI4Stream_IperDecod_0_1' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4Stream_IperDecod_0_1_stub.vhdl:5' bound to instance 'AXI4Stream_IperDecod_0' of component 'design_1_AXI4Stream_IperDecod_0_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:722]
-INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_IperDecod_0_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4Stream_IperDecod_0_1_stub.vhdl:18]
-INFO: [Synth 8-3491] module 'design_1_AXI4Stream_MagicCali_0_1' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4Stream_MagicCali_0_1_stub.vhdl:5' bound to instance 'AXI4Stream_MagicCali_0' of component 'design_1_AXI4Stream_MagicCali_0_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:732]
-INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_MagicCali_0_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4Stream_MagicCali_0_1_stub.vhdl:26]
-INFO: [Synth 8-3491] module 'design_1_AXI4Stream_OverflowC_0_1' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4Stream_OverflowC_0_1_stub.vhdl:5' bound to instance 'AXI4Stream_OverflowC_0' of component 'design_1_AXI4Stream_OverflowC_0_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:750]
-INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_OverflowC_0_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4Stream_OverflowC_0_1_stub.vhdl:18]
-INFO: [Synth 8-3491] module 'design_1_AXI4Stream_Synchroni_0_1' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4Stream_Synchroni_0_1_stub.vhdl:5' bound to instance 'AXI4Stream_Synchroni_0' of component 'design_1_AXI4Stream_Synchroni_0_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:760]
-INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_Synchroni_0_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4Stream_Synchroni_0_1_stub.vhdl:19]
-INFO: [Synth 8-3491] module 'design_1_AXI4Stream_XUS_Virtu_0_1' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4Stream_XUS_Virtu_0_1_stub.vhdl:5' bound to instance 'AXI4Stream_XUS_Virtu_0' of component 'design_1_AXI4Stream_XUS_Virtu_0_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:771]
-INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_XUS_Virtu_0_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4Stream_XUS_Virtu_0_1_stub.vhdl:18]
-INFO: [Synth 8-3491] module 'design_1_BeltBus_NodeInserter_0_4' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_BeltBus_NodeInserter_0_4_stub.vhdl:5' bound to instance 'BeltBus_NodeInserter_0' of component 'design_1_BeltBus_NodeInserter_0_4' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:781]
-INFO: [Synth 8-638] synthesizing module 'design_1_BeltBus_NodeInserter_0_4' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_BeltBus_NodeInserter_0_4_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'design_1_TDCChannelSlice_1_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_TDCChannelSlice_1_0_stub.vhdl:5' bound to instance 'TDCChannelSlice_1' of component 'design_1_TDCChannelSlice_1_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:794]
-INFO: [Synth 8-638] synthesizing module 'design_1_TDCChannelSlice_1_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_TDCChannelSlice_1_0_stub.vhdl:34]
-INFO: [Synth 8-3491] module 'design_1_xlconstant_2_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlconstant_2_0/synth/design_1_xlconstant_2_0.v:57' bound to instance 'xlconstant_2' of component 'design_1_xlconstant_2_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:820]
+INFO: [Synth 8-638] synthesizing module 'IIC_imp_ABWIMD' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:1221]
+INFO: [Synth 8-3491] module 'design_1_AXI4_AXIToIIC_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4_AXIToIIC_0_0_stub.vhdl:5' bound to instance 'AXI4_AXIToIIC_0' of component 'design_1_AXI4_AXIToIIC_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:1419]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4_AXIToIIC_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4_AXIToIIC_0_0_stub.vhdl:67]
+INFO: [Synth 8-3491] module 'design_1_axi_iic_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_axi_iic_0_0_stub.vhdl:5' bound to instance 'axi_iic_0' of component 'design_1_axi_iic_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:1480]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_iic_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_axi_iic_0_0_stub.vhdl:38]
+INFO: [Synth 8-256] done synthesizing module 'IIC_imp_ABWIMD' (3#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:1221]
+INFO: [Synth 8-3491] module 'design_1_MME_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_MME_0_0_stub.vhdl:5' bound to instance 'MME_0' of component 'design_1_MME_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:9048]
+INFO: [Synth 8-638] synthesizing module 'design_1_MME_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_MME_0_0_stub.vhdl:74]
+INFO: [Synth 8-638] synthesizing module 'Master_imp_1J78S86' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:1557]
+INFO: [Synth 8-3491] module 'design_1_axi_bram_ctrl_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_axi_bram_ctrl_0_0_stub.vhdl:5' bound to instance 'axi_bram_ctrl_0' of component 'design_1_axi_bram_ctrl_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:1699]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_bram_ctrl_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_axi_bram_ctrl_0_0_stub.vhdl:55]
+INFO: [Synth 8-3491] module 'design_1_blk_mem_gen_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_blk_mem_gen_0_0_stub.vhdl:5' bound to instance 'blk_mem_gen_0' of component 'design_1_blk_mem_gen_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:1746]
+INFO: [Synth 8-638] synthesizing module 'design_1_blk_mem_gen_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_blk_mem_gen_0_0_stub.vhdl:17]
+INFO: [Synth 8-256] done synthesizing module 'Master_imp_1J78S86' (4#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:1557]
+INFO: [Synth 8-638] synthesizing module 'TDC_Calib_imp_4BAZB9' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:7732]
+INFO: [Synth 8-3491] module 'design_1_AXI4Stream_MuxDebugg_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4Stream_MuxDebugg_0_0_stub.vhdl:5' bound to instance 'AXI4Stream_MuxDebugg_0' of component 'design_1_AXI4Stream_MuxDebugg_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:7913]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_MuxDebugg_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4Stream_MuxDebugg_0_0_stub.vhdl:26]
+INFO: [Synth 8-3491] module 'design_1_AXI4_TDC_Wrapper_0_2' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4_TDC_Wrapper_0_2_stub.vhdl:5' bound to instance 'AXI4_TDC_Wrapper_0' of component 'design_1_AXI4_TDC_Wrapper_0_2' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:7931]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4_TDC_Wrapper_0_2' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4_TDC_Wrapper_0_2_stub.vhdl:54]
+INFO: [Synth 8-638] synthesizing module 'TDC_imp_1FS8XU8' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4727]
+INFO: [Synth 8-638] synthesizing module 'Ch1_imp_1JE4URC' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:526]
+INFO: [Synth 8-3491] module 'design_1_AXI4Stream_CoarseExt_0_1' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4Stream_CoarseExt_0_1_stub.vhdl:5' bound to instance 'AXI4Stream_CoarseExt_0' of component 'design_1_AXI4Stream_CoarseExt_0_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:728]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_CoarseExt_0_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4Stream_CoarseExt_0_1_stub.vhdl:20]
+INFO: [Synth 8-3491] module 'design_1_AXI4Stream_IperDecod_0_1' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4Stream_IperDecod_0_1_stub.vhdl:5' bound to instance 'AXI4Stream_IperDecod_0' of component 'design_1_AXI4Stream_IperDecod_0_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:740]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_IperDecod_0_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4Stream_IperDecod_0_1_stub.vhdl:18]
+INFO: [Synth 8-3491] module 'design_1_AXI4Stream_MagicCali_0_1' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4Stream_MagicCali_0_1_stub.vhdl:5' bound to instance 'AXI4Stream_MagicCali_0' of component 'design_1_AXI4Stream_MagicCali_0_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:750]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_MagicCali_0_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4Stream_MagicCali_0_1_stub.vhdl:26]
+INFO: [Synth 8-3491] module 'design_1_AXI4Stream_OverflowC_0_1' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4Stream_OverflowC_0_1_stub.vhdl:5' bound to instance 'AXI4Stream_OverflowC_0' of component 'design_1_AXI4Stream_OverflowC_0_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:768]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_OverflowC_0_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4Stream_OverflowC_0_1_stub.vhdl:18]
+INFO: [Synth 8-3491] module 'design_1_AXI4Stream_Synchroni_0_1' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4Stream_Synchroni_0_1_stub.vhdl:5' bound to instance 'AXI4Stream_Synchroni_0' of component 'design_1_AXI4Stream_Synchroni_0_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:778]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_Synchroni_0_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4Stream_Synchroni_0_1_stub.vhdl:19]
+INFO: [Synth 8-3491] module 'design_1_AXI4Stream_XUS_Virtu_0_1' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4Stream_XUS_Virtu_0_1_stub.vhdl:5' bound to instance 'AXI4Stream_XUS_Virtu_0' of component 'design_1_AXI4Stream_XUS_Virtu_0_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:789]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_XUS_Virtu_0_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4Stream_XUS_Virtu_0_1_stub.vhdl:18]
+INFO: [Synth 8-3491] module 'design_1_BeltBus_NodeInserter_0_4' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_BeltBus_NodeInserter_0_4_stub.vhdl:5' bound to instance 'BeltBus_NodeInserter_0' of component 'design_1_BeltBus_NodeInserter_0_4' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:799]
+INFO: [Synth 8-638] synthesizing module 'design_1_BeltBus_NodeInserter_0_4' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_BeltBus_NodeInserter_0_4_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'design_1_TDCChannelSlice_1_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_TDCChannelSlice_1_0_stub.vhdl:5' bound to instance 'TDCChannelSlice_1' of component 'design_1_TDCChannelSlice_1_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:812]
+INFO: [Synth 8-638] synthesizing module 'design_1_TDCChannelSlice_1_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_TDCChannelSlice_1_0_stub.vhdl:34]
+INFO: [Synth 8-3491] module 'design_1_xlconstant_2_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlconstant_2_0/synth/design_1_xlconstant_2_0.v:57' bound to instance 'xlconstant_2' of component 'design_1_xlconstant_2_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:838]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_2_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlconstant_2_0/synth/design_1_xlconstant_2_0.v:57]
 INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
 	Parameter CONST_VAL bound to: 1'b0 
 	Parameter CONST_WIDTH bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (5#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_2_0' (6#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlconstant_2_0/synth/design_1_xlconstant_2_0.v:57]
-INFO: [Synth 8-256] done synthesizing module 'Ch1_imp_1JE4URC' (7#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:522]
-INFO: [Synth 8-638] synthesizing module 'Ch2_imp_1YIXUGT' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:851]
-INFO: [Synth 8-3491] module 'design_1_AXI4Stream_CoarseExt_0_2' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4Stream_CoarseExt_0_2_stub.vhdl:5' bound to instance 'AXI4Stream_CoarseExt_0' of component 'design_1_AXI4Stream_CoarseExt_0_2' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:1037]
-INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_CoarseExt_0_2' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4Stream_CoarseExt_0_2_stub.vhdl:20]
-INFO: [Synth 8-3491] module 'design_1_AXI4Stream_IperDecod_0_2' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4Stream_IperDecod_0_2_stub.vhdl:5' bound to instance 'AXI4Stream_IperDecod_0' of component 'design_1_AXI4Stream_IperDecod_0_2' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:1049]
-INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_IperDecod_0_2' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4Stream_IperDecod_0_2_stub.vhdl:18]
-INFO: [Synth 8-3491] module 'design_1_AXI4Stream_MagicCali_0_2' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4Stream_MagicCali_0_2_stub.vhdl:5' bound to instance 'AXI4Stream_MagicCali_0' of component 'design_1_AXI4Stream_MagicCali_0_2' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:1059]
-INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_MagicCali_0_2' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4Stream_MagicCali_0_2_stub.vhdl:26]
-INFO: [Synth 8-3491] module 'design_1_AXI4Stream_OverflowC_0_2' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4Stream_OverflowC_0_2_stub.vhdl:5' bound to instance 'AXI4Stream_OverflowC_0' of component 'design_1_AXI4Stream_OverflowC_0_2' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:1077]
-INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_OverflowC_0_2' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4Stream_OverflowC_0_2_stub.vhdl:18]
-INFO: [Synth 8-3491] module 'design_1_AXI4Stream_Synchroni_0_2' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4Stream_Synchroni_0_2_stub.vhdl:5' bound to instance 'AXI4Stream_Synchroni_0' of component 'design_1_AXI4Stream_Synchroni_0_2' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:1087]
-INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_Synchroni_0_2' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4Stream_Synchroni_0_2_stub.vhdl:19]
-INFO: [Synth 8-3491] module 'design_1_AXI4Stream_XUS_Virtu_0_2' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4Stream_XUS_Virtu_0_2_stub.vhdl:5' bound to instance 'AXI4Stream_XUS_Virtu_0' of component 'design_1_AXI4Stream_XUS_Virtu_0_2' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:1098]
-INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_XUS_Virtu_0_2' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4Stream_XUS_Virtu_0_2_stub.vhdl:18]
-INFO: [Synth 8-3491] module 'design_1_BeltBus_NodeInserter_0_5' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_BeltBus_NodeInserter_0_5_stub.vhdl:5' bound to instance 'BeltBus_NodeInserter_0' of component 'design_1_BeltBus_NodeInserter_0_5' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:1108]
-INFO: [Synth 8-638] synthesizing module 'design_1_BeltBus_NodeInserter_0_5' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_BeltBus_NodeInserter_0_5_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'design_1_TDCChannelSlice_2_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_TDCChannelSlice_2_0_stub.vhdl:5' bound to instance 'TDCChannelSlice_2' of component 'design_1_TDCChannelSlice_2_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:1121]
-INFO: [Synth 8-638] synthesizing module 'design_1_TDCChannelSlice_2_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_TDCChannelSlice_2_0_stub.vhdl:34]
-INFO: [Synth 8-3491] module 'design_1_xlconstant_2_1' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlconstant_2_1/synth/design_1_xlconstant_2_1.v:57' bound to instance 'xlconstant_2' of component 'design_1_xlconstant_2_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:1147]
+INFO: [Synth 8-256] done synthesizing module 'Ch1_imp_1JE4URC' (7#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:526]
+INFO: [Synth 8-638] synthesizing module 'Ch2_imp_1YIXUGT' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:869]
+INFO: [Synth 8-3491] module 'design_1_AXI4Stream_CoarseExt_0_2' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4Stream_CoarseExt_0_2_stub.vhdl:5' bound to instance 'AXI4Stream_CoarseExt_0' of component 'design_1_AXI4Stream_CoarseExt_0_2' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:1055]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_CoarseExt_0_2' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4Stream_CoarseExt_0_2_stub.vhdl:20]
+INFO: [Synth 8-3491] module 'design_1_AXI4Stream_IperDecod_0_2' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4Stream_IperDecod_0_2_stub.vhdl:5' bound to instance 'AXI4Stream_IperDecod_0' of component 'design_1_AXI4Stream_IperDecod_0_2' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:1067]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_IperDecod_0_2' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4Stream_IperDecod_0_2_stub.vhdl:18]
+INFO: [Synth 8-3491] module 'design_1_AXI4Stream_MagicCali_0_2' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4Stream_MagicCali_0_2_stub.vhdl:5' bound to instance 'AXI4Stream_MagicCali_0' of component 'design_1_AXI4Stream_MagicCali_0_2' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:1077]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_MagicCali_0_2' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4Stream_MagicCali_0_2_stub.vhdl:26]
+INFO: [Synth 8-3491] module 'design_1_AXI4Stream_OverflowC_0_2' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4Stream_OverflowC_0_2_stub.vhdl:5' bound to instance 'AXI4Stream_OverflowC_0' of component 'design_1_AXI4Stream_OverflowC_0_2' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:1095]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_OverflowC_0_2' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4Stream_OverflowC_0_2_stub.vhdl:18]
+INFO: [Synth 8-3491] module 'design_1_AXI4Stream_Synchroni_0_2' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4Stream_Synchroni_0_2_stub.vhdl:5' bound to instance 'AXI4Stream_Synchroni_0' of component 'design_1_AXI4Stream_Synchroni_0_2' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:1105]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_Synchroni_0_2' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4Stream_Synchroni_0_2_stub.vhdl:19]
+INFO: [Synth 8-3491] module 'design_1_AXI4Stream_XUS_Virtu_0_2' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4Stream_XUS_Virtu_0_2_stub.vhdl:5' bound to instance 'AXI4Stream_XUS_Virtu_0' of component 'design_1_AXI4Stream_XUS_Virtu_0_2' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:1116]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_XUS_Virtu_0_2' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4Stream_XUS_Virtu_0_2_stub.vhdl:18]
+INFO: [Synth 8-3491] module 'design_1_BeltBus_NodeInserter_0_5' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_BeltBus_NodeInserter_0_5_stub.vhdl:5' bound to instance 'BeltBus_NodeInserter_0' of component 'design_1_BeltBus_NodeInserter_0_5' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:1126]
+INFO: [Synth 8-638] synthesizing module 'design_1_BeltBus_NodeInserter_0_5' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_BeltBus_NodeInserter_0_5_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'design_1_TDCChannelSlice_2_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_TDCChannelSlice_2_0_stub.vhdl:5' bound to instance 'TDCChannelSlice_2' of component 'design_1_TDCChannelSlice_2_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:1139]
+INFO: [Synth 8-638] synthesizing module 'design_1_TDCChannelSlice_2_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_TDCChannelSlice_2_0_stub.vhdl:34]
+INFO: [Synth 8-3491] module 'design_1_xlconstant_2_1' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlconstant_2_1/synth/design_1_xlconstant_2_1.v:57' bound to instance 'xlconstant_2' of component 'design_1_xlconstant_2_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:1165]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_2_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlconstant_2_1/synth/design_1_xlconstant_2_1.v:57]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_2_1' (8#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlconstant_2_1/synth/design_1_xlconstant_2_1.v:57]
-INFO: [Synth 8-256] done synthesizing module 'Ch2_imp_1YIXUGT' (9#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:851]
-INFO: [Synth 8-3491] module 'design_1_CoarseTreeDistributor_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_CoarseTreeDistributor_0_0_stub.vhdl:5' bound to instance 'CoarseTreeDistributor_0' of component 'design_1_CoarseTreeDistributor_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4893]
-INFO: [Synth 8-638] synthesizing module 'design_1_CoarseTreeDistributor_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_CoarseTreeDistributor_0_0_stub.vhdl:16]
-INFO: [Synth 8-3491] module 'design_1_StartStopGenerator_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_StartStopGenerator_0_0_stub.vhdl:5' bound to instance 'StartStopGenerator_0' of component 'design_1_StartStopGenerator_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4901]
-INFO: [Synth 8-638] synthesizing module 'design_1_StartStopGenerator_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_StartStopGenerator_0_0_stub.vhdl:14]
-INFO: [Synth 8-638] synthesizing module 'Sync_imp_ZFT08U' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:1769]
-INFO: [Synth 8-3491] module 'design_1_AXI4Stream_CoarseExt_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4Stream_CoarseExt_0_0_stub.vhdl:5' bound to instance 'AXI4Stream_CoarseExt_0' of component 'design_1_AXI4Stream_CoarseExt_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:1992]
-INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_CoarseExt_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4Stream_CoarseExt_0_0_stub.vhdl:20]
-INFO: [Synth 8-3491] module 'design_1_AXI4Stream_IperDecod_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4Stream_IperDecod_0_0_stub.vhdl:5' bound to instance 'AXI4Stream_IperDecod_0' of component 'design_1_AXI4Stream_IperDecod_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:2004]
-INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_IperDecod_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4Stream_IperDecod_0_0_stub.vhdl:18]
-INFO: [Synth 8-3491] module 'design_1_AXI4Stream_MagicCali_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4Stream_MagicCali_0_0_stub.vhdl:5' bound to instance 'AXI4Stream_MagicCali_0' of component 'design_1_AXI4Stream_MagicCali_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:2014]
-INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_MagicCali_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4Stream_MagicCali_0_0_stub.vhdl:26]
-INFO: [Synth 8-3491] module 'design_1_AXI4Stream_OverflowC_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4Stream_OverflowC_0_0_stub.vhdl:5' bound to instance 'AXI4Stream_OverflowC_0' of component 'design_1_AXI4Stream_OverflowC_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:2032]
-INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_OverflowC_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4Stream_OverflowC_0_0_stub.vhdl:18]
-INFO: [Synth 8-3491] module 'design_1_AXI4Stream_PeriodMet_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4Stream_PeriodMet_0_0_stub.vhdl:5' bound to instance 'AXI4Stream_PeriodMet_0' of component 'design_1_AXI4Stream_PeriodMet_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:2042]
-INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_PeriodMet_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4Stream_PeriodMet_0_0_stub.vhdl:17]
-INFO: [Synth 8-3491] module 'design_1_AXI4Stream_Synchroni_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4Stream_Synchroni_0_0_stub.vhdl:5' bound to instance 'AXI4Stream_Synchroni_0' of component 'design_1_AXI4Stream_Synchroni_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:2051]
-INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_Synchroni_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4Stream_Synchroni_0_0_stub.vhdl:19]
-INFO: [Synth 8-3491] module 'design_1_AXI4Stream_XUS_Virtu_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4Stream_XUS_Virtu_0_0_stub.vhdl:5' bound to instance 'AXI4Stream_XUS_Virtu_0' of component 'design_1_AXI4Stream_XUS_Virtu_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:2062]
-INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_XUS_Virtu_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_AXI4Stream_XUS_Virtu_0_0_stub.vhdl:18]
-INFO: [Synth 8-3491] module 'design_1_BeltBus_NodeInserter_0_3' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_BeltBus_NodeInserter_0_3_stub.vhdl:5' bound to instance 'BeltBus_NodeInserter_0' of component 'design_1_BeltBus_NodeInserter_0_3' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:2072]
-INFO: [Synth 8-638] synthesizing module 'design_1_BeltBus_NodeInserter_0_3' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_BeltBus_NodeInserter_0_3_stub.vhdl:23]
-INFO: [Synth 8-3491] module 'design_1_TDCChannelSlice_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_TDCChannelSlice_0_0_stub.vhdl:5' bound to instance 'TDCChannelSlice_0' of component 'design_1_TDCChannelSlice_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:2118]
-INFO: [Synth 8-638] synthesizing module 'design_1_TDCChannelSlice_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_TDCChannelSlice_0_0_stub.vhdl:34]
-INFO: [Synth 8-3491] module 'design_1_axis_broadcaster_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_axis_broadcaster_0_0_stub.vhdl:5' bound to instance 'axis_broadcaster_0' of component 'design_1_axis_broadcaster_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:2144]
-INFO: [Synth 8-638] synthesizing module 'design_1_axis_broadcaster_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_axis_broadcaster_0_0_stub.vhdl:17]
-INFO: [Synth 8-3491] module 'design_1_util_vector_logic_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_util_vector_logic_0_0_stub.vhdl:5' bound to instance 'util_vector_logic_0' of component 'design_1_util_vector_logic_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:2155]
-INFO: [Synth 8-638] synthesizing module 'design_1_util_vector_logic_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_util_vector_logic_0_0_stub.vhdl:13]
-INFO: [Synth 8-256] done synthesizing module 'Sync_imp_ZFT08U' (10#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:1769]
-INFO: [Synth 8-3491] module 'design_1_util_vector_logic_0_1' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_util_vector_logic_0_1_stub.vhdl:5' bound to instance 'util_vector_logic_0' of component 'design_1_util_vector_logic_0_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4931]
-INFO: [Synth 8-638] synthesizing module 'design_1_util_vector_logic_0_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_util_vector_logic_0_1_stub.vhdl:14]
-INFO: [Synth 8-3491] module 'design_1_util_vector_logic_1_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_util_vector_logic_1_0_stub.vhdl:5' bound to instance 'util_vector_logic_1' of component 'design_1_util_vector_logic_1_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4937]
-INFO: [Synth 8-638] synthesizing module 'design_1_util_vector_logic_1_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_util_vector_logic_1_0_stub.vhdl:14]
-INFO: [Synth 8-3491] module 'design_1_xlconcat_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:60' bound to instance 'xlconcat_0' of component 'design_1_xlconcat_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4943]
+INFO: [Synth 8-256] done synthesizing module 'Ch2_imp_1YIXUGT' (9#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:869]
+INFO: [Synth 8-3491] module 'design_1_CoarseTreeDistributor_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_CoarseTreeDistributor_0_0_stub.vhdl:5' bound to instance 'CoarseTreeDistributor_0' of component 'design_1_CoarseTreeDistributor_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4932]
+INFO: [Synth 8-638] synthesizing module 'design_1_CoarseTreeDistributor_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_CoarseTreeDistributor_0_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'design_1_StartStopGenerator_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_StartStopGenerator_0_0_stub.vhdl:5' bound to instance 'StartStopGenerator_0' of component 'design_1_StartStopGenerator_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4940]
+INFO: [Synth 8-638] synthesizing module 'design_1_StartStopGenerator_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_StartStopGenerator_0_0_stub.vhdl:14]
+INFO: [Synth 8-638] synthesizing module 'Sync_imp_ZFT08U' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:1787]
+INFO: [Synth 8-3491] module 'design_1_AXI4Stream_CoarseExt_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4Stream_CoarseExt_0_0_stub.vhdl:5' bound to instance 'AXI4Stream_CoarseExt_0' of component 'design_1_AXI4Stream_CoarseExt_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:2010]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_CoarseExt_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4Stream_CoarseExt_0_0_stub.vhdl:20]
+INFO: [Synth 8-3491] module 'design_1_AXI4Stream_IperDecod_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4Stream_IperDecod_0_0_stub.vhdl:5' bound to instance 'AXI4Stream_IperDecod_0' of component 'design_1_AXI4Stream_IperDecod_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:2022]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_IperDecod_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4Stream_IperDecod_0_0_stub.vhdl:18]
+INFO: [Synth 8-3491] module 'design_1_AXI4Stream_MagicCali_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4Stream_MagicCali_0_0_stub.vhdl:5' bound to instance 'AXI4Stream_MagicCali_0' of component 'design_1_AXI4Stream_MagicCali_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:2032]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_MagicCali_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4Stream_MagicCali_0_0_stub.vhdl:26]
+INFO: [Synth 8-3491] module 'design_1_AXI4Stream_OverflowC_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4Stream_OverflowC_0_0_stub.vhdl:5' bound to instance 'AXI4Stream_OverflowC_0' of component 'design_1_AXI4Stream_OverflowC_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:2050]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_OverflowC_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4Stream_OverflowC_0_0_stub.vhdl:18]
+INFO: [Synth 8-3491] module 'design_1_AXI4Stream_PeriodMet_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4Stream_PeriodMet_0_0_stub.vhdl:5' bound to instance 'AXI4Stream_PeriodMet_0' of component 'design_1_AXI4Stream_PeriodMet_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:2060]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_PeriodMet_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4Stream_PeriodMet_0_0_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'design_1_AXI4Stream_Synchroni_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4Stream_Synchroni_0_0_stub.vhdl:5' bound to instance 'AXI4Stream_Synchroni_0' of component 'design_1_AXI4Stream_Synchroni_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:2069]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_Synchroni_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4Stream_Synchroni_0_0_stub.vhdl:19]
+INFO: [Synth 8-3491] module 'design_1_AXI4Stream_XUS_Virtu_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4Stream_XUS_Virtu_0_0_stub.vhdl:5' bound to instance 'AXI4Stream_XUS_Virtu_0' of component 'design_1_AXI4Stream_XUS_Virtu_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:2080]
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_XUS_Virtu_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_AXI4Stream_XUS_Virtu_0_0_stub.vhdl:18]
+INFO: [Synth 8-3491] module 'design_1_BeltBus_NodeInserter_0_3' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_BeltBus_NodeInserter_0_3_stub.vhdl:5' bound to instance 'BeltBus_NodeInserter_0' of component 'design_1_BeltBus_NodeInserter_0_3' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:2090]
+INFO: [Synth 8-638] synthesizing module 'design_1_BeltBus_NodeInserter_0_3' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_BeltBus_NodeInserter_0_3_stub.vhdl:23]
+INFO: [Synth 8-3491] module 'design_1_TDCChannelSlice_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_TDCChannelSlice_0_0_stub.vhdl:5' bound to instance 'TDCChannelSlice_0' of component 'design_1_TDCChannelSlice_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:2136]
+INFO: [Synth 8-638] synthesizing module 'design_1_TDCChannelSlice_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_TDCChannelSlice_0_0_stub.vhdl:34]
+INFO: [Synth 8-3491] module 'design_1_axis_broadcaster_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_axis_broadcaster_0_0_stub.vhdl:5' bound to instance 'axis_broadcaster_0' of component 'design_1_axis_broadcaster_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:2162]
+INFO: [Synth 8-638] synthesizing module 'design_1_axis_broadcaster_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_axis_broadcaster_0_0_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'design_1_util_vector_logic_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_util_vector_logic_0_0_stub.vhdl:5' bound to instance 'util_vector_logic_0' of component 'design_1_util_vector_logic_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:2173]
+INFO: [Synth 8-638] synthesizing module 'design_1_util_vector_logic_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_util_vector_logic_0_0_stub.vhdl:13]
+INFO: [Synth 8-256] done synthesizing module 'Sync_imp_ZFT08U' (10#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:1787]
+INFO: [Synth 8-3491] module 'design_1_util_vector_logic_0_1' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_util_vector_logic_0_1_stub.vhdl:5' bound to instance 'util_vector_logic_0' of component 'design_1_util_vector_logic_0_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4970]
+INFO: [Synth 8-638] synthesizing module 'design_1_util_vector_logic_0_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_util_vector_logic_0_1_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'design_1_util_vector_logic_1_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_util_vector_logic_1_0_stub.vhdl:5' bound to instance 'util_vector_logic_1' of component 'design_1_util_vector_logic_1_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4976]
+INFO: [Synth 8-638] synthesizing module 'design_1_util_vector_logic_1_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_util_vector_logic_1_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'design_1_xlconcat_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:60' bound to instance 'xlconcat_0' of component 'design_1_xlconcat_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4982]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xlconcat_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:60]
 INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
 	Parameter IN0_WIDTH bound to: 65 - type: integer 
@@ -287,10 +287,10 @@ INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [/home/mcons
 	Parameter NUM_PORTS bound to: 3 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (11#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconcat_0_0' (12#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:60]
-INFO: [Synth 8-3491] module 'design_1_xlconstant_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:57' bound to instance 'xlconstant_0' of component 'design_1_xlconstant_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4950]
+INFO: [Synth 8-3491] module 'design_1_xlconstant_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:57' bound to instance 'xlconstant_0' of component 'design_1_xlconstant_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4989]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:57]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_0_0' (13#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:57]
-INFO: [Synth 8-3491] module 'design_1_xlslice_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:57' bound to instance 'xlslice_0' of component 'design_1_xlslice_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4954]
+INFO: [Synth 8-3491] module 'design_1_xlslice_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:57' bound to instance 'xlslice_0' of component 'design_1_xlslice_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4993]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:57]
 INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
 	Parameter DIN_WIDTH bound to: 60 - type: integer 
@@ -298,7 +298,7 @@ INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [/home/mconson
 	Parameter DIN_TO bound to: 0 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (14#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_0_0' (15#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:57]
-INFO: [Synth 8-3491] module 'design_1_xlslice_1_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlslice_1_0/synth/design_1_xlslice_1_0.v:57' bound to instance 'xlslice_1' of component 'design_1_xlslice_1_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4959]
+INFO: [Synth 8-3491] module 'design_1_xlslice_1_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlslice_1_0/synth/design_1_xlslice_1_0.v:57' bound to instance 'xlslice_1' of component 'design_1_xlslice_1_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4998]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_1_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlslice_1_0/synth/design_1_xlslice_1_0.v:57]
 INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
 	Parameter DIN_WIDTH bound to: 60 - type: integer 
@@ -306,7 +306,7 @@ INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0
 	Parameter DIN_TO bound to: 20 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' (15#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_1_0' (16#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlslice_1_0/synth/design_1_xlslice_1_0.v:57]
-INFO: [Synth 8-3491] module 'design_1_xlslice_2_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlslice_2_0/synth/design_1_xlslice_2_0.v:57' bound to instance 'xlslice_2' of component 'design_1_xlslice_2_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4964]
+INFO: [Synth 8-3491] module 'design_1_xlslice_2_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlslice_2_0/synth/design_1_xlslice_2_0.v:57' bound to instance 'xlslice_2' of component 'design_1_xlslice_2_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:5003]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_2_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlslice_2_0/synth/design_1_xlslice_2_0.v:57]
 INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
 	Parameter DIN_WIDTH bound to: 60 - type: integer 
@@ -314,7 +314,7 @@ INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1
 	Parameter DIN_TO bound to: 40 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' (16#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_2_0' (17#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlslice_2_0/synth/design_1_xlslice_2_0.v:57]
-INFO: [Synth 8-3491] module 'design_1_xlslice_3_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlslice_3_0/synth/design_1_xlslice_3_0.v:57' bound to instance 'xlslice_3' of component 'design_1_xlslice_3_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4969]
+INFO: [Synth 8-3491] module 'design_1_xlslice_3_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlslice_3_0/synth/design_1_xlslice_3_0.v:57' bound to instance 'xlslice_3' of component 'design_1_xlslice_3_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:5008]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_3_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlslice_3_0/synth/design_1_xlslice_3_0.v:57]
 INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized2' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
 	Parameter DIN_WIDTH bound to: 222 - type: integer 
@@ -322,7 +322,7 @@ INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized2
 	Parameter DIN_TO bound to: 0 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized2' (17#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_3_0' (18#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlslice_3_0/synth/design_1_xlslice_3_0.v:57]
-INFO: [Synth 8-3491] module 'design_1_xlslice_4_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlslice_4_0/synth/design_1_xlslice_4_0.v:57' bound to instance 'xlslice_4' of component 'design_1_xlslice_4_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4974]
+INFO: [Synth 8-3491] module 'design_1_xlslice_4_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlslice_4_0/synth/design_1_xlslice_4_0.v:57' bound to instance 'xlslice_4' of component 'design_1_xlslice_4_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:5013]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_4_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlslice_4_0/synth/design_1_xlslice_4_0.v:57]
 INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized3' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
 	Parameter DIN_WIDTH bound to: 222 - type: integer 
@@ -330,7 +330,7 @@ INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized3
 	Parameter DIN_TO bound to: 74 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized3' (18#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_4_0' (19#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlslice_4_0/synth/design_1_xlslice_4_0.v:57]
-INFO: [Synth 8-3491] module 'design_1_xlslice_5_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlslice_5_0/synth/design_1_xlslice_5_0.v:57' bound to instance 'xlslice_5' of component 'design_1_xlslice_5_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4979]
+INFO: [Synth 8-3491] module 'design_1_xlslice_5_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlslice_5_0/synth/design_1_xlslice_5_0.v:57' bound to instance 'xlslice_5' of component 'design_1_xlslice_5_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:5018]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_5_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlslice_5_0/synth/design_1_xlslice_5_0.v:57]
 INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized4' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
 	Parameter DIN_WIDTH bound to: 222 - type: integer 
@@ -338,60 +338,60 @@ INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized4
 	Parameter DIN_TO bound to: 148 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized4' (19#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_5_0' (20#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlslice_5_0/synth/design_1_xlslice_5_0.v:57]
-INFO: [Synth 8-256] done synthesizing module 'TDC_imp_1FS8XU8' (21#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4705]
-INFO: [Synth 8-256] done synthesizing module 'TDC_Calib_imp_4BAZB9' (22#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:7689]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_interconnect_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:5275]
-INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1CA5Z32' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:2244]
-INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1CA5Z32' (23#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:2244]
-INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_I4GRPB' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:2487]
-INFO: [Synth 8-3491] module 'design_1_auto_pc_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:2671]
-INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_auto_pc_0_stub.vhdl:71]
-INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_I4GRPB' (24#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:2487]
-INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_1BOGR4T' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:2804]
-INFO: [Synth 8-3491] module 'design_1_auto_pc_1' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_auto_pc_1_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:2988]
-INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_auto_pc_1_stub.vhdl:71]
-INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_1BOGR4T' (25#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:2804]
-INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_J0G1J0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:3121]
-INFO: [Synth 8-3491] module 'design_1_auto_pc_2' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_auto_pc_2_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_2' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:3305]
-INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_2' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_auto_pc_2_stub.vhdl:71]
-INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_J0G1J0' (26#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:3121]
-INFO: [Synth 8-638] synthesizing module 'm04_couplers_imp_19YU2FS' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:3440]
-INFO: [Synth 8-256] done synthesizing module 'm04_couplers_imp_19YU2FS' (27#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:3440]
-INFO: [Synth 8-638] synthesizing module 'm05_couplers_imp_KSVY9L' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:3611]
-INFO: [Synth 8-256] done synthesizing module 'm05_couplers_imp_KSVY9L' (28#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:3611]
-INFO: [Synth 8-638] synthesizing module 'm06_couplers_imp_18J6S0R' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:3787]
-INFO: [Synth 8-256] done synthesizing module 'm06_couplers_imp_18J6S0R' (29#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:3787]
-INFO: [Synth 8-638] synthesizing module 'm07_couplers_imp_LYVHKQ' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:3946]
-INFO: [Synth 8-3491] module 'design_1_auto_pc_3' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_auto_pc_3_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_3' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4130]
-INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_3' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_auto_pc_3_stub.vhdl:71]
-INFO: [Synth 8-256] done synthesizing module 'm07_couplers_imp_LYVHKQ' (30#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:3946]
-INFO: [Synth 8-638] synthesizing module 'm08_couplers_imp_1FF5BKI' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4265]
-INFO: [Synth 8-256] done synthesizing module 'm08_couplers_imp_1FF5BKI' (31#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4265]
-INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_O7FAN0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4429]
-INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_O7FAN0' (32#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4429]
-INFO: [Synth 8-638] synthesizing module 's01_couplers_imp_1F69D31' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4526]
-INFO: [Synth 8-256] done synthesizing module 's01_couplers_imp_1F69D31' (33#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4526]
-INFO: [Synth 8-3491] module 'design_1_xbar_2' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_xbar_2_stub.vhdl:5' bound to instance 'xbar' of component 'design_1_xbar_2' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:6972]
-INFO: [Synth 8-638] synthesizing module 'design_1_xbar_2' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_xbar_2_stub.vhdl:93]
-INFO: [Synth 8-256] done synthesizing module 'design_1_axi_interconnect_0_0' (34#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:5275]
-INFO: [Synth 8-3491] module 'design_1_axis_broadcaster_0_1' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_axis_broadcaster_0_1_stub.vhdl:5' bound to instance 'axis_broadcaster_0' of component 'design_1_axis_broadcaster_0_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:9392]
-INFO: [Synth 8-638] synthesizing module 'design_1_axis_broadcaster_0_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_axis_broadcaster_0_1_stub.vhdl:17]
-INFO: [Synth 8-3491] module 'design_1_axis_broadcaster_1_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_axis_broadcaster_1_0_stub.vhdl:5' bound to instance 'axis_broadcaster_1' of component 'design_1_axis_broadcaster_1_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:9409]
-INFO: [Synth 8-638] synthesizing module 'design_1_axis_broadcaster_1_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_axis_broadcaster_1_0_stub.vhdl:17]
-INFO: [Synth 8-638] synthesizing module 'design_1_axis_interconnect_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:7435]
-INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_F63VTB' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:2372]
-INFO: [Synth 8-3491] module 'design_1_auto_ss_slidr_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_auto_ss_slidr_0_stub.vhdl:5' bound to instance 'auto_ss_slidr' of component 'design_1_auto_ss_slidr_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:2405]
-INFO: [Synth 8-638] synthesizing module 'design_1_auto_ss_slidr_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_auto_ss_slidr_0_stub.vhdl:20]
-INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_F63VTB' (35#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:2372]
-INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1LLE45P' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4374]
-INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1LLE45P' (36#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4374]
-INFO: [Synth 8-638] synthesizing module 's01_couplers_imp_935C30' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4602]
-INFO: [Synth 8-256] done synthesizing module 's01_couplers_imp_935C30' (37#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4602]
-INFO: [Synth 8-638] synthesizing module 's02_couplers_imp_1K4H9FY' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4633]
-INFO: [Synth 8-256] done synthesizing module 's02_couplers_imp_1K4H9FY' (38#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4633]
-INFO: [Synth 8-638] synthesizing module 's03_couplers_imp_AAD7FZ' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4664]
-INFO: [Synth 8-256] done synthesizing module 's03_couplers_imp_AAD7FZ' (39#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4664]
-INFO: [Synth 8-3491] module 'design_1_s_arb_req_suppress_concat_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_s_arb_req_suppress_concat_0/synth/design_1_s_arb_req_suppress_concat_0.v:60' bound to instance 's_arb_req_suppress_concat' of component 'design_1_s_arb_req_suppress_concat_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:7607]
+INFO: [Synth 8-256] done synthesizing module 'TDC_imp_1FS8XU8' (21#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4727]
+INFO: [Synth 8-256] done synthesizing module 'TDC_Calib_imp_4BAZB9' (22#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:7732]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_interconnect_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:5314]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1CA5Z32' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:2262]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1CA5Z32' (23#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:2262]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_I4GRPB' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:2505]
+INFO: [Synth 8-3491] module 'design_1_auto_pc_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:2689]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_auto_pc_0_stub.vhdl:71]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_I4GRPB' (24#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:2505]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_1BOGR4T' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:2822]
+INFO: [Synth 8-3491] module 'design_1_auto_pc_1' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_auto_pc_1_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:3006]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_auto_pc_1_stub.vhdl:71]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_1BOGR4T' (25#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:2822]
+INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_J0G1J0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:3139]
+INFO: [Synth 8-3491] module 'design_1_auto_pc_2' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_auto_pc_2_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_2' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:3323]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_2' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_auto_pc_2_stub.vhdl:71]
+INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_J0G1J0' (26#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:3139]
+INFO: [Synth 8-638] synthesizing module 'm04_couplers_imp_19YU2FS' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:3458]
+INFO: [Synth 8-256] done synthesizing module 'm04_couplers_imp_19YU2FS' (27#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:3458]
+INFO: [Synth 8-638] synthesizing module 'm05_couplers_imp_KSVY9L' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:3629]
+INFO: [Synth 8-256] done synthesizing module 'm05_couplers_imp_KSVY9L' (28#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:3629]
+INFO: [Synth 8-638] synthesizing module 'm06_couplers_imp_18J6S0R' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:3805]
+INFO: [Synth 8-256] done synthesizing module 'm06_couplers_imp_18J6S0R' (29#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:3805]
+INFO: [Synth 8-638] synthesizing module 'm07_couplers_imp_LYVHKQ' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:3964]
+INFO: [Synth 8-3491] module 'design_1_auto_pc_3' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_auto_pc_3_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_3' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4148]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_3' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_auto_pc_3_stub.vhdl:71]
+INFO: [Synth 8-256] done synthesizing module 'm07_couplers_imp_LYVHKQ' (30#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:3964]
+INFO: [Synth 8-638] synthesizing module 'm08_couplers_imp_1FF5BKI' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4283]
+INFO: [Synth 8-256] done synthesizing module 'm08_couplers_imp_1FF5BKI' (31#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4283]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_O7FAN0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4447]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_O7FAN0' (32#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4447]
+INFO: [Synth 8-638] synthesizing module 's01_couplers_imp_1F69D31' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4544]
+INFO: [Synth 8-256] done synthesizing module 's01_couplers_imp_1F69D31' (33#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4544]
+INFO: [Synth 8-3491] module 'design_1_xbar_2' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_xbar_2_stub.vhdl:5' bound to instance 'xbar' of component 'design_1_xbar_2' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:7011]
+INFO: [Synth 8-638] synthesizing module 'design_1_xbar_2' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_xbar_2_stub.vhdl:93]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_interconnect_0_0' (34#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:5314]
+INFO: [Synth 8-3491] module 'design_1_axis_broadcaster_0_1' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_axis_broadcaster_0_1_stub.vhdl:5' bound to instance 'axis_broadcaster_0' of component 'design_1_axis_broadcaster_0_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:9487]
+INFO: [Synth 8-638] synthesizing module 'design_1_axis_broadcaster_0_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_axis_broadcaster_0_1_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'design_1_axis_broadcaster_1_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_axis_broadcaster_1_0_stub.vhdl:5' bound to instance 'axis_broadcaster_1' of component 'design_1_axis_broadcaster_1_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:9504]
+INFO: [Synth 8-638] synthesizing module 'design_1_axis_broadcaster_1_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_axis_broadcaster_1_0_stub.vhdl:17]
+INFO: [Synth 8-638] synthesizing module 'design_1_axis_interconnect_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:7474]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_F63VTB' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:2390]
+INFO: [Synth 8-3491] module 'design_1_auto_ss_slidr_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_auto_ss_slidr_0_stub.vhdl:5' bound to instance 'auto_ss_slidr' of component 'design_1_auto_ss_slidr_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:2423]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_ss_slidr_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_auto_ss_slidr_0_stub.vhdl:20]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_F63VTB' (35#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:2390]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1LLE45P' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4392]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1LLE45P' (36#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4392]
+INFO: [Synth 8-638] synthesizing module 's01_couplers_imp_935C30' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4620]
+INFO: [Synth 8-256] done synthesizing module 's01_couplers_imp_935C30' (37#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4620]
+INFO: [Synth 8-638] synthesizing module 's02_couplers_imp_1K4H9FY' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4651]
+INFO: [Synth 8-256] done synthesizing module 's02_couplers_imp_1K4H9FY' (38#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4651]
+INFO: [Synth 8-638] synthesizing module 's03_couplers_imp_AAD7FZ' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4682]
+INFO: [Synth 8-256] done synthesizing module 's03_couplers_imp_AAD7FZ' (39#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:4682]
+INFO: [Synth 8-3491] module 'design_1_s_arb_req_suppress_concat_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_s_arb_req_suppress_concat_0/synth/design_1_s_arb_req_suppress_concat_0.v:60' bound to instance 's_arb_req_suppress_concat' of component 'design_1_s_arb_req_suppress_concat_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:7646]
 INFO: [Synth 8-6157] synthesizing module 'design_1_s_arb_req_suppress_concat_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_s_arb_req_suppress_concat_0/synth/design_1_s_arb_req_suppress_concat_0.v:60]
 INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat__parameterized0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
 	Parameter IN0_WIDTH bound to: 1 - type: integer 
@@ -526,22 +526,24 @@ INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat__parameterize
 	Parameter NUM_PORTS bound to: 4 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat__parameterized0' (39#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_s_arb_req_suppress_concat_0' (40#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_s_arb_req_suppress_concat_0/synth/design_1_s_arb_req_suppress_concat_0.v:60]
-INFO: [Synth 8-3491] module 'design_1_xbar_3' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_xbar_3_stub.vhdl:5' bound to instance 'xbar' of component 'design_1_xbar_3' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:7615]
-INFO: [Synth 8-638] synthesizing module 'design_1_xbar_3' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_xbar_3_stub.vhdl:21]
-INFO: [Synth 8-256] done synthesizing module 'design_1_axis_interconnect_0_0' (41#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:7435]
-INFO: [Synth 8-3491] module 'design_1_clk_wiz_0_1' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_clk_wiz_0_1_stub.vhdl:5' bound to instance 'clk_wiz_0' of component 'design_1_clk_wiz_0_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:9455]
-INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_clk_wiz_0_1_stub.vhdl:16]
-INFO: [Synth 8-3491] module 'design_1_proc_sys_reset_1_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_proc_sys_reset_1_0_stub.vhdl:5' bound to instance 'proc_sys_reset_1' of component 'design_1_proc_sys_reset_1_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:9463]
-INFO: [Synth 8-638] synthesizing module 'design_1_proc_sys_reset_1_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_proc_sys_reset_1_0_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'design_1_system_management_wiz_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_system_management_wiz_0_0_stub.vhdl:5' bound to instance 'system_management_wiz_0' of component 'design_1_system_management_wiz_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:9476]
-INFO: [Synth 8-638] synthesizing module 'design_1_system_management_wiz_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-28403-mconsonni-All-Series/realtime/design_1_system_management_wiz_0_0_stub.vhdl:38]
-INFO: [Synth 8-3491] module 'design_1_xlconstant_0_1' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_1/synth/design_1_xlconstant_0_1.v:57' bound to instance 'xlconstant_0' of component 'design_1_xlconstant_0_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:9506]
+INFO: [Synth 8-3491] module 'design_1_xbar_3' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_xbar_3_stub.vhdl:5' bound to instance 'xbar' of component 'design_1_xbar_3' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:7654]
+INFO: [Synth 8-638] synthesizing module 'design_1_xbar_3' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_xbar_3_stub.vhdl:21]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axis_interconnect_0_0' (41#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:7474]
+INFO: [Synth 8-3491] module 'design_1_clk_wiz_0_1' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_clk_wiz_0_1_stub.vhdl:5' bound to instance 'clk_wiz_0' of component 'design_1_clk_wiz_0_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:9550]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_clk_wiz_0_1_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'design_1_proc_sys_reset_1_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_proc_sys_reset_1_0_stub.vhdl:5' bound to instance 'proc_sys_reset_1' of component 'design_1_proc_sys_reset_1_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:9558]
+INFO: [Synth 8-638] synthesizing module 'design_1_proc_sys_reset_1_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_proc_sys_reset_1_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'design_1_system_ila_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_system_ila_0_0_stub.vhdl:5' bound to instance 'system_ila_0' of component 'design_1_system_ila_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:9571]
+INFO: [Synth 8-638] synthesizing module 'design_1_system_ila_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_system_ila_0_0_stub.vhdl:19]
+INFO: [Synth 8-3491] module 'design_1_system_management_wiz_0_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_system_management_wiz_0_0_stub.vhdl:5' bound to instance 'system_management_wiz_0' of component 'design_1_system_management_wiz_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:9582]
+INFO: [Synth 8-638] synthesizing module 'design_1_system_management_wiz_0_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/.Xil/Vivado-404966-mconsonni-All-Series/realtime/design_1_system_management_wiz_0_0_stub.vhdl:38]
+INFO: [Synth 8-3491] module 'design_1_xlconstant_0_1' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_1/synth/design_1_xlconstant_0_1.v:57' bound to instance 'xlconstant_0' of component 'design_1_xlconstant_0_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:9612]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_0_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_1/synth/design_1_xlconstant_0_1.v:57]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_0_1' (42#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_1/synth/design_1_xlconstant_0_1.v:57]
-INFO: [Synth 8-3491] module 'design_1_xlconstant_1_1' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlconstant_1_1/synth/design_1_xlconstant_1_1.v:57' bound to instance 'xlconstant_1' of component 'design_1_xlconstant_1_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:9510]
+INFO: [Synth 8-3491] module 'design_1_xlconstant_1_1' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlconstant_1_1/synth/design_1_xlconstant_1_1.v:57' bound to instance 'xlconstant_1' of component 'design_1_xlconstant_1_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:9616]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_1_1' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlconstant_1_1/synth/design_1_xlconstant_1_1.v:57]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_1_1' (43#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xlconstant_1_1/synth/design_1_xlconstant_1_1.v:57]
-INFO: [Synth 8-256] done synthesizing module 'design_1' (44#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:7983]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (44#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/synth/design_1.vhd:8043]
 INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'spi_flash_io0_iobuf' of component 'IOBUF' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:132]
 INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'spi_flash_io1_iobuf' of component 'IOBUF' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:139]
 INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'spi_flash_io2_iobuf' of component 'IOBUF' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:146]
@@ -549,18 +551,18 @@ INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2020.2/scrip
 INFO: [Synth 8-3491] module 'IOBUF' declared at '/opt/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242' bound to instance 'spi_flash_ss_iobuf' of component 'IOBUF' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:160]
 INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (45#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:30]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2715.766 ; gain = 281.625 ; free physical = 8753 ; free virtual = 12123
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2753.512 ; gain = 295.594 ; free physical = 2757 ; free virtual = 7285
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2733.609 ; gain = 299.469 ; free physical = 8759 ; free virtual = 12129
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2769.387 ; gain = 311.469 ; free physical = 2763 ; free virtual = 7291
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2733.609 ; gain = 299.469 ; free physical = 8759 ; free virtual = 12129
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2769.387 ; gain = 311.469 ; free physical = 2763 ; free virtual = 7291
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2742.516 ; gain = 0.000 ; free physical = 8744 ; free virtual = 12114
+Netlist sorting complete. Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2779.293 ; gain = 0.000 ; free physical = 2749 ; free virtual = 7277
 INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -683,16 +685,18 @@ Parsing XDC File [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.ge
 Finished Parsing XDC File [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_BeltBus_TDCHistogrammer_1_0/design_1_BeltBus_TDCHistogrammer_1_0/design_1_BeltBus_TDCHistogrammer_1_0_in_context.xdc] for cell 'design_1_i/BeltBus_TDCHistogrammer_1'
 Parsing XDC File [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_BeltBus_TTM_0_0/design_1_BeltBus_TTM_0_0/design_1_BeltBus_TTM_0_0_in_context.xdc] for cell 'design_1_i/BeltBus_TTM_0'
 Finished Parsing XDC File [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_BeltBus_TTM_0_0/design_1_BeltBus_TTM_0_0/design_1_BeltBus_TTM_0_0_in_context.xdc] for cell 'design_1_i/BeltBus_TTM_0'
+Parsing XDC File [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0/design_1_system_ila_0_0_in_context.xdc] for cell 'design_1_i/system_ila_0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0/design_1_system_ila_0_0_in_context.xdc] for cell 'design_1_i/system_ila_0'
 Parsing XDC File [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2878.359 ; gain = 0.000 ; free physical = 8681 ; free virtual = 12052
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2915.137 ; gain = 0.000 ; free physical = 2686 ; free virtual = 7214
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 7 instances were transformed.
   IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 7 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2878.359 ; gain = 0.000 ; free physical = 8681 ; free virtual = 12052
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2915.137 ; gain = 0.000 ; free physical = 2686 ; free virtual = 7214
 WARNING: [Timing 38-316] Clock period '125.000' specified during out-of-context synthesis of instance 'design_1_i/system_management_wiz_0' at clock pin 's_axi_aclk' is different from the actual clock period '10.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/BitstreamUpdater_QSPI/axi_quad_spi_0' at clock pin 'ext_spi_clk' is different from the actual clock period '10.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/Master/blk_mem_gen_0' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
@@ -710,7 +714,7 @@ WARNING: [Timing 38-316] Clock period '25.000' specified during out-of-context s
 WARNING: [Timing 38-316] Clock period '2.400' specified during out-of-context synthesis of instance 'design_1_i/TDC_Calib/TDC/Sync/TDCChannelSlice_0' at clock pin 'clk_TDC' is different from the actual clock period '2.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'design_1_i/axis_interconnect_0/xbar' at clock pin 'aclk' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2878.359 ; gain = 444.219 ; free physical = 8746 ; free virtual = 12117
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2915.137 ; gain = 457.219 ; free physical = 2749 ; free virtual = 7277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -718,7 +722,7 @@ Start Loading Part and Timing Information
 Loading part: xcku040-ffva1156-2-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2878.359 ; gain = 444.219 ; free physical = 8746 ; free virtual = 12117
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2915.137 ; gain = 457.219 ; free physical = 2749 ; free virtual = 7277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -801,11 +805,12 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/BeltBus_TDCCounter_0. 
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/BeltBus_TDCHistogrammer_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/BeltBus_TDCHistogrammer_1. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/BeltBus_TTM_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/system_ila_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2878.359 ; gain = 444.219 ; free physical = 8746 ; free virtual = 12117
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2915.137 ; gain = 457.219 ; free physical = 2749 ; free virtual = 7277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2878.359 ; gain = 444.219 ; free physical = 8744 ; free virtual = 12116
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2915.137 ; gain = 457.219 ; free physical = 2750 ; free virtual = 7279
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -827,25 +832,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2878.359 ; gain = 444.219 ; free physical = 8736 ; free virtual = 12116
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2915.137 ; gain = 457.219 ; free physical = 2740 ; free virtual = 7277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 2880.219 ; gain = 446.078 ; free physical = 8548 ; free virtual = 11927
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 2915.996 ; gain = 458.078 ; free physical = 2511 ; free virtual = 7047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 2882.219 ; gain = 448.078 ; free physical = 8545 ; free virtual = 11924
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 2918.996 ; gain = 461.078 ; free physical = 2509 ; free virtual = 7045
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 2909.258 ; gain = 475.117 ; free physical = 8542 ; free virtual = 11922
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 2946.035 ; gain = 488.117 ; free physical = 2505 ; free virtual = 7041
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -863,37 +868,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 2912.227 ; gain = 478.086 ; free physical = 8542 ; free virtual = 11921
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 2946.035 ; gain = 488.117 ; free physical = 2522 ; free virtual = 7059
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 2912.227 ; gain = 478.086 ; free physical = 8542 ; free virtual = 11921
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 2946.035 ; gain = 488.117 ; free physical = 2522 ; free virtual = 7059
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 2912.227 ; gain = 478.086 ; free physical = 8541 ; free virtual = 11920
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 2946.035 ; gain = 488.117 ; free physical = 2521 ; free virtual = 7058
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 2912.227 ; gain = 478.086 ; free physical = 8541 ; free virtual = 11920
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 2946.035 ; gain = 488.117 ; free physical = 2521 ; free virtual = 7057
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 2912.227 ; gain = 478.086 ; free physical = 8541 ; free virtual = 11920
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 2946.035 ; gain = 488.117 ; free physical = 2521 ; free virtual = 7057
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 2912.227 ; gain = 478.086 ; free physical = 8541 ; free virtual = 11920
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 2946.035 ; gain = 488.117 ; free physical = 2520 ; free virtual = 7057
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -920,47 +925,48 @@ Report BlackBoxes:
 |15    |design_1_axis_broadcaster_1_0        |         1|
 |16    |design_1_clk_wiz_0_1                 |         1|
 |17    |design_1_proc_sys_reset_1_0          |         1|
-|18    |design_1_system_management_wiz_0_0   |         1|
-|19    |design_1_AXI4Stream_QSPI_Prog_0_0    |         1|
-|20    |design_1_AXI4_BitstreamUpdater_0_0   |         1|
-|21    |design_1_axi_quad_spi_0_0            |         1|
-|22    |design_1_AXI4_AXIToIIC_0_0           |         1|
-|23    |design_1_axi_iic_0_0                 |         1|
-|24    |design_1_axi_bram_ctrl_0_0           |         1|
-|25    |design_1_blk_mem_gen_0_0             |         1|
-|26    |design_1_AXI4Stream_MuxDebugg_0_0    |         1|
-|27    |design_1_AXI4_TDC_Wrapper_0_2        |         1|
-|28    |design_1_CoarseTreeDistributor_0_0   |         1|
-|29    |design_1_StartStopGenerator_0_0      |         1|
-|30    |design_1_util_vector_logic_0_1       |         1|
-|31    |design_1_util_vector_logic_1_0       |         1|
-|32    |design_1_AXI4Stream_CoarseExt_0_1    |         1|
-|33    |design_1_AXI4Stream_IperDecod_0_1    |         1|
-|34    |design_1_AXI4Stream_MagicCali_0_1    |         1|
-|35    |design_1_AXI4Stream_OverflowC_0_1    |         1|
-|36    |design_1_AXI4Stream_Synchroni_0_1    |         1|
-|37    |design_1_AXI4Stream_XUS_Virtu_0_1    |         1|
-|38    |design_1_BeltBus_NodeInserter_0_4    |         1|
-|39    |design_1_TDCChannelSlice_1_0         |         1|
-|40    |design_1_AXI4Stream_CoarseExt_0_2    |         1|
-|41    |design_1_AXI4Stream_IperDecod_0_2    |         1|
-|42    |design_1_AXI4Stream_MagicCali_0_2    |         1|
-|43    |design_1_AXI4Stream_OverflowC_0_2    |         1|
-|44    |design_1_AXI4Stream_Synchroni_0_2    |         1|
-|45    |design_1_AXI4Stream_XUS_Virtu_0_2    |         1|
-|46    |design_1_BeltBus_NodeInserter_0_5    |         1|
-|47    |design_1_TDCChannelSlice_2_0         |         1|
-|48    |design_1_AXI4Stream_CoarseExt_0_0    |         1|
-|49    |design_1_AXI4Stream_IperDecod_0_0    |         1|
-|50    |design_1_AXI4Stream_MagicCali_0_0    |         1|
-|51    |design_1_AXI4Stream_OverflowC_0_0    |         1|
-|52    |design_1_AXI4Stream_PeriodMet_0_0    |         1|
-|53    |design_1_AXI4Stream_Synchroni_0_0    |         1|
-|54    |design_1_AXI4Stream_XUS_Virtu_0_0    |         1|
-|55    |design_1_BeltBus_NodeInserter_0_3    |         1|
-|56    |design_1_TDCChannelSlice_0_0         |         1|
-|57    |design_1_axis_broadcaster_0_0        |         1|
-|58    |design_1_util_vector_logic_0_0       |         1|
+|18    |design_1_system_ila_0_0              |         1|
+|19    |design_1_system_management_wiz_0_0   |         1|
+|20    |design_1_AXI4Stream_QSPI_Prog_0_0    |         1|
+|21    |design_1_AXI4_BitstreamUpdater_0_0   |         1|
+|22    |design_1_axi_quad_spi_0_0            |         1|
+|23    |design_1_AXI4_AXIToIIC_0_0           |         1|
+|24    |design_1_axi_iic_0_0                 |         1|
+|25    |design_1_axi_bram_ctrl_0_0           |         1|
+|26    |design_1_blk_mem_gen_0_0             |         1|
+|27    |design_1_AXI4Stream_MuxDebugg_0_0    |         1|
+|28    |design_1_AXI4_TDC_Wrapper_0_2        |         1|
+|29    |design_1_AXI4Stream_CoarseExt_0_1    |         1|
+|30    |design_1_AXI4Stream_IperDecod_0_1    |         1|
+|31    |design_1_AXI4Stream_MagicCali_0_1    |         1|
+|32    |design_1_AXI4Stream_OverflowC_0_1    |         1|
+|33    |design_1_AXI4Stream_Synchroni_0_1    |         1|
+|34    |design_1_AXI4Stream_XUS_Virtu_0_1    |         1|
+|35    |design_1_BeltBus_NodeInserter_0_4    |         1|
+|36    |design_1_TDCChannelSlice_1_0         |         1|
+|37    |design_1_CoarseTreeDistributor_0_0   |         1|
+|38    |design_1_StartStopGenerator_0_0      |         1|
+|39    |design_1_util_vector_logic_0_1       |         1|
+|40    |design_1_util_vector_logic_1_0       |         1|
+|41    |design_1_AXI4Stream_CoarseExt_0_2    |         1|
+|42    |design_1_AXI4Stream_IperDecod_0_2    |         1|
+|43    |design_1_AXI4Stream_MagicCali_0_2    |         1|
+|44    |design_1_AXI4Stream_OverflowC_0_2    |         1|
+|45    |design_1_AXI4Stream_Synchroni_0_2    |         1|
+|46    |design_1_AXI4Stream_XUS_Virtu_0_2    |         1|
+|47    |design_1_BeltBus_NodeInserter_0_5    |         1|
+|48    |design_1_TDCChannelSlice_2_0         |         1|
+|49    |design_1_AXI4Stream_CoarseExt_0_0    |         1|
+|50    |design_1_AXI4Stream_IperDecod_0_0    |         1|
+|51    |design_1_AXI4Stream_MagicCali_0_0    |         1|
+|52    |design_1_AXI4Stream_OverflowC_0_0    |         1|
+|53    |design_1_AXI4Stream_PeriodMet_0_0    |         1|
+|54    |design_1_AXI4Stream_Synchroni_0_0    |         1|
+|55    |design_1_AXI4Stream_XUS_Virtu_0_0    |         1|
+|56    |design_1_BeltBus_NodeInserter_0_3    |         1|
+|57    |design_1_TDCChannelSlice_0_0         |         1|
+|58    |design_1_axis_broadcaster_0_0        |         1|
+|59    |design_1_util_vector_logic_0_0       |         1|
 +------+-------------------------------------+----------+
 
 Report Cell Usage: 
@@ -1019,38 +1025,39 @@ Report Cell Usage:
 |50    |design_1_blk_mem_gen_0_0_bbox             |     1|
 |51    |design_1_clk_wiz_0_1_bbox                 |     1|
 |52    |design_1_proc_sys_reset_1_0_bbox          |     1|
-|53    |design_1_system_management_wiz_0_0_bbox   |     1|
-|54    |design_1_util_vector_logic_0_0_bbox       |     1|
-|55    |design_1_util_vector_logic_0_1_bbox       |     1|
-|56    |design_1_util_vector_logic_1_0_bbox       |     1|
-|57    |design_1_xbar_2_bbox                      |     1|
-|58    |design_1_xbar_3_bbox                      |     1|
-|59    |IBUF                                      |     1|
-|60    |IOBUF                                     |     7|
-|61    |OBUF                                      |     1|
+|53    |design_1_system_ila_0_0_bbox              |     1|
+|54    |design_1_system_management_wiz_0_0_bbox   |     1|
+|55    |design_1_util_vector_logic_0_0_bbox       |     1|
+|56    |design_1_util_vector_logic_0_1_bbox       |     1|
+|57    |design_1_util_vector_logic_1_0_bbox       |     1|
+|58    |design_1_xbar_2_bbox                      |     1|
+|59    |design_1_xbar_3_bbox                      |     1|
+|60    |IBUF                                      |     1|
+|61    |IOBUF                                     |     7|
+|62    |OBUF                                      |     1|
 +------+------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 2912.227 ; gain = 478.086 ; free physical = 8541 ; free virtual = 11920
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 2946.035 ; gain = 488.117 ; free physical = 2520 ; free virtual = 7057
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 2912.227 ; gain = 333.336 ; free physical = 8563 ; free virtual = 11943
-Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 2912.234 ; gain = 478.086 ; free physical = 8563 ; free virtual = 11943
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 2946.035 ; gain = 342.367 ; free physical = 2544 ; free virtual = 7080
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 2946.043 ; gain = 488.117 ; free physical = 2544 ; free virtual = 7080
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2918.164 ; gain = 0.000 ; free physical = 8643 ; free virtual = 12022
+Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2952.973 ; gain = 0.000 ; free physical = 2623 ; free virtual = 7159
 INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2951.883 ; gain = 0.000 ; free physical = 8589 ; free virtual = 11968
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2987.691 ; gain = 0.000 ; free physical = 2569 ; free virtual = 7106
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 8 instances were transformed.
   IBUF => IBUF (IBUFCTRL, INBUF): 1 instance 
   IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 7 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-260 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
+262 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 2951.883 ; gain = 525.914 ; free physical = 8728 ; free virtual = 12107
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 2987.691 ; gain = 561.727 ; free physical = 2709 ; free virtual = 7245
 INFO: [Common 17-1381] The checkpoint '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Feb  8 11:30:13 2022...
+INFO: [Common 17-206] Exiting Vivado at Tue Feb  8 15:56:42 2022...

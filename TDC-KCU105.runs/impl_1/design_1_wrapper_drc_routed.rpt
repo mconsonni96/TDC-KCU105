@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date         : Tue Feb  8 11:46:18 2022
+| Date         : Tue Feb  8 16:15:58 2022
 | Host         : mconsonni-All-Series running 64-bit Ubuntu 20.04.3 LTS
 | Command      : report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
 | Design       : design_1_wrapper
@@ -79,7 +79,11 @@ Related violations: <none>
 
 RTSTAT-10#1 Warning
 No routable loads  
-150 net(s) have no routable loads. The problem bus(es) and/or net(s) are design_1_i/system_management_wiz_0/U0/AXI_SYSMON_CORE_I/daddr_C_master_reg2[7:0],
+175 net(s) have no routable loads. The problem bus(es) and/or net(s) are dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD1/ctl_reg_en_2[1],
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg[2:0],
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg_en_2[1],
+design_1_i/system_management_wiz_0/U0/AXI_SYSMON_CORE_I/daddr_C_master_reg2[7:0],
 design_1_i/system_management_wiz_0/U0/AXI_SYSMON_CORE_I/daddr_C_master_reg[7:0],
 design_1_i/system_management_wiz_0/U0/AXI_SYSMON_CORE_I/daddr_C_slave0_reg2[7:0],
 design_1_i/system_management_wiz_0/U0/AXI_SYSMON_CORE_I/daddr_C_slave0_reg[7:0],
@@ -89,12 +93,8 @@ design_1_i/system_management_wiz_0/U0/AXI_SYSMON_CORE_I/di_C_master_reg2[15:0],
 design_1_i/system_management_wiz_0/U0/AXI_SYSMON_CORE_I/di_C_master_reg[15:0],
 design_1_i/system_management_wiz_0/U0/AXI_SYSMON_CORE_I/di_C_slave0_reg2[15:0],
 design_1_i/system_management_wiz_0/U0/AXI_SYSMON_CORE_I/di_C_slave0_reg[15:0],
-design_1_i/system_management_wiz_0/U0/AXI_SYSMON_CORE_I/di_C_slave1_reg2[15:0],
-design_1_i/system_management_wiz_0/U0/AXI_SYSMON_CORE_I/di_C_slave1_reg[15:0],
-design_1_i/system_management_wiz_0/U0/AXI_SYSMON_CORE_I/dwe_C_master_reg,
-design_1_i/system_management_wiz_0/U0/AXI_SYSMON_CORE_I/dwe_C_master_reg2,
-design_1_i/system_management_wiz_0/U0/AXI_SYSMON_CORE_I/dwe_C_slave0_reg
- (the first 15 of 18 listed).
+design_1_i/system_management_wiz_0/U0/AXI_SYSMON_CORE_I/di_C_slave1_reg2[15:0]
+ (the first 15 of 41 listed).
 Related violations: <none>
 
 

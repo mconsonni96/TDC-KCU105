@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
---Date        : Tue Feb  8 11:27:58 2022
+--Date        : Tue Feb  8 15:53:09 2022
 --Host        : mconsonni-All-Series running 64-bit Ubuntu 20.04.3 LTS
 --Command     : generate_target design_1_wrapper.bd
 --Design      : design_1_wrapper
@@ -30,6 +30,16 @@ end design_1_wrapper;
 architecture STRUCTURE of design_1_wrapper is
   component design_1 is
   port (
+    sysclk_125_clk_n : in STD_LOGIC;
+    sysclk_125_clk_p : in STD_LOGIC;
+    rs232_uart_txd : out STD_LOGIC;
+    rs232_uart_rxd : in STD_LOGIC;
+    IIC_0_scl_i : in STD_LOGIC;
+    IIC_0_scl_o : out STD_LOGIC;
+    IIC_0_scl_t : out STD_LOGIC;
+    IIC_0_sda_i : in STD_LOGIC;
+    IIC_0_sda_o : out STD_LOGIC;
+    IIC_0_sda_t : out STD_LOGIC;
     spi_flash_io0_i : in STD_LOGIC;
     spi_flash_io0_o : out STD_LOGIC;
     spi_flash_io0_t : out STD_LOGIC;
@@ -44,17 +54,7 @@ architecture STRUCTURE of design_1_wrapper is
     spi_flash_io3_t : out STD_LOGIC;
     spi_flash_ss_i : in STD_LOGIC;
     spi_flash_ss_o : out STD_LOGIC;
-    spi_flash_ss_t : out STD_LOGIC;
-    sysclk_125_clk_n : in STD_LOGIC;
-    sysclk_125_clk_p : in STD_LOGIC;
-    rs232_uart_txd : out STD_LOGIC;
-    rs232_uart_rxd : in STD_LOGIC;
-    IIC_0_scl_i : in STD_LOGIC;
-    IIC_0_scl_o : out STD_LOGIC;
-    IIC_0_scl_t : out STD_LOGIC;
-    IIC_0_sda_i : in STD_LOGIC;
-    IIC_0_sda_o : out STD_LOGIC;
-    IIC_0_sda_t : out STD_LOGIC
+    spi_flash_ss_t : out STD_LOGIC
   );
   end component design_1;
   component IOBUF is

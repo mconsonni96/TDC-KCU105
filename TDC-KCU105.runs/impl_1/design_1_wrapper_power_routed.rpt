@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date             : Tue Feb  8 11:46:40 2022
+| Date             : Tue Feb  8 16:16:21 2022
 | Host             : mconsonni-All-Series running 64-bit Ubuntu 20.04.3 LTS
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.702        |
+| Total On-Chip Power (W)  | 1.741        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.213        |
+| Dynamic (W)              | 1.252        |
 | Device Static (W)        | 0.489        |
 | Effective TJA (C/W)      | 1.4          |
-| Max Ambient (C)          | 97.6         |
-| Junction Temperature (C) | 27.4         |
+| Max Ambient (C)          | 97.5         |
+| Junction Temperature (C) | 27.5         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,24 +52,24 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.608 |        8 |       --- |             --- |
-| CLB Logic                |     0.202 |   116349 |       --- |             --- |
-|   LUT as Logic           |     0.151 |    35182 |    242400 |           14.51 |
-|   Register               |     0.036 |    56968 |    484800 |           11.75 |
-|   CARRY8                 |     0.006 |     2680 |     30300 |            8.84 |
-|   LUT as Distributed RAM |     0.005 |      882 |    112800 |            0.78 |
-|   LUT as Shift Register  |     0.004 |      435 |    112800 |            0.39 |
-|   F7/F8 Muxes            |    <0.001 |      682 |    242400 |            0.28 |
+| Clocks                   |     0.634 |        9 |       --- |             --- |
+| CLB Logic                |     0.205 |   120523 |       --- |             --- |
+|   LUT as Logic           |     0.152 |    36275 |    242400 |           14.96 |
+|   Register               |     0.036 |    59233 |    484800 |           12.22 |
+|   LUT as Distributed RAM |     0.006 |      914 |    112800 |            0.81 |
+|   LUT as Shift Register  |     0.006 |      580 |    112800 |            0.51 |
+|   CARRY8                 |     0.006 |     2704 |     30300 |            8.92 |
+|   F7/F8 Muxes            |    <0.001 |      679 |    242400 |            0.28 |
 |   BUFG                   |    <0.001 |        3 |        80 |            3.75 |
-|   Others                 |     0.000 |     8247 |       --- |             --- |
-| Signals                  |     0.182 |    73311 |       --- |             --- |
-| Block RAM                |     0.099 |     72.5 |       600 |           12.08 |
+|   Others                 |     0.000 |     8505 |       --- |             --- |
+| Signals                  |     0.191 |    76559 |       --- |             --- |
+| Block RAM                |     0.101 |     74.5 |       600 |           12.42 |
 | MMCM                     |     0.115 |        1 |        10 |           10.00 |
 | DSPs                     |    <0.001 |        1 |      1920 |            0.05 |
 | I/O                      |     0.005 |       11 |       520 |            2.12 |
 | SYSMON                   |     0.002 |        1 |       --- |             --- |
 | Static Power             |     0.489 |          |           |                 |
-| Total                    |     1.702 |          |           |                 |
+| Total                    |     1.741 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -79,7 +79,7 @@ Table of Contents
 +------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source     | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint     |       0.950 |     1.303 |       1.148 |      0.154 |       NA    | Unspecified | NA         |
+| Vccint     |       0.950 |     1.344 |       1.189 |      0.155 |       NA    | Unspecified | NA         |
 | Vccaux     |       1.800 |     0.160 |       0.063 |      0.096 |       NA    | Unspecified | NA         |
 | Vccaux_io  |       1.800 |     0.066 |       0.001 |      0.065 |       NA    | Unspecified | NA         |
 | Vccint_io  |       0.950 |     0.017 |       0.001 |      0.016 |       NA    | Unspecified | NA         |
@@ -138,15 +138,16 @@ Table of Contents
 2.2 Clock Constraints
 ---------------------
 
-+-------------------------------+---------------------------------------------------------+-----------------+
-| Clock                         | Domain                                                  | Constraint (ns) |
-+-------------------------------+---------------------------------------------------------+-----------------+
-| clk_out1_design_1_clk_wiz_0_1 | design_1_i/clk_wiz_0/inst/clk_out1                      |            10.0 |
-| clk_out1_design_1_clk_wiz_0_1 | design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_1 |            10.0 |
-| clk_out2_design_1_clk_wiz_0_1 | design_1_i/clk_wiz_0/inst/clk_out2_design_1_clk_wiz_0_1 |             2.0 |
-| clkfbout_design_1_clk_wiz_0_1 | design_1_i/clk_wiz_0/inst/clkfbout_design_1_clk_wiz_0_1 |             8.0 |
-| sysclk_125_clk_p              | sysclk_125_clk_p                                        |             8.0 |
-+-------------------------------+---------------------------------------------------------+-----------------+
++--------------------------------------------------------------------------------------------+----------------------------------------------------------------------+-----------------+
+| Clock                                                                                      | Domain                                                               | Constraint (ns) |
++--------------------------------------------------------------------------------------------+----------------------------------------------------------------------+-----------------+
+| clk_out1_design_1_clk_wiz_0_1                                                              | design_1_i/clk_wiz_0/inst/clk_out1                                   |            10.0 |
+| clk_out1_design_1_clk_wiz_0_1                                                              | design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_1              |            10.0 |
+| clk_out2_design_1_clk_wiz_0_1                                                              | design_1_i/clk_wiz_0/inst/clk_out2_design_1_clk_wiz_0_1              |             2.0 |
+| clkfbout_design_1_clk_wiz_0_1                                                              | design_1_i/clk_wiz_0/inst/clkfbout_design_1_clk_wiz_0_1              |             8.0 |
+| dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK | dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/tck_bs |            33.0 |
+| sysclk_125_clk_p                                                                           | sysclk_125_clk_p                                                     |             8.0 |
++--------------------------------------------------------------------------------------------+----------------------------------------------------------------------+-----------------+
 
 
 3. Detailed Reports
@@ -158,16 +159,19 @@ Table of Contents
 +-------------------------------+-----------+
 | Name                          | Power (W) |
 +-------------------------------+-----------+
-| design_1_wrapper              |     1.213 |
-|   design_1_i                  |     1.212 |
+| design_1_wrapper              |     1.252 |
+|   dbg_hub                     |     0.003 |
+|     inst                      |     0.003 |
+|       BSCANID.u_xsdbm_id      |     0.003 |
+|   design_1_i                  |     1.248 |
 |     AXI4Stream_UART_1         |     0.003 |
 |       U0                      |     0.003 |
 |     BeltBus_TDCCounter_0      |     0.003 |
 |       U0                      |     0.003 |
-|     BeltBus_TDCHistogrammer_0 |     0.033 |
-|       U0                      |     0.033 |
-|     BeltBus_TDCHistogrammer_1 |     0.033 |
-|       U0                      |     0.033 |
+|     BeltBus_TDCHistogrammer_0 |     0.034 |
+|       U0                      |     0.034 |
+|     BeltBus_TDCHistogrammer_1 |     0.034 |
+|       U0                      |     0.034 |
 |     BeltBus_TTM_0             |     0.017 |
 |       U0                      |     0.017 |
 |     BitstreamUpdater_QSPI     |     0.010 |
@@ -179,9 +183,9 @@ Table of Contents
 |       U0                      |     0.026 |
 |     Master                    |     0.002 |
 |       blk_mem_gen_0           |     0.001 |
-|     TDC_Calib                 |     0.950 |
+|     TDC_Calib                 |     0.974 |
 |       AXI4_TDC_Wrapper_0      |     0.015 |
-|       TDC                     |     0.935 |
+|       TDC                     |     0.960 |
 |     axi_interconnect_0        |     0.010 |
 |       m01_couplers            |     0.002 |
 |       m02_couplers            |     0.001 |
@@ -190,6 +194,8 @@ Table of Contents
 |       xbar                    |     0.003 |
 |     clk_wiz_0                 |     0.120 |
 |       inst                    |     0.120 |
+|     system_ila_0              |     0.009 |
+|       U0                      |     0.009 |
 |     system_management_wiz_0   |     0.003 |
 |       U0                      |     0.003 |
 +-------------------------------+-----------+

@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
 // Date        : Tue Feb  8 10:45:18 2022
 // Host        : mconsonni-All-Series running 64-bit Ubuntu 20.04.3 LTS
-// Command     : write_verilog -force -mode funcsim
-//               /home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_CoarseExt_0_2/design_1_AXI4Stream_CoarseExt_0_2_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top design_1_AXI4Stream_CoarseExt_0_2 -prefix
+//               design_1_AXI4Stream_CoarseExt_0_2_ design_1_AXI4Stream_CoarseExt_0_2_sim_netlist.v
 // Design      : design_1_AXI4Stream_CoarseExt_0_2
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,79 +12,11 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "design_1_AXI4Stream_CoarseExt_0_2,AXI4Stream_CoarseExtensionCore,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* ip_definition_source = "package_project" *) 
-(* x_core_info = "AXI4Stream_CoarseExtensionCore,Vivado 2020.2" *) 
-(* NotValidForBitStream *)
-module design_1_AXI4Stream_CoarseExt_0_2
-   (reset_SYS,
-    reset_TDC,
-    clk_TDC,
-    clk_SYS,
-    CoarseCounter_CTD,
-    s00_axis_subint_tvalid,
-    s00_axis_subint_tdata,
-    m00_axis_uncalib_tvalid,
-    m00_axis_uncalib_tdata);
-  (* x_interface_info = "xilinx.com:signal:reset:1.0 reset_SYS RST" *) (* x_interface_parameter = "XIL_INTERFACENAME reset_SYS, POLARITY ACTIVE_HIGH, INSERT_VIP 0" *) input reset_SYS;
-  (* x_interface_info = "xilinx.com:signal:reset:1.0 reset_TDC RST" *) (* x_interface_parameter = "XIL_INTERFACENAME reset_TDC, POLARITY ACTIVE_HIGH, INSERT_VIP 0" *) input reset_TDC;
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 clk_TDC CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME clk_TDC, ASSOCIATED_BUSIF S00_AXIS_SubInt:CoarseCounter_CTD, ASSOCIATED_RESET reset_TDC, FREQ_HZ 500000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_clk_wiz_0_1_clk_out1, INSERT_VIP 0" *) input clk_TDC;
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 clk_SYS CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME clk_SYS, ASSOCIATED_RESET reset_SYS, ASSOCIATED_BUSIF M00_AXIS_UnCalib, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_clk_wiz_0_1_clk_out1, INSERT_VIP 0" *) input clk_SYS;
-  (* x_interface_info = "xilinx.com:signal:data:1.0 CoarseCounter_CTD DATA" *) (* x_interface_parameter = "XIL_INTERFACENAME CoarseCounter_CTD, LAYERED_METADATA undef" *) input [7:0]CoarseCounter_CTD;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 S00_AXIS_SubInt TVALID" *) (* x_interface_parameter = "XIL_INTERFACENAME S00_AXIS_SubInt, TDATA_NUM_BYTES 2, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 0, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 500000000, PHASE 0.0, CLK_DOMAIN design_1_clk_wiz_0_1_clk_out1, LAYERED_METADATA undef, INSERT_VIP 0" *) input s00_axis_subint_tvalid;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 S00_AXIS_SubInt TDATA" *) input [15:0]s00_axis_subint_tdata;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 M00_AXIS_UnCalib TVALID" *) (* x_interface_parameter = "XIL_INTERFACENAME M00_AXIS_UnCalib, TDATA_NUM_BYTES 3, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 0, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN design_1_clk_wiz_0_1_clk_out1, LAYERED_METADATA undef, INSERT_VIP 0" *) output m00_axis_uncalib_tvalid;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 M00_AXIS_UnCalib TDATA" *) output [23:0]m00_axis_uncalib_tdata;
-
-  wire \<const0> ;
-  wire [7:0]CoarseCounter_CTD;
-  wire clk_SYS;
-  wire clk_TDC;
-  wire [21:0]\^m00_axis_uncalib_tdata ;
-  wire m00_axis_uncalib_tvalid;
-  wire reset_SYS;
-  wire reset_TDC;
-  wire [15:0]s00_axis_subint_tdata;
-  wire s00_axis_subint_tvalid;
-  wire [23:22]NLW_U0_m00_axis_uncalib_tdata_UNCONNECTED;
-
-  assign m00_axis_uncalib_tdata[23] = \<const0> ;
-  assign m00_axis_uncalib_tdata[22] = \<const0> ;
-  assign m00_axis_uncalib_tdata[21:0] = \^m00_axis_uncalib_tdata [21:0];
-  GND GND
-       (.G(\<const0> ));
-  (* BIT_COARSE = "8" *) 
-  (* BIT_FID = "2" *) 
-  (* BIT_SUB_INT = "12" *) 
-  (* BIT_UNCALIBRATED = "12" *) 
-  (* CDC_SYNC_STAGES = "4" *) 
-  (* CEC_COARSE_CNT_INIT = "0" *) 
-  (* CEC_VS_CTD_COUNTER = "CTD" *) 
-  (* FIFO_MEMORY_TYPE = "distributed" *) 
-  (* FIFO_WRITE_DEPTH = "16" *) 
-  (* INTERNAL_OVERFLOW_CNT = "FALSE" *) 
-  (* MAX_INPUT_ENGINE_AND_PIPELINE_STAGE1 = "4" *) 
-  (* MAX_INPUT_ENGINE_AND_PIPELINE_STAGE2 = "4" *) 
-  (* MAX_INPUT_ENGINE_AND_PIPELINE_STAGE3 = "4" *) 
-  (* MAX_NUM_BIT_EQ_PIPELINE_STAGE0 = "4" *) 
-  (* RELATED_CLOCKS = "FALSE" *) 
-  design_1_AXI4Stream_CoarseExt_0_2_AXI4Stream_CoarseExtensionCore U0
-       (.CoarseCounter_CTD(CoarseCounter_CTD),
-        .clk_SYS(clk_SYS),
-        .clk_TDC(clk_TDC),
-        .m00_axis_uncalib_tdata({NLW_U0_m00_axis_uncalib_tdata_UNCONNECTED[23:22],\^m00_axis_uncalib_tdata }),
-        .m00_axis_uncalib_tvalid(m00_axis_uncalib_tvalid),
-        .reset_SYS(reset_SYS),
-        .reset_TDC(reset_TDC),
-        .s00_axis_subint_tdata({1'b0,1'b0,1'b0,s00_axis_subint_tdata[12:0]}),
-        .s00_axis_subint_tvalid(s00_axis_subint_tvalid));
-endmodule
-
 (* BIT_COARSE = "8" *) (* BIT_FID = "2" *) (* BIT_SUB_INT = "12" *) 
 (* BIT_UNCALIBRATED = "12" *) (* CDC_SYNC_STAGES = "4" *) (* CEC_COARSE_CNT_INIT = "0" *) 
 (* CEC_VS_CTD_COUNTER = "CTD" *) (* FIFO_MEMORY_TYPE = "distributed" *) (* FIFO_WRITE_DEPTH = "16" *) 
 (* INTERNAL_OVERFLOW_CNT = "FALSE" *) (* MAX_INPUT_ENGINE_AND_PIPELINE_STAGE1 = "4" *) (* MAX_INPUT_ENGINE_AND_PIPELINE_STAGE2 = "4" *) 
-(* MAX_INPUT_ENGINE_AND_PIPELINE_STAGE3 = "4" *) (* MAX_NUM_BIT_EQ_PIPELINE_STAGE0 = "4" *) (* ORIG_REF_NAME = "AXI4Stream_CoarseExtensionCore" *) 
-(* RELATED_CLOCKS = "FALSE" *) 
+(* MAX_INPUT_ENGINE_AND_PIPELINE_STAGE3 = "4" *) (* MAX_NUM_BIT_EQ_PIPELINE_STAGE0 = "4" *) (* RELATED_CLOCKS = "FALSE" *) 
 module design_1_AXI4Stream_CoarseExt_0_2_AXI4Stream_CoarseExtensionCore
    (reset_SYS,
     reset_TDC,
@@ -133,7 +65,6 @@ module design_1_AXI4Stream_CoarseExt_0_2_AXI4Stream_CoarseExtensionCore
         .s00_axis_subint_tvalid(s00_axis_subint_tvalid));
 endmodule
 
-(* ORIG_REF_NAME = "AXI4Stream_CoarseExtensionCoreWrapper_CEC" *) 
 module design_1_AXI4Stream_CoarseExt_0_2_AXI4Stream_CoarseExtensionCoreWrapper_CEC
    (m00_axis_uncalib_tvalid,
     m00_axis_uncalib_tdata,
@@ -176,7 +107,6 @@ module design_1_AXI4Stream_CoarseExt_0_2_AXI4Stream_CoarseExtensionCoreWrapper_C
         .s00_axis_subint_tvalid(s00_axis_subint_tvalid));
 endmodule
 
-(* ORIG_REF_NAME = "CoarseExtensionCore" *) 
 module design_1_AXI4Stream_CoarseExt_0_2_CoarseExtensionCore
    (m00_axis_uncalib_tvalid,
     m00_axis_uncalib_tdata,
@@ -939,7 +869,6 @@ module design_1_AXI4Stream_CoarseExt_0_2_CoarseExtensionCore
         .Q(wr_en));
 endmodule
 
-(* ORIG_REF_NAME = "Engine_AND_TC" *) 
 module design_1_AXI4Stream_CoarseExt_0_2_Engine_AND_TC
    (CompOut_AND_reg_0,
     \din_reg[21] ,
@@ -988,7 +917,6 @@ module design_1_AXI4Stream_CoarseExt_0_2_Engine_AND_TC
         .O(CompOut_AND_reg_0));
 endmodule
 
-(* ORIG_REF_NAME = "Engine_EQ_TC" *) 
 module design_1_AXI4Stream_CoarseExt_0_2_Engine_EQ_TC
    (CompOut_EQ_reg_0,
     CoarseCounter_CTD,
@@ -1064,7 +992,6 @@ module design_1_AXI4Stream_CoarseExt_0_2_Engine_EQ_TC_0
         .Q(CompOut_EQ_reg_0));
 endmodule
 
-(* ORIG_REF_NAME = "FIFO_Synchronizer" *) 
 module design_1_AXI4Stream_CoarseExt_0_2_FIFO_Synchronizer
    (dout,
     data_valid,
@@ -1211,7 +1138,6 @@ module design_1_AXI4Stream_CoarseExt_0_2_FIFO_Synchronizer
         .O(queue_reg));
 endmodule
 
-(* ORIG_REF_NAME = "Step_TC" *) 
 module design_1_AXI4Stream_CoarseExt_0_2_Step_TC
    (CompOut_EQ_reg,
     CoarseCounter_CTD,
@@ -1276,7 +1202,6 @@ module design_1_AXI4Stream_CoarseExt_0_2_Step_TC__parameterized1
         .s00_axis_subint_tvalid(s00_axis_subint_tvalid));
 endmodule
 
-(* ORIG_REF_NAME = "TreeComparator" *) 
 module design_1_AXI4Stream_CoarseExt_0_2_TreeComparator
    (CompOut_AND_reg,
     \din_reg[21] ,
@@ -1311,7 +1236,6 @@ module design_1_AXI4Stream_CoarseExt_0_2_TreeComparator
         .s00_axis_subint_tvalid(s00_axis_subint_tvalid));
 endmodule
 
-(* ORIG_REF_NAME = "TreeComparatorWrapper" *) 
 module design_1_AXI4Stream_CoarseExt_0_2_TreeComparatorWrapper
    (CompOut_AND_reg,
     \din_reg[21] ,
@@ -1352,10 +1276,77 @@ module design_1_AXI4Stream_CoarseExt_0_2_TreeComparatorWrapper
         .s00_axis_subint_tvalid(s00_axis_subint_tvalid));
 endmodule
 
-(* DEST_SYNC_FF = "4" *) (* INIT_SYNC_FF = "1" *) (* ORIG_REF_NAME = "xpm_cdc_gray" *) 
-(* REG_OUTPUT = "0" *) (* SIM_ASSERT_CHK = "0" *) (* SIM_LOSSLESS_GRAY_CHK = "0" *) 
-(* VERSION = "0" *) (* WIDTH = "4" *) (* XPM_MODULE = "TRUE" *) 
-(* keep_hierarchy = "true" *) (* xpm_cdc = "GRAY" *) 
+(* CHECK_LICENSE_TYPE = "design_1_AXI4Stream_CoarseExt_0_2,AXI4Stream_CoarseExtensionCore,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* ip_definition_source = "package_project" *) 
+(* x_core_info = "AXI4Stream_CoarseExtensionCore,Vivado 2020.2" *) 
+(* NotValidForBitStream *)
+module design_1_AXI4Stream_CoarseExt_0_2
+   (reset_SYS,
+    reset_TDC,
+    clk_TDC,
+    clk_SYS,
+    CoarseCounter_CTD,
+    s00_axis_subint_tvalid,
+    s00_axis_subint_tdata,
+    m00_axis_uncalib_tvalid,
+    m00_axis_uncalib_tdata);
+  (* x_interface_info = "xilinx.com:signal:reset:1.0 reset_SYS RST" *) (* x_interface_parameter = "XIL_INTERFACENAME reset_SYS, POLARITY ACTIVE_HIGH, INSERT_VIP 0" *) input reset_SYS;
+  (* x_interface_info = "xilinx.com:signal:reset:1.0 reset_TDC RST" *) (* x_interface_parameter = "XIL_INTERFACENAME reset_TDC, POLARITY ACTIVE_HIGH, INSERT_VIP 0" *) input reset_TDC;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 clk_TDC CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME clk_TDC, ASSOCIATED_BUSIF S00_AXIS_SubInt:CoarseCounter_CTD, ASSOCIATED_RESET reset_TDC, FREQ_HZ 500000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_clk_wiz_0_1_clk_out1, INSERT_VIP 0" *) input clk_TDC;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 clk_SYS CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME clk_SYS, ASSOCIATED_RESET reset_SYS, ASSOCIATED_BUSIF M00_AXIS_UnCalib, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_clk_wiz_0_1_clk_out1, INSERT_VIP 0" *) input clk_SYS;
+  (* x_interface_info = "xilinx.com:signal:data:1.0 CoarseCounter_CTD DATA" *) (* x_interface_parameter = "XIL_INTERFACENAME CoarseCounter_CTD, LAYERED_METADATA undef" *) input [7:0]CoarseCounter_CTD;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 S00_AXIS_SubInt TVALID" *) (* x_interface_parameter = "XIL_INTERFACENAME S00_AXIS_SubInt, TDATA_NUM_BYTES 2, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 0, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 500000000, PHASE 0.0, CLK_DOMAIN design_1_clk_wiz_0_1_clk_out1, LAYERED_METADATA undef, INSERT_VIP 0" *) input s00_axis_subint_tvalid;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 S00_AXIS_SubInt TDATA" *) input [15:0]s00_axis_subint_tdata;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 M00_AXIS_UnCalib TVALID" *) (* x_interface_parameter = "XIL_INTERFACENAME M00_AXIS_UnCalib, TDATA_NUM_BYTES 3, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 0, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN design_1_clk_wiz_0_1_clk_out1, LAYERED_METADATA undef, INSERT_VIP 0" *) output m00_axis_uncalib_tvalid;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 M00_AXIS_UnCalib TDATA" *) output [23:0]m00_axis_uncalib_tdata;
+
+  wire \<const0> ;
+  wire [7:0]CoarseCounter_CTD;
+  wire clk_SYS;
+  wire clk_TDC;
+  wire [21:0]\^m00_axis_uncalib_tdata ;
+  wire m00_axis_uncalib_tvalid;
+  wire reset_SYS;
+  wire reset_TDC;
+  wire [15:0]s00_axis_subint_tdata;
+  wire s00_axis_subint_tvalid;
+  wire [23:22]NLW_U0_m00_axis_uncalib_tdata_UNCONNECTED;
+
+  assign m00_axis_uncalib_tdata[23] = \<const0> ;
+  assign m00_axis_uncalib_tdata[22] = \<const0> ;
+  assign m00_axis_uncalib_tdata[21:0] = \^m00_axis_uncalib_tdata [21:0];
+  GND GND
+       (.G(\<const0> ));
+  (* BIT_COARSE = "8" *) 
+  (* BIT_FID = "2" *) 
+  (* BIT_SUB_INT = "12" *) 
+  (* BIT_UNCALIBRATED = "12" *) 
+  (* CDC_SYNC_STAGES = "4" *) 
+  (* CEC_COARSE_CNT_INIT = "0" *) 
+  (* CEC_VS_CTD_COUNTER = "CTD" *) 
+  (* FIFO_MEMORY_TYPE = "distributed" *) 
+  (* FIFO_WRITE_DEPTH = "16" *) 
+  (* INTERNAL_OVERFLOW_CNT = "FALSE" *) 
+  (* MAX_INPUT_ENGINE_AND_PIPELINE_STAGE1 = "4" *) 
+  (* MAX_INPUT_ENGINE_AND_PIPELINE_STAGE2 = "4" *) 
+  (* MAX_INPUT_ENGINE_AND_PIPELINE_STAGE3 = "4" *) 
+  (* MAX_NUM_BIT_EQ_PIPELINE_STAGE0 = "4" *) 
+  (* RELATED_CLOCKS = "FALSE" *) 
+  design_1_AXI4Stream_CoarseExt_0_2_AXI4Stream_CoarseExtensionCore U0
+       (.CoarseCounter_CTD(CoarseCounter_CTD),
+        .clk_SYS(clk_SYS),
+        .clk_TDC(clk_TDC),
+        .m00_axis_uncalib_tdata({NLW_U0_m00_axis_uncalib_tdata_UNCONNECTED[23:22],\^m00_axis_uncalib_tdata }),
+        .m00_axis_uncalib_tvalid(m00_axis_uncalib_tvalid),
+        .reset_SYS(reset_SYS),
+        .reset_TDC(reset_TDC),
+        .s00_axis_subint_tdata({1'b0,1'b0,1'b0,s00_axis_subint_tdata[12:0]}),
+        .s00_axis_subint_tvalid(s00_axis_subint_tvalid));
+endmodule
+
+(* DEST_SYNC_FF = "4" *) (* INIT_SYNC_FF = "1" *) (* REG_OUTPUT = "0" *) 
+(* SIM_ASSERT_CHK = "0" *) (* SIM_LOSSLESS_GRAY_CHK = "0" *) (* VERSION = "0" *) 
+(* WIDTH = "4" *) (* XPM_MODULE = "TRUE" *) (* keep_hierarchy = "true" *) 
+(* xpm_cdc = "GRAY" *) 
 module design_1_AXI4Stream_CoarseExt_0_2_xpm_cdc_gray
    (src_clk,
     src_in_bin,
@@ -2515,9 +2506,8 @@ module design_1_AXI4Stream_CoarseExt_0_2_xpm_cdc_gray__parameterized1
 endmodule
 
 (* DEF_VAL = "1'b0" *) (* DEST_SYNC_FF = "4" *) (* INIT = "0" *) 
-(* INIT_SYNC_FF = "1" *) (* ORIG_REF_NAME = "xpm_cdc_sync_rst" *) (* SIM_ASSERT_CHK = "0" *) 
-(* VERSION = "0" *) (* XPM_MODULE = "TRUE" *) (* keep_hierarchy = "true" *) 
-(* xpm_cdc = "SYNC_RST" *) 
+(* INIT_SYNC_FF = "1" *) (* SIM_ASSERT_CHK = "0" *) (* VERSION = "0" *) 
+(* XPM_MODULE = "TRUE" *) (* keep_hierarchy = "true" *) (* xpm_cdc = "SYNC_RST" *) 
 module design_1_AXI4Stream_CoarseExt_0_2_xpm_cdc_sync_rst
    (src_rst,
     dest_clk,
@@ -2640,7 +2630,6 @@ module design_1_AXI4Stream_CoarseExt_0_2_xpm_cdc_sync_rst__2
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "xpm_counter_updn" *) 
 module design_1_AXI4Stream_CoarseExt_0_2_xpm_counter_updn
    (Q,
     \count_value_i_reg[1]_0 ,
@@ -3287,13 +3276,12 @@ endmodule
 (* CASCADE_HEIGHT = "0" *) (* CDC_SYNC_STAGES = "4" *) (* DOUT_RESET_VALUE = "0" *) 
 (* ECC_MODE = "no_ecc" *) (* EN_ADV_FEATURE_ASYNC = "16'b0001000000000000" *) (* FIFO_MEMORY_TYPE = "distributed" *) 
 (* FIFO_READ_LATENCY = "0" *) (* FIFO_WRITE_DEPTH = "16" *) (* FULL_RESET_VALUE = "1" *) 
-(* ORIG_REF_NAME = "xpm_fifo_async" *) (* PROG_EMPTY_THRESH = "6" *) (* PROG_FULL_THRESH = "10" *) 
-(* P_COMMON_CLOCK = "0" *) (* P_ECC_MODE = "0" *) (* P_FIFO_MEMORY_TYPE = "1" *) 
-(* P_READ_MODE = "1" *) (* P_WAKEUP_TIME = "2" *) (* RD_DATA_COUNT_WIDTH = "1" *) 
-(* READ_DATA_WIDTH = "23" *) (* READ_MODE = "fwft" *) (* RELATED_CLOCKS = "0" *) 
-(* SIM_ASSERT_CHK = "0" *) (* USE_ADV_FEATURES = "1000" *) (* WAKEUP_TIME = "0" *) 
-(* WRITE_DATA_WIDTH = "23" *) (* WR_DATA_COUNT_WIDTH = "1" *) (* XPM_MODULE = "TRUE" *) 
-(* dont_touch = "true" *) 
+(* PROG_EMPTY_THRESH = "6" *) (* PROG_FULL_THRESH = "10" *) (* P_COMMON_CLOCK = "0" *) 
+(* P_ECC_MODE = "0" *) (* P_FIFO_MEMORY_TYPE = "1" *) (* P_READ_MODE = "1" *) 
+(* P_WAKEUP_TIME = "2" *) (* RD_DATA_COUNT_WIDTH = "1" *) (* READ_DATA_WIDTH = "23" *) 
+(* READ_MODE = "fwft" *) (* RELATED_CLOCKS = "0" *) (* SIM_ASSERT_CHK = "0" *) 
+(* USE_ADV_FEATURES = "1000" *) (* WAKEUP_TIME = "0" *) (* WRITE_DATA_WIDTH = "23" *) 
+(* WR_DATA_COUNT_WIDTH = "1" *) (* XPM_MODULE = "TRUE" *) (* dont_touch = "true" *) 
 module design_1_AXI4Stream_CoarseExt_0_2_xpm_fifo_async
    (sleep,
     rst,
@@ -3488,19 +3476,19 @@ endmodule
 (* EN_WACK = "1'b0" *) (* EN_WDC = "1'b0" *) (* FG_EQ_ASYM_DOUT = "1'b0" *) 
 (* FIFO_MEMORY_TYPE = "1" *) (* FIFO_MEM_TYPE = "1" *) (* FIFO_READ_DEPTH = "16" *) 
 (* FIFO_READ_LATENCY = "0" *) (* FIFO_SIZE = "368" *) (* FIFO_WRITE_DEPTH = "16" *) 
-(* FULL_RESET_VALUE = "1" *) (* FULL_RST_VAL = "1'b1" *) (* ORIG_REF_NAME = "xpm_fifo_base" *) 
-(* PE_THRESH_ADJ = "4" *) (* PE_THRESH_MAX = "11" *) (* PE_THRESH_MIN = "5" *) 
-(* PF_THRESH_ADJ = "8" *) (* PF_THRESH_MAX = "11" *) (* PF_THRESH_MIN = "9" *) 
-(* PROG_EMPTY_THRESH = "6" *) (* PROG_FULL_THRESH = "10" *) (* RD_DATA_COUNT_WIDTH = "1" *) 
-(* RD_DC_WIDTH_EXT = "5" *) (* RD_LATENCY = "2" *) (* RD_MODE = "1" *) 
-(* RD_PNTR_WIDTH = "4" *) (* READ_DATA_WIDTH = "23" *) (* READ_MODE = "1" *) 
-(* READ_MODE_LL = "1" *) (* RELATED_CLOCKS = "0" *) (* REMOVE_WR_RD_PROT_LOGIC = "0" *) 
-(* SIM_ASSERT_CHK = "0" *) (* USE_ADV_FEATURES = "1000" *) (* VERSION = "0" *) 
-(* WAKEUP_TIME = "0" *) (* WIDTH_RATIO = "1" *) (* WRITE_DATA_WIDTH = "23" *) 
-(* WR_DATA_COUNT_WIDTH = "1" *) (* WR_DC_WIDTH_EXT = "5" *) (* WR_DEPTH_LOG = "4" *) 
-(* WR_PNTR_WIDTH = "4" *) (* WR_RD_RATIO = "0" *) (* WR_WIDTH_LOG = "5" *) 
-(* XPM_MODULE = "TRUE" *) (* both_stages_valid = "3" *) (* invalid = "0" *) 
-(* keep_hierarchy = "soft" *) (* stage1_valid = "2" *) (* stage2_valid = "1" *) 
+(* FULL_RESET_VALUE = "1" *) (* FULL_RST_VAL = "1'b1" *) (* PE_THRESH_ADJ = "4" *) 
+(* PE_THRESH_MAX = "11" *) (* PE_THRESH_MIN = "5" *) (* PF_THRESH_ADJ = "8" *) 
+(* PF_THRESH_MAX = "11" *) (* PF_THRESH_MIN = "9" *) (* PROG_EMPTY_THRESH = "6" *) 
+(* PROG_FULL_THRESH = "10" *) (* RD_DATA_COUNT_WIDTH = "1" *) (* RD_DC_WIDTH_EXT = "5" *) 
+(* RD_LATENCY = "2" *) (* RD_MODE = "1" *) (* RD_PNTR_WIDTH = "4" *) 
+(* READ_DATA_WIDTH = "23" *) (* READ_MODE = "1" *) (* READ_MODE_LL = "1" *) 
+(* RELATED_CLOCKS = "0" *) (* REMOVE_WR_RD_PROT_LOGIC = "0" *) (* SIM_ASSERT_CHK = "0" *) 
+(* USE_ADV_FEATURES = "1000" *) (* VERSION = "0" *) (* WAKEUP_TIME = "0" *) 
+(* WIDTH_RATIO = "1" *) (* WRITE_DATA_WIDTH = "23" *) (* WR_DATA_COUNT_WIDTH = "1" *) 
+(* WR_DC_WIDTH_EXT = "5" *) (* WR_DEPTH_LOG = "4" *) (* WR_PNTR_WIDTH = "4" *) 
+(* WR_RD_RATIO = "0" *) (* WR_WIDTH_LOG = "5" *) (* XPM_MODULE = "TRUE" *) 
+(* both_stages_valid = "3" *) (* invalid = "0" *) (* keep_hierarchy = "soft" *) 
+(* stage1_valid = "2" *) (* stage2_valid = "1" *) 
 module design_1_AXI4Stream_CoarseExt_0_2_xpm_fifo_base
    (sleep,
     rst,
@@ -3958,7 +3946,6 @@ module design_1_AXI4Stream_CoarseExt_0_2_xpm_fifo_base
         .wrst_busy(wrst_busy));
 endmodule
 
-(* ORIG_REF_NAME = "xpm_fifo_reg_bit" *) 
 module design_1_AXI4Stream_CoarseExt_0_2_xpm_fifo_reg_bit
    (rst_d1,
     clr_full,
@@ -3994,7 +3981,6 @@ module design_1_AXI4Stream_CoarseExt_0_2_xpm_fifo_reg_bit
         .O(clr_full));
 endmodule
 
-(* ORIG_REF_NAME = "xpm_fifo_reg_vec" *) 
 module design_1_AXI4Stream_CoarseExt_0_2_xpm_fifo_reg_vec
    (\count_value_i_reg[3] ,
     \reg_out_i_reg[3]_0 ,
@@ -4192,7 +4178,6 @@ module design_1_AXI4Stream_CoarseExt_0_2_xpm_fifo_reg_vec_1
         .R(SR));
 endmodule
 
-(* ORIG_REF_NAME = "xpm_fifo_rst" *) 
 module design_1_AXI4Stream_CoarseExt_0_2_xpm_fifo_rst
    (SR,
     wrst_busy,
@@ -4590,25 +4575,24 @@ endmodule
 (* CLOCKING_MODE = "1" *) (* ECC_MODE = "0" *) (* MAX_NUM_CHAR = "0" *) 
 (* MEMORY_INIT_FILE = "none" *) (* MEMORY_INIT_PARAM = "" *) (* MEMORY_OPTIMIZATION = "true" *) 
 (* MEMORY_PRIMITIVE = "1" *) (* MEMORY_SIZE = "368" *) (* MEMORY_TYPE = "1" *) 
-(* MESSAGE_CONTROL = "0" *) (* NUM_CHAR_LOC = "0" *) (* ORIG_REF_NAME = "xpm_memory_base" *) 
-(* P_ECC_MODE = "no_ecc" *) (* P_ENABLE_BYTE_WRITE_A = "0" *) (* P_ENABLE_BYTE_WRITE_B = "0" *) 
-(* P_MAX_DEPTH_DATA = "16" *) (* P_MEMORY_OPT = "yes" *) (* P_MEMORY_PRIMITIVE = "distributed" *) 
-(* P_MIN_WIDTH_DATA = "23" *) (* P_MIN_WIDTH_DATA_A = "23" *) (* P_MIN_WIDTH_DATA_B = "23" *) 
-(* P_MIN_WIDTH_DATA_ECC = "23" *) (* P_MIN_WIDTH_DATA_LDW = "4" *) (* P_MIN_WIDTH_DATA_SHFT = "23" *) 
-(* P_NUM_COLS_WRITE_A = "1" *) (* P_NUM_COLS_WRITE_B = "1" *) (* P_NUM_ROWS_READ_A = "1" *) 
-(* P_NUM_ROWS_READ_B = "1" *) (* P_NUM_ROWS_WRITE_A = "1" *) (* P_NUM_ROWS_WRITE_B = "1" *) 
-(* P_SDP_WRITE_MODE = "yes" *) (* P_WIDTH_ADDR_LSB_READ_A = "0" *) (* P_WIDTH_ADDR_LSB_READ_B = "0" *) 
-(* P_WIDTH_ADDR_LSB_WRITE_A = "0" *) (* P_WIDTH_ADDR_LSB_WRITE_B = "0" *) (* P_WIDTH_ADDR_READ_A = "4" *) 
-(* P_WIDTH_ADDR_READ_B = "4" *) (* P_WIDTH_ADDR_WRITE_A = "4" *) (* P_WIDTH_ADDR_WRITE_B = "4" *) 
-(* P_WIDTH_COL_WRITE_A = "23" *) (* P_WIDTH_COL_WRITE_B = "23" *) (* READ_DATA_WIDTH_A = "23" *) 
-(* READ_DATA_WIDTH_B = "23" *) (* READ_LATENCY_A = "2" *) (* READ_LATENCY_B = "2" *) 
-(* READ_RESET_VALUE_A = "0" *) (* READ_RESET_VALUE_B = "0" *) (* RST_MODE_A = "SYNC" *) 
-(* RST_MODE_B = "SYNC" *) (* SIM_ASSERT_CHK = "0" *) (* USE_EMBEDDED_CONSTRAINT = "1" *) 
-(* USE_MEM_INIT = "0" *) (* USE_MEM_INIT_MMI = "0" *) (* VERSION = "0" *) 
-(* WAKEUP_TIME = "0" *) (* WRITE_DATA_WIDTH_A = "23" *) (* WRITE_DATA_WIDTH_B = "23" *) 
-(* WRITE_MODE_A = "2" *) (* WRITE_MODE_B = "1" *) (* WRITE_PROTECT = "1" *) 
-(* XPM_MODULE = "TRUE" *) (* keep_hierarchy = "soft" *) (* rsta_loop_iter = "24" *) 
-(* rstb_loop_iter = "24" *) 
+(* MESSAGE_CONTROL = "0" *) (* NUM_CHAR_LOC = "0" *) (* P_ECC_MODE = "no_ecc" *) 
+(* P_ENABLE_BYTE_WRITE_A = "0" *) (* P_ENABLE_BYTE_WRITE_B = "0" *) (* P_MAX_DEPTH_DATA = "16" *) 
+(* P_MEMORY_OPT = "yes" *) (* P_MEMORY_PRIMITIVE = "distributed" *) (* P_MIN_WIDTH_DATA = "23" *) 
+(* P_MIN_WIDTH_DATA_A = "23" *) (* P_MIN_WIDTH_DATA_B = "23" *) (* P_MIN_WIDTH_DATA_ECC = "23" *) 
+(* P_MIN_WIDTH_DATA_LDW = "4" *) (* P_MIN_WIDTH_DATA_SHFT = "23" *) (* P_NUM_COLS_WRITE_A = "1" *) 
+(* P_NUM_COLS_WRITE_B = "1" *) (* P_NUM_ROWS_READ_A = "1" *) (* P_NUM_ROWS_READ_B = "1" *) 
+(* P_NUM_ROWS_WRITE_A = "1" *) (* P_NUM_ROWS_WRITE_B = "1" *) (* P_SDP_WRITE_MODE = "yes" *) 
+(* P_WIDTH_ADDR_LSB_READ_A = "0" *) (* P_WIDTH_ADDR_LSB_READ_B = "0" *) (* P_WIDTH_ADDR_LSB_WRITE_A = "0" *) 
+(* P_WIDTH_ADDR_LSB_WRITE_B = "0" *) (* P_WIDTH_ADDR_READ_A = "4" *) (* P_WIDTH_ADDR_READ_B = "4" *) 
+(* P_WIDTH_ADDR_WRITE_A = "4" *) (* P_WIDTH_ADDR_WRITE_B = "4" *) (* P_WIDTH_COL_WRITE_A = "23" *) 
+(* P_WIDTH_COL_WRITE_B = "23" *) (* READ_DATA_WIDTH_A = "23" *) (* READ_DATA_WIDTH_B = "23" *) 
+(* READ_LATENCY_A = "2" *) (* READ_LATENCY_B = "2" *) (* READ_RESET_VALUE_A = "0" *) 
+(* READ_RESET_VALUE_B = "0" *) (* RST_MODE_A = "SYNC" *) (* RST_MODE_B = "SYNC" *) 
+(* SIM_ASSERT_CHK = "0" *) (* USE_EMBEDDED_CONSTRAINT = "1" *) (* USE_MEM_INIT = "0" *) 
+(* USE_MEM_INIT_MMI = "0" *) (* VERSION = "0" *) (* WAKEUP_TIME = "0" *) 
+(* WRITE_DATA_WIDTH_A = "23" *) (* WRITE_DATA_WIDTH_B = "23" *) (* WRITE_MODE_A = "2" *) 
+(* WRITE_MODE_B = "1" *) (* WRITE_PROTECT = "1" *) (* XPM_MODULE = "TRUE" *) 
+(* keep_hierarchy = "soft" *) (* rsta_loop_iter = "24" *) (* rstb_loop_iter = "24" *) 
 module design_1_AXI4Stream_CoarseExt_0_2_xpm_memory_base
    (sleep,
     clka,

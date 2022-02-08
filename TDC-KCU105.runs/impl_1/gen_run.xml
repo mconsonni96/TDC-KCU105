@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xcku040-ffva1156-2-e" LaunchTime="1644316083">
+<GenRun Id="impl_1" LaunchPart="xcku040-ffva1156-2-e" LaunchTime="1644331997">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="BITSTR-SYSDEF" Name="design_1_wrapper.sysdef"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
@@ -126,30 +126,20 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_AXI4Stream_OverflowC_0_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_AXI4Stream_CoarseExt_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_system_ila_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_blk_mem_gen_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_AXI4Stream_MagicCali_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_BeltBus_NodeInserter_0_4"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_AXI4Stream_XUS_Virtu_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_AXI4Stream_IperDecod_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_TDCChannelSlice_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_CoarseTreeDistributor_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_AXI4_TDC_Wrapper_0_2"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_TDCChannelSlice_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_BeltBus_NodeInserter_0_3"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_AXI4Stream_PeriodMet_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_AXI4Stream_MagicCali_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_AXI4Stream_CoarseExt_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_AXI4Stream_OverflowC_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_AXI4Stream_IperDecod_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_AXI4Stream_XUS_Virtu_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_TDCChannelSlice_2_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_AXI4Stream_CoarseExt_0_2"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_AXI4Stream_OverflowC_0_2"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_AXI4Stream_IperDecod_0_2"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_AXI4Stream_XUS_Virtu_0_2"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_AXI4Stream_MagicCali_0_2"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_BeltBus_TTM_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_BeltBus_TDCHistogrammer_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_BeltBus_TDCHistogrammer_0_0"/>

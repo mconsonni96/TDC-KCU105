@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
 -- Date        : Tue Feb  8 10:48:04 2022
 -- Host        : mconsonni-All-Series running 64-bit Ubuntu 20.04.3 LTS
--- Command     : write_vhdl -force -mode funcsim
---               /home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_CoarseExt_0_0/design_1_AXI4Stream_CoarseExt_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top design_1_AXI4Stream_CoarseExt_0_0 -prefix
+--               design_1_AXI4Stream_CoarseExt_0_0_ design_1_AXI4Stream_CoarseExt_0_0_sim_netlist.vhdl
 -- Design      : design_1_AXI4Stream_CoarseExt_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -24,8 +24,6 @@ entity design_1_AXI4Stream_CoarseExt_0_0_Engine_AND_TC is
     s00_axis_subint_tvalid : in STD_LOGIC;
     din : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_AXI4Stream_CoarseExt_0_0_Engine_AND_TC : entity is "Engine_AND_TC";
 end design_1_AXI4Stream_CoarseExt_0_0_Engine_AND_TC;
 
 architecture STRUCTURE of design_1_AXI4Stream_CoarseExt_0_0_Engine_AND_TC is
@@ -74,8 +72,6 @@ entity design_1_AXI4Stream_CoarseExt_0_0_Engine_EQ_TC is
     clk_TDC : in STD_LOGIC;
     reset_TDC : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_AXI4Stream_CoarseExt_0_0_Engine_EQ_TC : entity is "Engine_EQ_TC";
 end design_1_AXI4Stream_CoarseExt_0_0_Engine_EQ_TC;
 
 architecture STRUCTURE of design_1_AXI4Stream_CoarseExt_0_0_Engine_EQ_TC is
@@ -167,8 +163,6 @@ entity design_1_AXI4Stream_CoarseExt_0_0_xpm_cdc_sync_rst is
   attribute INIT of design_1_AXI4Stream_CoarseExt_0_0_xpm_cdc_sync_rst : entity is "0";
   attribute INIT_SYNC_FF : integer;
   attribute INIT_SYNC_FF of design_1_AXI4Stream_CoarseExt_0_0_xpm_cdc_sync_rst : entity is 1;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_AXI4Stream_CoarseExt_0_0_xpm_cdc_sync_rst : entity is "xpm_cdc_sync_rst";
   attribute SIM_ASSERT_CHK : integer;
   attribute SIM_ASSERT_CHK of design_1_AXI4Stream_CoarseExt_0_0_xpm_cdc_sync_rst : entity is 0;
   attribute VERSION : integer;
@@ -908,8 +902,6 @@ entity design_1_AXI4Stream_CoarseExt_0_0_xpm_fifo_reg_bit is
     wr_clk : in STD_LOGIC;
     rst : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_AXI4Stream_CoarseExt_0_0_xpm_fifo_reg_bit : entity is "xpm_fifo_reg_bit";
 end design_1_AXI4Stream_CoarseExt_0_0_xpm_fifo_reg_bit;
 
 architecture STRUCTURE of design_1_AXI4Stream_CoarseExt_0_0_xpm_fifo_reg_bit is
@@ -956,8 +948,6 @@ entity design_1_AXI4Stream_CoarseExt_0_0_xpm_fifo_reg_vec is
     \reg_out_i_reg[3]_0\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     wr_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_AXI4Stream_CoarseExt_0_0_xpm_fifo_reg_vec : entity is "xpm_fifo_reg_vec";
 end design_1_AXI4Stream_CoarseExt_0_0_xpm_fifo_reg_vec;
 
 architecture STRUCTURE of design_1_AXI4Stream_CoarseExt_0_0_xpm_fifo_reg_vec is
@@ -1225,8 +1215,6 @@ entity design_1_AXI4Stream_CoarseExt_0_0_xpm_memory_base is
   attribute MESSAGE_CONTROL of design_1_AXI4Stream_CoarseExt_0_0_xpm_memory_base : entity is 0;
   attribute NUM_CHAR_LOC : integer;
   attribute NUM_CHAR_LOC of design_1_AXI4Stream_CoarseExt_0_0_xpm_memory_base : entity is 0;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_AXI4Stream_CoarseExt_0_0_xpm_memory_base : entity is "xpm_memory_base";
   attribute P_ECC_MODE : string;
   attribute P_ECC_MODE of design_1_AXI4Stream_CoarseExt_0_0_xpm_memory_base : entity is "no_ecc";
   attribute P_ENABLE_BYTE_WRITE_A : integer;
@@ -2041,8 +2029,6 @@ entity design_1_AXI4Stream_CoarseExt_0_0_Step_TC is
     clk_TDC : in STD_LOGIC;
     reset_TDC : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_AXI4Stream_CoarseExt_0_0_Step_TC : entity is "Step_TC";
 end design_1_AXI4Stream_CoarseExt_0_0_Step_TC;
 
 architecture STRUCTURE of design_1_AXI4Stream_CoarseExt_0_0_Step_TC is
@@ -2112,8 +2098,6 @@ entity design_1_AXI4Stream_CoarseExt_0_0_xpm_fifo_rst is
     full : in STD_LOGIC;
     rst_d1 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_AXI4Stream_CoarseExt_0_0_xpm_fifo_rst : entity is "xpm_fifo_rst";
 end design_1_AXI4Stream_CoarseExt_0_0_xpm_fifo_rst;
 
 architecture STRUCTURE of design_1_AXI4Stream_CoarseExt_0_0_xpm_fifo_rst is
@@ -2598,8 +2582,6 @@ entity design_1_AXI4Stream_CoarseExt_0_0_TreeComparatorWrapper is
     s00_axis_subint_tvalid : in STD_LOGIC;
     din : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_AXI4Stream_CoarseExt_0_0_TreeComparatorWrapper : entity is "TreeComparatorWrapper";
 end design_1_AXI4Stream_CoarseExt_0_0_TreeComparatorWrapper;
 
 architecture STRUCTURE of design_1_AXI4Stream_CoarseExt_0_0_TreeComparatorWrapper is
@@ -2709,8 +2691,6 @@ entity design_1_AXI4Stream_CoarseExt_0_0_xpm_fifo_base is
   attribute FULL_RESET_VALUE of design_1_AXI4Stream_CoarseExt_0_0_xpm_fifo_base : entity is 1;
   attribute FULL_RST_VAL : string;
   attribute FULL_RST_VAL of design_1_AXI4Stream_CoarseExt_0_0_xpm_fifo_base : entity is "1'b1";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_AXI4Stream_CoarseExt_0_0_xpm_fifo_base : entity is "xpm_fifo_base";
   attribute PE_THRESH_ADJ : integer;
   attribute PE_THRESH_ADJ of design_1_AXI4Stream_CoarseExt_0_0_xpm_fifo_base : entity is 4;
   attribute PE_THRESH_MAX : integer;
@@ -3241,8 +3221,6 @@ entity design_1_AXI4Stream_CoarseExt_0_0_TreeComparator is
     s00_axis_subint_tvalid : in STD_LOGIC;
     din : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_AXI4Stream_CoarseExt_0_0_TreeComparator : entity is "TreeComparator";
 end design_1_AXI4Stream_CoarseExt_0_0_TreeComparator;
 
 architecture STRUCTURE of design_1_AXI4Stream_CoarseExt_0_0_TreeComparator is
@@ -3309,8 +3287,6 @@ entity design_1_AXI4Stream_CoarseExt_0_0_xpm_fifo_async is
   attribute FIFO_WRITE_DEPTH of design_1_AXI4Stream_CoarseExt_0_0_xpm_fifo_async : entity is 16;
   attribute FULL_RESET_VALUE : integer;
   attribute FULL_RESET_VALUE of design_1_AXI4Stream_CoarseExt_0_0_xpm_fifo_async : entity is 1;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_AXI4Stream_CoarseExt_0_0_xpm_fifo_async : entity is "xpm_fifo_async";
   attribute PROG_EMPTY_THRESH : integer;
   attribute PROG_EMPTY_THRESH of design_1_AXI4Stream_CoarseExt_0_0_xpm_fifo_async : entity is 6;
   attribute PROG_FULL_THRESH : integer;
@@ -3538,8 +3514,6 @@ entity design_1_AXI4Stream_CoarseExt_0_0_FIFO_Synchronizer is
     reset_SYS : in STD_LOGIC;
     queue_reg_1 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_AXI4Stream_CoarseExt_0_0_FIFO_Synchronizer : entity is "FIFO_Synchronizer";
 end design_1_AXI4Stream_CoarseExt_0_0_FIFO_Synchronizer;
 
 architecture STRUCTURE of design_1_AXI4Stream_CoarseExt_0_0_FIFO_Synchronizer is
@@ -3708,8 +3682,6 @@ entity design_1_AXI4Stream_CoarseExt_0_0_CoarseExtensionCore is
     s00_axis_subint_tdata : in STD_LOGIC_VECTOR ( 12 downto 0 );
     s00_axis_subint_tvalid : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_AXI4Stream_CoarseExt_0_0_CoarseExtensionCore : entity is "CoarseExtensionCore";
 end design_1_AXI4Stream_CoarseExt_0_0_CoarseExtensionCore;
 
 architecture STRUCTURE of design_1_AXI4Stream_CoarseExt_0_0_CoarseExtensionCore is
@@ -4714,8 +4686,6 @@ entity design_1_AXI4Stream_CoarseExt_0_0_AXI4Stream_CoarseExtensionCoreWrapper_C
     s00_axis_subint_tdata : in STD_LOGIC_VECTOR ( 12 downto 0 );
     s00_axis_subint_tvalid : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_AXI4Stream_CoarseExt_0_0_AXI4Stream_CoarseExtensionCoreWrapper_CEC : entity is "AXI4Stream_CoarseExtensionCoreWrapper_CEC";
 end design_1_AXI4Stream_CoarseExt_0_0_AXI4Stream_CoarseExtensionCoreWrapper_CEC;
 
 architecture STRUCTURE of design_1_AXI4Stream_CoarseExt_0_0_AXI4Stream_CoarseExtensionCoreWrapper_CEC is
@@ -4777,8 +4747,6 @@ entity design_1_AXI4Stream_CoarseExt_0_0_AXI4Stream_CoarseExtensionCore is
   attribute MAX_INPUT_ENGINE_AND_PIPELINE_STAGE3 of design_1_AXI4Stream_CoarseExt_0_0_AXI4Stream_CoarseExtensionCore : entity is 4;
   attribute MAX_NUM_BIT_EQ_PIPELINE_STAGE0 : integer;
   attribute MAX_NUM_BIT_EQ_PIPELINE_STAGE0 of design_1_AXI4Stream_CoarseExt_0_0_AXI4Stream_CoarseExtensionCore : entity is 4;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_AXI4Stream_CoarseExt_0_0_AXI4Stream_CoarseExtensionCore : entity is "AXI4Stream_CoarseExtensionCore";
   attribute RELATED_CLOCKS : string;
   attribute RELATED_CLOCKS of design_1_AXI4Stream_CoarseExt_0_0_AXI4Stream_CoarseExtensionCore : entity is "TRUE";
 end design_1_AXI4Stream_CoarseExt_0_0_AXI4Stream_CoarseExtensionCore;

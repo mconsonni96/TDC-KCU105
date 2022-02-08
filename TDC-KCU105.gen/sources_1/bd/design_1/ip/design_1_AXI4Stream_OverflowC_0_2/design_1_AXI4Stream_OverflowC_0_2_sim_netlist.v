@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-// Date        : Tue Feb  8 10:44:34 2022
+// Date        : Tue Feb  8 10:44:33 2022
 // Host        : mconsonni-All-Series running 64-bit Ubuntu 20.04.3 LTS
-// Command     : write_verilog -force -mode funcsim
-//               /home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_OverflowC_0_2/design_1_AXI4Stream_OverflowC_0_2_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top design_1_AXI4Stream_OverflowC_0_2 -prefix
+//               design_1_AXI4Stream_OverflowC_0_2_ design_1_AXI4Stream_OverflowC_0_2_sim_netlist.v
 // Design      : design_1_AXI4Stream_OverflowC_0_2
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,60 +12,8 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "design_1_AXI4Stream_OverflowC_0_2,AXI4Stream_OverflowCounter,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* ip_definition_source = "package_project" *) 
-(* x_core_info = "AXI4Stream_OverflowCounter,Vivado 2020.2" *) 
-(* NotValidForBitStream *)
-module design_1_AXI4Stream_OverflowC_0_2
-   (reset,
-    clk,
-    s00_axis_timestamp_tvalid,
-    s00_axis_timestamp_tdata,
-    IsCalibrated,
-    m00_axis_beltbus_tvalid,
-    m00_axis_beltbus_tdata);
-  (* x_interface_info = "xilinx.com:signal:reset:1.0 reset RST" *) (* x_interface_parameter = "XIL_INTERFACENAME reset, POLARITY ACTIVE_HIGH, INSERT_VIP 0" *) input reset;
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 clk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME clk, ASSOCIATED_BUSIF m00_axis_beltbus:s00_axis_timestamp, ASSOCIATED_RESET reset:IsCalibrated, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_clk_wiz_0_1_clk_out1, INSERT_VIP 0" *) input clk;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 s00_axis_timestamp TVALID" *) (* x_interface_parameter = "XIL_INTERFACENAME s00_axis_timestamp, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 0, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN design_1_clk_wiz_0_1_clk_out1, LAYERED_METADATA undef, INSERT_VIP 0" *) input s00_axis_timestamp_tvalid;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 s00_axis_timestamp TDATA" *) input [31:0]s00_axis_timestamp_tdata;
-  (* x_interface_info = "xilinx.com:signal:data:1.0 IsCalibrated DATA" *) (* x_interface_parameter = "XIL_INTERFACENAME IsCalibrated, LAYERED_METADATA undef" *) input IsCalibrated;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 m00_axis_beltbus TVALID" *) (* x_interface_parameter = "XIL_INTERFACENAME m00_axis_beltbus, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 0, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN design_1_clk_wiz_0_1_clk_out1, LAYERED_METADATA undef, INSERT_VIP 0" *) output m00_axis_beltbus_tvalid;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 m00_axis_beltbus TDATA" *) output [31:0]m00_axis_beltbus_tdata;
-
-  wire \<const0> ;
-  wire IsCalibrated;
-  wire clk;
-  wire [25:0]\^m00_axis_beltbus_tdata ;
-  wire m00_axis_beltbus_tvalid;
-  wire reset;
-  wire [31:0]s00_axis_timestamp_tdata;
-  wire s00_axis_timestamp_tvalid;
-  wire [31:26]NLW_U0_m00_axis_beltbus_tdata_UNCONNECTED;
-
-  assign m00_axis_beltbus_tdata[31] = \<const0> ;
-  assign m00_axis_beltbus_tdata[30] = \<const0> ;
-  assign m00_axis_beltbus_tdata[29] = \<const0> ;
-  assign m00_axis_beltbus_tdata[28] = \<const0> ;
-  assign m00_axis_beltbus_tdata[27] = \<const0> ;
-  assign m00_axis_beltbus_tdata[26] = \<const0> ;
-  assign m00_axis_beltbus_tdata[25:0] = \^m00_axis_beltbus_tdata [25:0];
-  GND GND
-       (.G(\<const0> ));
-  (* BIT_COARSE = "8" *) 
-  (* BIT_COARSE_CEC = "8" *) 
-  (* BIT_FID = "2" *) 
-  (* BIT_RESOLUTION = "16" *) 
-  design_1_AXI4Stream_OverflowC_0_2_AXI4Stream_OverflowCounter U0
-       (.IsCalibrated(IsCalibrated),
-        .clk(clk),
-        .m00_axis_beltbus_tdata({NLW_U0_m00_axis_beltbus_tdata_UNCONNECTED[31:26],\^m00_axis_beltbus_tdata }),
-        .m00_axis_beltbus_tvalid(m00_axis_beltbus_tvalid),
-        .reset(reset),
-        .s00_axis_timestamp_tdata({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,s00_axis_timestamp_tdata[25:0]}),
-        .s00_axis_timestamp_tvalid(s00_axis_timestamp_tvalid));
-endmodule
-
 (* BIT_COARSE = "8" *) (* BIT_COARSE_CEC = "8" *) (* BIT_FID = "2" *) 
-(* BIT_RESOLUTION = "16" *) (* ORIG_REF_NAME = "AXI4Stream_OverflowCounter" *) 
+(* BIT_RESOLUTION = "16" *) 
 module design_1_AXI4Stream_OverflowC_0_2_AXI4Stream_OverflowCounter
    (reset,
     clk,
@@ -110,7 +58,6 @@ module design_1_AXI4Stream_OverflowC_0_2_AXI4Stream_OverflowCounter
         .s00_axis_timestamp_tvalid(s00_axis_timestamp_tvalid));
 endmodule
 
-(* ORIG_REF_NAME = "AXI4Stream_OverflowCounterWrapper" *) 
 module design_1_AXI4Stream_OverflowC_0_2_AXI4Stream_OverflowCounterWrapper
    (m00_axis_beltbus_tvalid,
     m00_axis_beltbus_tdata,
@@ -145,7 +92,6 @@ module design_1_AXI4Stream_OverflowC_0_2_AXI4Stream_OverflowCounterWrapper
         .s00_axis_timestamp_tvalid(s00_axis_timestamp_tvalid));
 endmodule
 
-(* ORIG_REF_NAME = "OverflowCounter" *) 
 module design_1_AXI4Stream_OverflowC_0_2_OverflowCounter
    (m00_axis_beltbus_tvalid,
     m00_axis_beltbus_tdata,
@@ -847,6 +793,58 @@ module design_1_AXI4Stream_OverflowC_0_2_OverflowCounter
         .CLR(reset),
         .D(beltbus_tvalid0_out),
         .Q(m00_axis_beltbus_tvalid));
+endmodule
+
+(* CHECK_LICENSE_TYPE = "design_1_AXI4Stream_OverflowC_0_2,AXI4Stream_OverflowCounter,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* ip_definition_source = "package_project" *) 
+(* x_core_info = "AXI4Stream_OverflowCounter,Vivado 2020.2" *) 
+(* NotValidForBitStream *)
+module design_1_AXI4Stream_OverflowC_0_2
+   (reset,
+    clk,
+    s00_axis_timestamp_tvalid,
+    s00_axis_timestamp_tdata,
+    IsCalibrated,
+    m00_axis_beltbus_tvalid,
+    m00_axis_beltbus_tdata);
+  (* x_interface_info = "xilinx.com:signal:reset:1.0 reset RST" *) (* x_interface_parameter = "XIL_INTERFACENAME reset, POLARITY ACTIVE_HIGH, INSERT_VIP 0" *) input reset;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 clk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME clk, ASSOCIATED_BUSIF m00_axis_beltbus:s00_axis_timestamp, ASSOCIATED_RESET reset:IsCalibrated, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_clk_wiz_0_1_clk_out1, INSERT_VIP 0" *) input clk;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 s00_axis_timestamp TVALID" *) (* x_interface_parameter = "XIL_INTERFACENAME s00_axis_timestamp, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 0, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN design_1_clk_wiz_0_1_clk_out1, LAYERED_METADATA undef, INSERT_VIP 0" *) input s00_axis_timestamp_tvalid;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 s00_axis_timestamp TDATA" *) input [31:0]s00_axis_timestamp_tdata;
+  (* x_interface_info = "xilinx.com:signal:data:1.0 IsCalibrated DATA" *) (* x_interface_parameter = "XIL_INTERFACENAME IsCalibrated, LAYERED_METADATA undef" *) input IsCalibrated;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 m00_axis_beltbus TVALID" *) (* x_interface_parameter = "XIL_INTERFACENAME m00_axis_beltbus, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 0, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN design_1_clk_wiz_0_1_clk_out1, LAYERED_METADATA undef, INSERT_VIP 0" *) output m00_axis_beltbus_tvalid;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 m00_axis_beltbus TDATA" *) output [31:0]m00_axis_beltbus_tdata;
+
+  wire \<const0> ;
+  wire IsCalibrated;
+  wire clk;
+  wire [25:0]\^m00_axis_beltbus_tdata ;
+  wire m00_axis_beltbus_tvalid;
+  wire reset;
+  wire [31:0]s00_axis_timestamp_tdata;
+  wire s00_axis_timestamp_tvalid;
+  wire [31:26]NLW_U0_m00_axis_beltbus_tdata_UNCONNECTED;
+
+  assign m00_axis_beltbus_tdata[31] = \<const0> ;
+  assign m00_axis_beltbus_tdata[30] = \<const0> ;
+  assign m00_axis_beltbus_tdata[29] = \<const0> ;
+  assign m00_axis_beltbus_tdata[28] = \<const0> ;
+  assign m00_axis_beltbus_tdata[27] = \<const0> ;
+  assign m00_axis_beltbus_tdata[26] = \<const0> ;
+  assign m00_axis_beltbus_tdata[25:0] = \^m00_axis_beltbus_tdata [25:0];
+  GND GND
+       (.G(\<const0> ));
+  (* BIT_COARSE = "8" *) 
+  (* BIT_COARSE_CEC = "8" *) 
+  (* BIT_FID = "2" *) 
+  (* BIT_RESOLUTION = "16" *) 
+  design_1_AXI4Stream_OverflowC_0_2_AXI4Stream_OverflowCounter U0
+       (.IsCalibrated(IsCalibrated),
+        .clk(clk),
+        .m00_axis_beltbus_tdata({NLW_U0_m00_axis_beltbus_tdata_UNCONNECTED[31:26],\^m00_axis_beltbus_tdata }),
+        .m00_axis_beltbus_tvalid(m00_axis_beltbus_tvalid),
+        .reset(reset),
+        .s00_axis_timestamp_tdata({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,s00_axis_timestamp_tdata[25:0]}),
+        .s00_axis_timestamp_tvalid(s00_axis_timestamp_tvalid));
 endmodule
 `ifndef GLBL
 `define GLBL

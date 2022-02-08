@@ -78,6 +78,7 @@
             <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.COARSECOUNTER_CTD_0.LAYERED_METADATA" xilinx:valuePermission="bd_and_user"/>
             <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.COARSECOUNTER_CTD_1.LAYERED_METADATA" xilinx:valuePermission="bd_and_user"/>
             <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.COARSECOUNTER_CTD_2.LAYERED_METADATA" xilinx:valuePermission="bd_and_user"/>
+            <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.BIT_COARSE" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.NUMBER_OF_OUTPUT" xilinx:valueSource="user"/>
           </xilinx:configElementInfos>
           <xilinx:boundaryDescriptionInfo>
