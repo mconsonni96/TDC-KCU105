@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Wed Dec  1 16:53:40 2021
-# Process ID: 31420
+# Start of session at: Tue Feb  8 10:42:46 2022
+# Process ID: 10817
 # Current directory: /home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/design_1_BeltBus_TDCHistogrammer_1_0_synth_1
 # Command line: vivado -log design_1_BeltBus_TDCHistogrammer_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_BeltBus_TDCHistogrammer_1_0.tcl
 # Log file: /home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/design_1_BeltBus_TDCHistogrammer_1_0_synth_1/design_1_BeltBus_TDCHistogrammer_1_0.vds
@@ -21,9 +21,9 @@ INFO: [Common 17-1540] The version limit for your license is '2021.05' and has e
 INFO: [Device 21-403] Loading part xcku040-ffva1156-2-e
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 31492
+INFO: [Synth 8-7075] Helper process launched with PID 10880
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2603.953 ; gain = 176.719 ; free physical = 3315 ; free virtual = 8797
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2603.855 ; gain = 169.688 ; free physical = 7913 ; free virtual = 10757
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_1_BeltBus_TDCHistogrammer_1_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_BeltBus_TDCHistogrammer_1_0/synth/design_1_BeltBus_TDCHistogrammer_1_0.vhd:91]
 	Parameter BIN_DATA_WIDTH bound to: 27 - type: integer 
@@ -38,8 +38,9 @@ INFO: [Synth 8-638] synthesizing module 'design_1_BeltBus_TDCHistogrammer_1_0' [
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 12 - type: integer 
 	Parameter C_S00_AXI_BASEADDRESS bound to: 32'b01000100101000100000000000000000 
-	Parameter BIT_FID bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'histogrammer_v1_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ipshared/5e42/hdl/histogrammer_v1_0.vhd:5' bound to instance 'U0' of component 'histogrammer_v1_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_BeltBus_TDCHistogrammer_1_0/synth/design_1_BeltBus_TDCHistogrammer_1_0.vhd:191]
+	Parameter BIT_FID bound to: 2 - type: integer 
+	Parameter MAX_SYNC_DIVISION bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'histogrammer_v1_0' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ipshared/db28/hdl/histogrammer_v1_0.vhd:5' bound to instance 'U0' of component 'histogrammer_v1_0' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_BeltBus_TDCHistogrammer_1_0/synth/design_1_BeltBus_TDCHistogrammer_1_0.vhd:192]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
 	Parameter MEMORY_TYPE bound to: 1 - type: integer 
@@ -244,7 +245,7 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized0' [/opt
 	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 36 - type: integer 
 	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
 INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value.   [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:488]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized0' (6#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized0' (7#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
 INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
 	Parameter DEST_SYNC_FF bound to: 3 - type: integer 
 	Parameter INIT_SYNC_FF bound to: 1 - type: integer 
@@ -253,10 +254,10 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray' [/opt/Xilinx/Vivado/2020
 	Parameter SIM_LOSSLESS_GRAY_CHK bound to: 0 - type: integer 
 	Parameter VERSION bound to: 0 - type: integer 
 	Parameter WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray' (7#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray' (8#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
 INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_vec' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1880]
 	Parameter REG_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_vec' (8#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1880]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_vec' (9#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1880]
 INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized0' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
 	Parameter DEST_SYNC_FF bound to: 5 - type: integer 
 	Parameter INIT_SYNC_FF bound to: 1 - type: integer 
@@ -265,10 +266,10 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized0' [/opt/Xi
 	Parameter SIM_LOSSLESS_GRAY_CHK bound to: 0 - type: integer 
 	Parameter VERSION bound to: 0 - type: integer 
 	Parameter WIDTH bound to: 5 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized0' (8#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized0' (9#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
 INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_vec__parameterized0' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1880]
 	Parameter REG_WIDTH bound to: 5 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_vec__parameterized0' (8#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1880]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_vec__parameterized0' (9#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1880]
 INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized1' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
 	Parameter DEST_SYNC_FF bound to: 3 - type: integer 
 	Parameter INIT_SYNC_FF bound to: 1 - type: integer 
@@ -277,17 +278,17 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized1' [/opt/Xi
 	Parameter SIM_LOSSLESS_GRAY_CHK bound to: 0 - type: integer 
 	Parameter VERSION bound to: 0 - type: integer 
 	Parameter WIDTH bound to: 5 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized1' (8#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized1' (9#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
 INFO: [Synth 8-226] default block is never used [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1204]
 INFO: [Synth 8-226] default block is never used [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1271]
 INFO: [Synth 8-226] default block is never used [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1293]
 INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_bit' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1902]
 	Parameter RST_VALUE bound to: 0 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_bit' (9#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1902]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_bit' (10#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1902]
 INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
 	Parameter COUNTER_WIDTH bound to: 2 - type: integer 
 	Parameter RESET_VALUE bound to: 0 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn' (10#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn' (11#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
 INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_rst' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1618]
 	Parameter COMMON_CLOCK bound to: 0 - type: integer 
 	Parameter CDC_DEST_SYNC_FF bound to: 3 - type: integer 
@@ -299,22 +300,22 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_sync_rst' [/opt/Xilinx/Vivado/
 	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
 	Parameter VERSION bound to: 0 - type: integer 
 	Parameter DEF_VAL bound to: 1'b0 
-INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst' (11#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_rst' (12#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1618]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst' (12#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_rst' (13#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1618]
 INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized0' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
 	Parameter COUNTER_WIDTH bound to: 5 - type: integer 
 	Parameter RESET_VALUE bound to: 0 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized0' (12#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized0' (13#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
 INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized1' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
 	Parameter COUNTER_WIDTH bound to: 4 - type: integer 
 	Parameter RESET_VALUE bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized1' (12#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized1' (13#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
 INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized2' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
 	Parameter COUNTER_WIDTH bound to: 4 - type: integer 
 	Parameter RESET_VALUE bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized2' (12#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base' (13#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_async' (14#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2142]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized2' (13#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base' (14#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_async' (15#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2142]
 INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_async__parameterized1' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2142]
 INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base__parameterized0' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
 	Parameter COMMON_CLOCK bound to: 0 - type: integer 
@@ -446,26 +447,26 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized1' [/opt
 	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 27 - type: integer 
 	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
 INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value.   [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:488]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized1' (14#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized1' (15#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
 INFO: [Synth 8-226] default block is never used [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1204]
 INFO: [Synth 8-226] default block is never used [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1271]
 INFO: [Synth 8-226] default block is never used [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1293]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base__parameterized0' (14#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_async__parameterized1' (14#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2142]
-INFO: [Synth 8-256] done synthesizing module 'design_1_BeltBus_TDCHistogrammer_1_0' (18#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_BeltBus_TDCHistogrammer_1_0/synth/design_1_BeltBus_TDCHistogrammer_1_0.vhd:91]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base__parameterized0' (15#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_async__parameterized1' (15#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2142]
+INFO: [Synth 8-256] done synthesizing module 'design_1_BeltBus_TDCHistogrammer_1_0' (19#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_BeltBus_TDCHistogrammer_1_0/synth/design_1_BeltBus_TDCHistogrammer_1_0.vhd:91]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2665.547 ; gain = 238.312 ; free physical = 4075 ; free virtual = 9559
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2667.449 ; gain = 233.281 ; free physical = 8688 ; free virtual = 11533
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2680.391 ; gain = 253.156 ; free physical = 4075 ; free virtual = 9558
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2685.262 ; gain = 251.094 ; free physical = 8688 ; free virtual = 11533
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2680.391 ; gain = 253.156 ; free physical = 4075 ; free virtual = 9558
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2685.262 ; gain = 251.094 ; free physical = 8688 ; free virtual = 11533
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2680.391 ; gain = 0.000 ; free physical = 4067 ; free virtual = 9550
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2685.262 ; gain = 0.000 ; free physical = 8681 ; free virtual = 11526
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -485,13 +486,13 @@ Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_Bel
 INFO: [Project 1-1715] 4 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2814.156 ; gain = 0.000 ; free physical = 3998 ; free virtual = 9481
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2853.012 ; gain = 0.000 ; free physical = 8621 ; free virtual = 11466
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2817.125 ; gain = 2.969 ; free physical = 3997 ; free virtual = 9481
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2853.012 ; gain = 0.000 ; free physical = 8621 ; free virtual = 11466
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2817.125 ; gain = 389.891 ; free physical = 4002 ; free virtual = 9486
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2853.012 ; gain = 418.844 ; free physical = 10016 ; free virtual = 12861
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -499,7 +500,7 @@ Start Loading Part and Timing Information
 Loading part: xcku040-ffva1156-2-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2817.125 ; gain = 389.891 ; free physical = 4002 ; free virtual = 9485
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2853.012 ; gain = 418.844 ; free physical = 10016 ; free virtual = 12861
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -522,7 +523,7 @@ Applied set_property KEEP_HIERARCHY = SOFT for U0/interface_bridge_inst/\generat
 Applied set_property KEEP_HIERARCHY = SOFT for U0/histogrammer_cu_inst/integrator_inst_A/xpm_memory_sdpram_inst. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for U0/histogrammer_cu_inst/integrator_inst_B/xpm_memory_sdpram_inst. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2817.125 ; gain = 389.891 ; free physical = 4001 ; free virtual = 9484
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2853.012 ; gain = 418.844 ; free physical = 10016 ; free virtual = 12861
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'histogrammer_cu'
 INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst__xdcDup__1'
@@ -608,7 +609,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_rrst_state
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base__parameterized0'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2817.125 ; gain = 389.891 ; free physical = 3937 ; free virtual = 9422
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2853.012 ; gain = 418.844 ; free physical = 9981 ; free virtual = 12828
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -635,12 +636,11 @@ Detailed RTL Component Info :
 	   2 Input      1 Bit         XORs := 28    
 +---Registers : 
 	               64 Bit    Registers := 4     
-	               45 Bit    Registers := 6     
-	               44 Bit    Registers := 1     
+	               45 Bit    Registers := 7     
 	               40 Bit    Registers := 4     
 	               36 Bit    Registers := 2     
 	               33 Bit    Registers := 1     
-	               32 Bit    Registers := 3     
+	               32 Bit    Registers := 5     
 	               28 Bit    Registers := 4     
 	               27 Bit    Registers := 6     
 	               17 Bit    Registers := 3     
@@ -648,10 +648,10 @@ Detailed RTL Component Info :
 	               13 Bit    Registers := 7     
 	               12 Bit    Registers := 2     
 	                5 Bit    Registers := 35    
-	                4 Bit    Registers := 37    
+	                4 Bit    Registers := 35    
 	                3 Bit    Registers := 5     
 	                2 Bit    Registers := 14    
-	                1 Bit    Registers := 67    
+	                1 Bit    Registers := 73    
 +---RAMs : 
 	             216K Bit	(8192 X 27 bit)          RAMs := 2     
 	              576 Bit	(16 X 36 bit)          RAMs := 1     
@@ -672,7 +672,7 @@ Detailed RTL Component Info :
 	  19 Input    2 Bit        Muxes := 1     
 	   4 Input    2 Bit        Muxes := 21    
 	   3 Input    2 Bit        Muxes := 1     
-	   2 Input    1 Bit        Muxes := 48    
+	   2 Input    1 Bit        Muxes := 50    
 	  15 Input    1 Bit        Muxes := 19    
 	   4 Input    1 Bit        Muxes := 22    
 	   6 Input    1 Bit        Muxes := 4     
@@ -700,7 +700,7 @@ INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 9
 INFO: [Synth 8-6904] The RAM "U0/\interface_bridge_inst/generator_async.xpm_fifo_forward /\gnuram_async_fifo.xpm_fifo_base_inst /\gen_sdpram.xpm_memory_base_inst /gen_wr_a.gen_word_narrow.mem_reg" of size (depth=16 x width=36) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
 INFO: [Synth 8-6904] The RAM "U0/\interface_bridge_inst/generator_async.xpm_fifo_backward /\gnuram_async_fifo.xpm_fifo_base_inst /\gen_sdpram.xpm_memory_base_inst /gen_wr_a.gen_word_narrow.mem_reg" of size (depth=16 x width=27) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2817.125 ; gain = 389.891 ; free physical = 3903 ; free virtual = 9394
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2853.012 ; gain = 418.844 ; free physical = 9403 ; free virtual = 12258
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -732,7 +732,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 2881.875 ; gain = 454.641 ; free physical = 3833 ; free virtual = 9330
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 2882.809 ; gain = 448.641 ; free physical = 8463 ; free virtual = 11320
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -744,7 +744,7 @@ INFO: [Synth 8-5556] The block RAM "U0/histogrammer_cu_inst/\integrator_inst_B/x
 INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 4 and width 18 for RAM "U0/histogrammer_cu_inst/\integrator_inst_B/xpm_memory_sdpram_inst /xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg"
 INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 9 for RAM "U0/histogrammer_cu_inst/\integrator_inst_B/xpm_memory_sdpram_inst /xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg"
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:38 . Memory (MB): peak = 2936.914 ; gain = 509.680 ; free physical = 5150 ; free virtual = 10647
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 2937.848 ; gain = 503.680 ; free physical = 8389 ; free virtual = 11245
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -778,7 +778,7 @@ INFO: [Synth 8-7052] The timing for the instance U0/histogrammer_cu_inst/integra
 INFO: [Synth 8-7052] The timing for the instance U0/histogrammer_cu_inst/integrator_inst_B/xpm_memory_sdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance U0/histogrammer_cu_inst/integrator_inst_B/xpm_memory_sdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:40 . Memory (MB): peak = 2952.930 ; gain = 525.695 ; free physical = 5132 ; free virtual = 10628
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:30 . Memory (MB): peak = 2953.863 ; gain = 519.695 ; free physical = 8403 ; free virtual = 11260
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -796,49 +796,50 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:42 . Memory (MB): peak = 2952.930 ; gain = 525.695 ; free physical = 5120 ; free virtual = 10617
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 2953.863 ; gain = 519.695 ; free physical = 8360 ; free virtual = 11236
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:42 . Memory (MB): peak = 2952.930 ; gain = 525.695 ; free physical = 5120 ; free virtual = 10617
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 2953.863 ; gain = 519.695 ; free physical = 8360 ; free virtual = 11236
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:42 . Memory (MB): peak = 2952.930 ; gain = 525.695 ; free physical = 5120 ; free virtual = 10617
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 2953.863 ; gain = 519.695 ; free physical = 8338 ; free virtual = 11214
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:42 . Memory (MB): peak = 2952.930 ; gain = 525.695 ; free physical = 5120 ; free virtual = 10617
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 2953.863 ; gain = 519.695 ; free physical = 8338 ; free virtual = 11214
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:43 . Memory (MB): peak = 2952.930 ; gain = 525.695 ; free physical = 5120 ; free virtual = 10617
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 2953.863 ; gain = 519.695 ; free physical = 8346 ; free virtual = 11222
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:43 . Memory (MB): peak = 2952.930 ; gain = 525.695 ; free physical = 5120 ; free virtual = 10617
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 2953.863 ; gain = 519.695 ; free physical = 8346 ; free virtual = 11222
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 
 Static Shift Register Report:
-+------------------+-----------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|Module Name       | RTL Name                                                                                      | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
-+------------------+-----------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|histogrammer_v1_0 | histogrammer_cu_inst/single_positive_subtractor_inst.subtractor_inst/sync_stages_valid_reg[3] | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-|histogrammer_v1_0 | m_axis_controller_inst/async_row_reg[0]                                                       | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-+------------------+-----------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
++------------------+------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name       | RTL Name                                                                                       | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------------+------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|histogrammer_v1_0 | histogrammer_cu_inst/single_positive_subtractor_inst.subtractor_inst/sync_stages_valid_reg[3]  | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|histogrammer_v1_0 | histogrammer_cu_inst/single_positive_subtractor_inst.subtractor_inst/sync_mean_buff_reg[3][39] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|histogrammer_v1_0 | m_axis_controller_inst/async_row_reg[0]                                                        | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------------+------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -857,36 +858,36 @@ Report Cell Usage:
 +------+---------+------+
 |      |Cell     |Count |
 +------+---------+------+
-|1     |CARRY8   |   120|
+|1     |CARRY8   |   123|
 |2     |LUT1     |   157|
-|3     |LUT2     |   233|
-|4     |LUT3     |   367|
-|5     |LUT4     |   449|
-|6     |LUT5     |   175|
-|7     |LUT6     |   443|
-|8     |MUXF7    |    29|
+|3     |LUT2     |   243|
+|4     |LUT3     |   346|
+|5     |LUT4     |   492|
+|6     |LUT5     |   185|
+|7     |LUT6     |   483|
+|8     |MUXF7    |    48|
 |9     |MUXF8    |     3|
 |10    |RAM32M16 |     5|
 |11    |RAMB36E2 |    12|
-|16    |SRL16E   |     2|
+|16    |SRL16E   |     3|
 |17    |FDCE     |   166|
 |18    |FDPE     |     1|
-|19    |FDRE     |  1641|
+|19    |FDRE     |  1701|
 |20    |FDSE     |    22|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:43 . Memory (MB): peak = 2952.930 ; gain = 525.695 ; free physical = 5120 ; free virtual = 10617
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 2953.863 ; gain = 519.695 ; free physical = 8346 ; free virtual = 11222
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:41 . Memory (MB): peak = 2952.930 ; gain = 388.961 ; free physical = 5142 ; free virtual = 10639
-Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:43 . Memory (MB): peak = 2952.938 ; gain = 525.695 ; free physical = 5142 ; free virtual = 10639
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 2953.863 ; gain = 351.945 ; free physical = 8370 ; free virtual = 11247
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 2953.871 ; gain = 519.695 ; free physical = 8370 ; free virtual = 11247
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2958.867 ; gain = 0.000 ; free physical = 5227 ; free virtual = 10724
-INFO: [Netlist 29-17] Analyzing 157 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2960.801 ; gain = 0.000 ; free physical = 8460 ; free virtual = 11336
+INFO: [Netlist 29-17] Analyzing 179 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2971.742 ; gain = 0.000 ; free physical = 5189 ; free virtual = 10686
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3003.723 ; gain = 0.000 ; free physical = 8426 ; free virtual = 11303
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 5 instances were transformed.
   RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 5 instances
@@ -894,11 +895,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 116 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 2971.742 ; gain = 552.680 ; free physical = 5202 ; free virtual = 10699
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 3003.723 ; gain = 577.727 ; free physical = 8587 ; free virtual = 11464
 INFO: [Common 17-1381] The checkpoint '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/design_1_BeltBus_TDCHistogrammer_1_0_synth_1/design_1_BeltBus_TDCHistogrammer_1_0.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_BeltBus_TDCHistogrammer_1_0, cache-ID = 41b5d09508118636
-INFO: [Coretcl 2-1174] Renamed 54 cell refs.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_BeltBus_TDCHistogrammer_1_0, cache-ID = 572daf75c975835b
+INFO: [Coretcl 2-1174] Renamed 58 cell refs.
 INFO: [Common 17-1381] The checkpoint '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/design_1_BeltBus_TDCHistogrammer_1_0_synth_1/design_1_BeltBus_TDCHistogrammer_1_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_BeltBus_TDCHistogrammer_1_0_utilization_synth.rpt -pb design_1_BeltBus_TDCHistogrammer_1_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Dec  1 16:54:46 2021...
+INFO: [Common 17-206] Exiting Vivado at Tue Feb  8 10:43:36 2022...

@@ -1,4 +1,4 @@
--- (c) Copyright 1995-2021 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 1995-2022 Xilinx, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
 -- of Xilinx, Inc. and is protected under U.S. and
@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: DigiLAB:ip:AXI4Stream_OverflowCounter:2.0
--- IP Revision: 1
+-- IP Revision: 3
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -71,6 +71,7 @@ ARCHITECTURE design_1_AXI4Stream_OverflowC_0_1_arch OF design_1_AXI4Stream_Overf
   COMPONENT AXI4Stream_OverflowCounter IS
     GENERIC (
       BIT_FID : INTEGER;
+      BIT_COARSE_CEC : INTEGER;
       BIT_COARSE : INTEGER;
       BIT_RESOLUTION : INTEGER
     );
@@ -92,22 +93,23 @@ ARCHITECTURE design_1_AXI4Stream_OverflowC_0_1_arch OF design_1_AXI4Stream_Overf
   ATTRIBUTE IP_DEFINITION_SOURCE OF design_1_AXI4Stream_OverflowC_0_1_arch: ARCHITECTURE IS "package_project";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
-  ATTRIBUTE X_INTERFACE_INFO OF m00_axis_beltbus_tdata: SIGNAL IS "xilinx.com:interface:axis:1.0 M00_AXIS_BeltBus TDATA";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF m00_axis_beltbus_tvalid: SIGNAL IS "XIL_INTERFACENAME M00_AXIS_BeltBus, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 0, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN design_1_clk_wiz_0_1_clk_out1, LAYERED_METADATA undef, INSERT_VIP 0";
-  ATTRIBUTE X_INTERFACE_INFO OF m00_axis_beltbus_tvalid: SIGNAL IS "xilinx.com:interface:axis:1.0 M00_AXIS_BeltBus TVALID";
+  ATTRIBUTE X_INTERFACE_INFO OF m00_axis_beltbus_tdata: SIGNAL IS "xilinx.com:interface:axis:1.0 m00_axis_beltbus TDATA";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF m00_axis_beltbus_tvalid: SIGNAL IS "XIL_INTERFACENAME m00_axis_beltbus, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 0, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN design_1_clk_wiz_0_1_clk_out1, LAYERED_METADATA undef, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_INFO OF m00_axis_beltbus_tvalid: SIGNAL IS "xilinx.com:interface:axis:1.0 m00_axis_beltbus TVALID";
   ATTRIBUTE X_INTERFACE_PARAMETER OF IsCalibrated: SIGNAL IS "XIL_INTERFACENAME IsCalibrated, LAYERED_METADATA undef";
   ATTRIBUTE X_INTERFACE_INFO OF IsCalibrated: SIGNAL IS "xilinx.com:signal:data:1.0 IsCalibrated DATA";
-  ATTRIBUTE X_INTERFACE_INFO OF s00_axis_timestamp_tdata: SIGNAL IS "xilinx.com:interface:axis:1.0 S00_AXIS_TimeStamp TDATA";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF s00_axis_timestamp_tvalid: SIGNAL IS "XIL_INTERFACENAME S00_AXIS_TimeStamp, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 0, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN design_1_clk_wiz_0_1_clk_out1, LAYERED_METADATA undef, INSERT_VIP 0";
-  ATTRIBUTE X_INTERFACE_INFO OF s00_axis_timestamp_tvalid: SIGNAL IS "xilinx.com:interface:axis:1.0 S00_AXIS_TimeStamp TVALID";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF clk: SIGNAL IS "XIL_INTERFACENAME clk, ASSOCIATED_BUSIF M00_AXIS_BeltBus:S00_AXIS_TimeStamp:IsCalibrated, ASSOCIATED_RESET reset, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_clk_wiz_0_1_clk_out1, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_INFO OF s00_axis_timestamp_tdata: SIGNAL IS "xilinx.com:interface:axis:1.0 s00_axis_timestamp TDATA";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF s00_axis_timestamp_tvalid: SIGNAL IS "XIL_INTERFACENAME s00_axis_timestamp, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 0, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN design_1_clk_wiz_0_1_clk_out1, LAYERED_METADATA undef, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_INFO OF s00_axis_timestamp_tvalid: SIGNAL IS "xilinx.com:interface:axis:1.0 s00_axis_timestamp TVALID";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF clk: SIGNAL IS "XIL_INTERFACENAME clk, ASSOCIATED_BUSIF m00_axis_beltbus:s00_axis_timestamp, ASSOCIATED_RESET reset:IsCalibrated, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_clk_wiz_0_1_clk_out1, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF clk: SIGNAL IS "xilinx.com:signal:clock:1.0 clk CLK";
   ATTRIBUTE X_INTERFACE_PARAMETER OF reset: SIGNAL IS "XIL_INTERFACENAME reset, POLARITY ACTIVE_HIGH, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF reset: SIGNAL IS "xilinx.com:signal:reset:1.0 reset RST";
 BEGIN
   U0 : AXI4Stream_OverflowCounter
     GENERIC MAP (
-      BIT_FID => 1,
+      BIT_FID => 2,
+      BIT_COARSE_CEC => 8,
       BIT_COARSE => 8,
       BIT_RESOLUTION => 16
     )

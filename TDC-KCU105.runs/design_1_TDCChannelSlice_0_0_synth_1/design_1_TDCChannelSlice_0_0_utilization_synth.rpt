@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date         : Wed Dec  1 17:01:42 2021
+| Date         : Tue Feb  8 10:49:36 2022
 | Host         : mconsonni-All-Series running 64-bit Ubuntu 20.04.3 LTS
 | Command      : report_utilization -file design_1_TDCChannelSlice_0_0_utilization_synth.rpt -pb design_1_TDCChannelSlice_0_0_utilization_synth.pb
 | Design       : design_1_TDCChannelSlice_0_0
@@ -34,8 +34,8 @@ Table of Contents
 | CLB LUTs*               |   12 |     0 |    242400 | <0.01 |
 |   LUT as Logic          |   12 |     0 |    242400 | <0.01 |
 |   LUT as Memory         |    0 |     0 |    112800 |  0.00 |
-| CLB Registers           |  278 |     0 |    484800 |  0.06 |
-|   Register as Flip Flop |  278 |     0 |    484800 |  0.06 |
+| CLB Registers           |  280 |     0 |    484800 |  0.06 |
+|   Register as Flip Flop |  280 |     0 |    484800 |  0.06 |
 |   Register as Latch     |    0 |     0 |    484800 |  0.00 |
 | CARRY8                  |    0 |     0 |     30300 |  0.00 |
 | F7 Muxes                |    0 |     0 |    121200 |  0.00 |
@@ -60,7 +60,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 278   |          Yes |       Reset |            - |
+| 280   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -152,7 +152,7 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |  278 |            Register |
+| FDRE     |  280 |            Register |
 | LUT1     |    7 |                 CLB |
 | LUT2     |    4 |                 CLB |
 | LUT3     |    1 |                 CLB |

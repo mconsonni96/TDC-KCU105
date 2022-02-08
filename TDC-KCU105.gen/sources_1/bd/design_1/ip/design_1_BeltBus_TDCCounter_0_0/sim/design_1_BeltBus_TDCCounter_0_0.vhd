@@ -1,4 +1,4 @@
--- (c) Copyright 1995-2021 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 1995-2022 Xilinx, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
 -- of Xilinx, Inc. and is protected under U.S. and
@@ -46,7 +46,7 @@
 -- 
 -- DO NOT MODIFY THIS FILE.
 
--- IP VLNV: DigiLAB:ip:BeltBus_TDCCounter:2.0
+-- IP VLNV: DigiLAB:ip:BeltBus_TDCCounter:3.0
 -- IP Revision: 1
 
 LIBRARY ieee;
@@ -176,7 +176,7 @@ BEGIN
   U0 : TDCCounter_v1_0
     GENERIC MAP (
       BIT_COARSE => 8,
-      BIT_FID => 1,
+      BIT_FID => 2,
       BIT_NUM_CH => 4,
       NUM_CH => 3,
       COUNTER_WIDTH => 32,

@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-// Date        : Wed Dec  1 17:01:42 2021
+// Date        : Tue Feb  8 10:49:36 2022
 // Host        : mconsonni-All-Series running 64-bit Ubuntu 20.04.3 LTS
 // Command     : write_verilog -force -mode synth_stub
 //               /home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_TDCChannelSlice_0_0/design_1_TDCChannelSlice_0_0_stub.v
@@ -19,12 +19,12 @@ module design_1_TDCChannelSlice_0_0(clk_TDC, clk_SYS, clk_BB, aclk, EdgeTrigger,
   subInterpolationMatrix, Restart_Calibration, Stop_Calibration, bitTrn_Uncal_addr, 
   bitTrn_Cal_dout, bitTrn_ReqSample, Calibrated, s00_axis_period_tvalid, 
   s00_axis_period_tdata, write_reg, write_debug_reg, read_reg)
-/* synthesis syn_black_box black_box_pad_pin="clk_TDC,clk_SYS,clk_BB,aclk,EdgeTrigger,StretchLength[2:0],Divider[3:0],Gate,ForceCalibrate,ValidPositionTap[31:0],ValidNumberOfTdl[31:0],subInterpolationMatrix[31:0],Restart_Calibration,Stop_Calibration,bitTrn_Uncal_addr[31:0],bitTrn_Cal_dout[31:0],bitTrn_ReqSample[31:0],Calibrated,s00_axis_period_tvalid,s00_axis_period_tdata[39:0],write_reg[18:0],write_debug_reg[73:0],read_reg[64:0]" */;
+/* synthesis syn_black_box black_box_pad_pin="clk_TDC,clk_SYS,clk_BB,aclk,EdgeTrigger[1:0],StretchLength[2:0],Divider[3:0],Gate,ForceCalibrate,ValidPositionTap[31:0],ValidNumberOfTdl[31:0],subInterpolationMatrix[31:0],Restart_Calibration,Stop_Calibration,bitTrn_Uncal_addr[31:0],bitTrn_Cal_dout[31:0],bitTrn_ReqSample[31:0],Calibrated,s00_axis_period_tvalid,s00_axis_period_tdata[39:0],write_reg[19:0],write_debug_reg[73:0],read_reg[64:0]" */;
   input clk_TDC;
   input clk_SYS;
   input clk_BB;
   input aclk;
-  output EdgeTrigger;
+  output [1:0]EdgeTrigger;
   output [2:0]StretchLength;
   output [3:0]Divider;
   output Gate;
@@ -40,7 +40,7 @@ module design_1_TDCChannelSlice_0_0(clk_TDC, clk_SYS, clk_BB, aclk, EdgeTrigger,
   input Calibrated;
   input s00_axis_period_tvalid;
   input [39:0]s00_axis_period_tdata;
-  input [18:0]write_reg;
+  input [19:0]write_reg;
   input [73:0]write_debug_reg;
   output [64:0]read_reg;
 endmodule

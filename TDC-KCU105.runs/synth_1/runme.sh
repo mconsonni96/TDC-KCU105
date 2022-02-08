@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/mconsonni/Desktop/Tesi/Projects/TDC_KCU105/TDC-KCU105.runs/synth_1'
+HD_PWD='/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

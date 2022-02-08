@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date         : Tue Jan 18 16:25:05 2022
+| Date         : Tue Feb  8 11:46:28 2022
 | Host         : mconsonni-All-Series running 64-bit Ubuntu 20.04.3 LTS
 | Command      : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
 | Design       : design_1_wrapper
@@ -23,7 +23,7 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 93
+             Violations found: 96
 +-----------+------------------+--------------------------------------------------------+------------+
 | Rule      | Severity         | Description                                            | Violations |
 +-----------+------------------+--------------------------------------------------------+------------+
@@ -33,6 +33,7 @@ Table of Contents
 | TIMING-17 | Critical Warning | Non-clocked sequential cell                            | 8          |
 | TIMING-27 | Critical Warning | Invalid primary clock on hierarchical pin              | 2          |
 | LUTAR-1   | Warning          | LUT drives async reset alert                           | 2          |
+| TIMING-16 | Warning          | Large setup violation                                  | 3          |
 | TIMING-20 | Warning          | Non-clocked latch                                      | 65         |
 | TIMING-23 | Warning          | Combinational loop found                               | 1          |
 | XDCC-1    | Warning          | Scoped Clock constraint overwritten with the same name | 4          |
@@ -179,6 +180,21 @@ design_1_i/BeltBus_TDCHistogrammer_1/U0/histogrammer_cu_inst/integrator_inst_A/a
 design_1_i/BeltBus_TDCHistogrammer_1/U0/histogrammer_cu_inst/integrator_inst_A/integrator_ready_reg/CLR,
 design_1_i/BeltBus_TDCHistogrammer_1/U0/histogrammer_cu_inst/integrator_inst_A/state_reg[0]/CLR
  (the first 15 of 32 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -1.090 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[0]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[0]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -1.100 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[0]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][0]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -1.155 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[0]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][0]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-20#1 Warning
@@ -514,35 +530,35 @@ Related violations: <none>
 XDCC-1#1 Warning
 Scoped Clock constraint overwritten with the same name  
 A new clock constraint create_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
-New: create_clock -period 10.000 -name clk -waveform {0.000 5.000} [get_ports -scoped_to_current_instance clk] (Source: /home/mconsonni/Desktop/Tesi/Projects/TDC_KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_MagicCali_0_0/src/timing_ooc.xdc (Line: 1))
-Previous: create_clock -period 5.000 -name clk -waveform {0.000 2.500} [get_ports -scoped_to_current_instance clk] (Source: /home/mconsonni/Desktop/Tesi/Projects/TDC_KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_AXI4_TDC_Wrapper_0_0/src/timing_ooc.xdc (Line: 2))
+New: create_clock -period 10.000 -name clk -waveform {0.000 5.000} [get_ports -scoped_to_current_instance clk] (Source: /home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_MagicCali_0_0/src/timing_ooc.xdc (Line: 1))
+Previous: create_clock -period 2.400 -name clk -waveform {0.000 1.200} [get_ports -scoped_to_current_instance clk] (Source: /home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_PeriodMet_0_0/src/timing_ooc.xdc (Line: 1))
 Related violations: <none>
 
 XDCC-1#2 Warning
 Scoped Clock constraint overwritten with the same name  
 A new clock constraint create_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
-New: create_clock -period 10.000 -name clk -waveform {0.000 5.000} [get_ports -scoped_to_current_instance clk] (Source: /home/mconsonni/Desktop/Tesi/Projects/TDC_KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_MagicCali_0_2/src/timing_ooc.xdc (Line: 1))
-Previous: create_clock -period 2.400 -name clk -waveform {0.000 1.200} [get_ports -scoped_to_current_instance clk] (Source: /home/mconsonni/Desktop/Tesi/Projects/TDC_KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_PeriodMet_0_0/src/timing_ooc.xdc (Line: 1))
+New: create_clock -period 10.000 -name clk -waveform {0.000 5.000} [get_ports -scoped_to_current_instance clk] (Source: /home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_MagicCali_0_2/src/timing_ooc.xdc (Line: 1))
+Previous: create_clock -period 10.000 -name clk -waveform {0.000 5.000} [get_ports -scoped_to_current_instance clk] (Source: /home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_MagicCali_0_0/src/timing_ooc.xdc (Line: 1))
 Related violations: <none>
 
 XDCC-1#3 Warning
 Scoped Clock constraint overwritten with the same name  
 A new clock constraint create_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
-New: create_clock -period 2.400 -name clk -waveform {0.000 1.200} [get_ports -scoped_to_current_instance clk] (Source: /home/mconsonni/Desktop/Tesi/Projects/TDC_KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_PeriodMet_0_0/src/timing_ooc.xdc (Line: 1))
-Previous: create_clock -period 10.000 -name clk -waveform {0.000 5.000} [get_ports -scoped_to_current_instance clk] (Source: /home/mconsonni/Desktop/Tesi/Projects/TDC_KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_MagicCali_0_0/src/timing_ooc.xdc (Line: 1))
+New: create_clock -period 2.400 -name clk -waveform {0.000 1.200} [get_ports -scoped_to_current_instance clk] (Source: /home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_PeriodMet_0_0/src/timing_ooc.xdc (Line: 1))
+Previous: create_clock -period 5.000 -name clk -waveform {0.000 2.500} [get_ports -scoped_to_current_instance clk] (Source: /home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_AXI4_TDC_Wrapper_0_2/src/timing_ooc.xdc (Line: 2))
 Related violations: <none>
 
 XDCC-1#4 Warning
 Scoped Clock constraint overwritten with the same name  
 A new clock constraint create_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
-New: create_clock -period 5.000 -name clk -waveform {0.000 2.500} [get_ports -scoped_to_current_instance clk] (Source: /home/mconsonni/Desktop/Tesi/Projects/TDC_KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_AXI4_TDC_Wrapper_0_0/src/timing_ooc.xdc (Line: 2))
-Previous: create_clock -period 10.000 -name clk -waveform {0.000 5.000} [get_ports -scoped_to_current_instance clk] (Source: /home/mconsonni/Desktop/Tesi/Projects/TDC_KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_MagicCali_0_1/src/timing_ooc.xdc (Line: 1))
+New: create_clock -period 5.000 -name clk -waveform {0.000 2.500} [get_ports -scoped_to_current_instance clk] (Source: /home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_AXI4_TDC_Wrapper_0_2/src/timing_ooc.xdc (Line: 2))
+Previous: create_clock -period 10.000 -name clk -waveform {0.000 5.000} [get_ports -scoped_to_current_instance clk] (Source: /home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_MagicCali_0_1/src/timing_ooc.xdc (Line: 1))
 Related violations: <none>
 
 XDCB-6#1 Advisory
 Timing constraint pointing to hierarchical pins  
-A timing constraint 'set_false_path' has a single -through that points to hierarchical pins (see constraint position '7' in the Timing Constraint window in Vivado IDE). With such constraint, it is recommended to have a DONT_TOUCH or KEEP_HIERARCHY on the hierarchical module to avoid the risk of pin names changing during synthesis.
-Current XDC: /home/mconsonni/Desktop/Tesi/Projects/TDC_KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_BeltBus_TDCCounter_0_0/xdc/timinig.xdc (Line: 5)
+A timing constraint 'set_false_path' has a single -through that points to hierarchical pins (see constraint position '3' in the Timing Constraint window in Vivado IDE). With such constraint, it is recommended to have a DONT_TOUCH or KEEP_HIERARCHY on the hierarchical module to avoid the risk of pin names changing during synthesis.
+Current XDC: /home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_BeltBus_TDCCounter_0_0/xdc/timinig.xdc (Line: 5)
 Related violations: <none>
 
 

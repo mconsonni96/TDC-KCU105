@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date         : Tue Jan 18 16:12:28 2022
+| Date         : Tue Feb  8 11:30:13 2022
 | Host         : mconsonni-All-Series running 64-bit Ubuntu 20.04.3 LTS
 | Command      : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
 | Design       : design_1_wrapper
@@ -171,7 +171,6 @@ Table of Contents
 | design_1_util_vector_logic_0_1       |    1 |
 | design_1_util_vector_logic_0_0       |    1 |
 | design_1_system_management_wiz_0_0   |    1 |
-| design_1_rst_design_1_416M_0         |    1 |
 | design_1_proc_sys_reset_1_0          |    1 |
 | design_1_clk_wiz_0_1                 |    1 |
 | design_1_blk_mem_gen_0_0             |    1 |
@@ -199,7 +198,7 @@ Table of Contents
 | design_1_BeltBus_NodeInserter_0_5    |    1 |
 | design_1_BeltBus_NodeInserter_0_4    |    1 |
 | design_1_BeltBus_NodeInserter_0_3    |    1 |
-| design_1_AXI4_TDC_Wrapper_0_0        |    1 |
+| design_1_AXI4_TDC_Wrapper_0_2        |    1 |
 | design_1_AXI4_BitstreamUpdater_0_0   |    1 |
 | design_1_AXI4_AXIToIIC_0_0           |    1 |
 | design_1_AXI4Stream_XUS_Virtu_0_2    |    1 |

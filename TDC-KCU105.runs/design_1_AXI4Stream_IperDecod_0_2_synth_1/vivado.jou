@@ -2,11 +2,11 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu Dec 23 12:12:54 2021
-# Process ID: 38561
-# Current directory: /home/mconsonni/Desktop/Tesi/Projects/TDC_KCU105/TDC-KCU105.runs/design_1_AXI4Stream_IperDecod_0_2_synth_1
+# Start of session at: Tue Feb  8 11:17:53 2022
+# Process ID: 25089
+# Current directory: /home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/design_1_AXI4Stream_IperDecod_0_2_synth_1
 # Command line: vivado -log design_1_AXI4Stream_IperDecod_0_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_AXI4Stream_IperDecod_0_2.tcl
-# Log file: /home/mconsonni/Desktop/Tesi/Projects/TDC_KCU105/TDC-KCU105.runs/design_1_AXI4Stream_IperDecod_0_2_synth_1/design_1_AXI4Stream_IperDecod_0_2.vds
-# Journal file: /home/mconsonni/Desktop/Tesi/Projects/TDC_KCU105/TDC-KCU105.runs/design_1_AXI4Stream_IperDecod_0_2_synth_1/vivado.jou
+# Log file: /home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/design_1_AXI4Stream_IperDecod_0_2_synth_1/design_1_AXI4Stream_IperDecod_0_2.vds
+# Journal file: /home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/design_1_AXI4Stream_IperDecod_0_2_synth_1/vivado.jou
 #-----------------------------------------------------------
 source design_1_AXI4Stream_IperDecod_0_2.tcl -notrace

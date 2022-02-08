@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
 -- Date        : Wed Dec  1 16:52:26 2021
 -- Host        : mconsonni-All-Series running 64-bit Ubuntu 20.04.3 LTS
--- Command     : write_vhdl -force -mode funcsim
---               /home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_xbar_3/design_1_xbar_3_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top design_1_xbar_3 -prefix
+--               design_1_xbar_3_ design_1_xbar_3_sim_netlist.vhdl
 -- Design      : design_1_xbar_3
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -43,8 +43,6 @@ entity design_1_xbar_3_axis_switch_v1_1_22_arb_rr is
     \gen_tdest_routing.busy_r_reg[0]_2\ : in STD_LOGIC;
     m_axis_tready : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_xbar_3_axis_switch_v1_1_22_arb_rr : entity is "axis_switch_v1_1_22_arb_rr";
 end design_1_xbar_3_axis_switch_v1_1_22_arb_rr;
 
 architecture STRUCTURE of design_1_xbar_3_axis_switch_v1_1_22_arb_rr is
@@ -1394,8 +1392,6 @@ entity design_1_xbar_3_axis_switch_v1_1_22_axisc_arb_responder is
     \busy_r_reg[1]_0\ : in STD_LOGIC;
     \busy_r_reg[0]_1\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_xbar_3_axis_switch_v1_1_22_axisc_arb_responder : entity is "axis_switch_v1_1_22_axisc_arb_responder";
 end design_1_xbar_3_axis_switch_v1_1_22_axisc_arb_responder;
 
 architecture STRUCTURE of design_1_xbar_3_axis_switch_v1_1_22_axisc_arb_responder is
@@ -1490,8 +1486,6 @@ entity design_1_xbar_3_axis_switch_v1_1_22_axisc_decoder is
     \gen_tdest_routing.busy_ns\ : in STD_LOGIC;
     aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_xbar_3_axis_switch_v1_1_22_axisc_decoder : entity is "axis_switch_v1_1_22_axisc_decoder";
 end design_1_xbar_3_axis_switch_v1_1_22_axisc_decoder;
 
 architecture STRUCTURE of design_1_xbar_3_axis_switch_v1_1_22_axisc_decoder is
@@ -1614,8 +1608,6 @@ entity design_1_xbar_3_axis_switch_v1_1_22_axis_switch_arbiter is
     aresetn : in STD_LOGIC;
     m_axis_tready : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_xbar_3_axis_switch_v1_1_22_axis_switch_arbiter : entity is "axis_switch_v1_1_22_axis_switch_arbiter";
 end design_1_xbar_3_axis_switch_v1_1_22_axis_switch_arbiter;
 
 architecture STRUCTURE of design_1_xbar_3_axis_switch_v1_1_22_axis_switch_arbiter is
@@ -1689,8 +1681,6 @@ entity design_1_xbar_3_axis_switch_v1_1_22_axisc_transfer_mux is
     \busy_r_reg[1]\ : in STD_LOGIC;
     \busy_r_reg[0]_0\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_xbar_3_axis_switch_v1_1_22_axisc_transfer_mux : entity is "axis_switch_v1_1_22_axisc_transfer_mux";
 end design_1_xbar_3_axis_switch_v1_1_22_axisc_transfer_mux;
 
 architecture STRUCTURE of design_1_xbar_3_axis_switch_v1_1_22_axisc_transfer_mux is
@@ -1858,8 +1848,6 @@ entity design_1_xbar_3_axis_switch_v1_1_22_axis_switch is
   attribute LP_MERGEDOWN_MUX of design_1_xbar_3_axis_switch_v1_1_22_axis_switch : entity is 0;
   attribute LP_NUM_SYNCHRONIZER_STAGES : integer;
   attribute LP_NUM_SYNCHRONIZER_STAGES of design_1_xbar_3_axis_switch_v1_1_22_axis_switch : entity is 4;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_xbar_3_axis_switch_v1_1_22_axis_switch : entity is "axis_switch_v1_1_22_axis_switch";
   attribute P_DECODER_CONNECTIVITY_ARRAY : string;
   attribute P_DECODER_CONNECTIVITY_ARRAY of design_1_xbar_3_axis_switch_v1_1_22_axis_switch : entity is "4'b1111";
   attribute P_SINGLE_SLAVE_CONNECTIVITY_ARRAY : string;

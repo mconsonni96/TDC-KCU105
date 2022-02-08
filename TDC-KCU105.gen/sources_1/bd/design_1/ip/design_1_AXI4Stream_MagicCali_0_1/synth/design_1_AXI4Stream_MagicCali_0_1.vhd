@@ -1,4 +1,4 @@
--- (c) Copyright 1995-2021 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 1995-2022 Xilinx, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
 -- of Xilinx, Inc. and is protected under U.S. and
@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: DigiLAB:ip:AXI4Stream_MagicCalibrator:2.5
--- IP Revision: 2
+-- IP Revision: 3
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -149,7 +149,7 @@ BEGIN
     GENERIC MAP (
       BIT_UNCALIBRATED => 12,
       BIT_COARSE => 8,
-      BIT_FID => 1,
+      BIT_FID => 2,
       INTEGRATION_METHOD => "-",
       SAVE_BIT => true,
       BIT_CALIBRATION => 24,

@@ -1,11 +1,11 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
--- Date        : Thu Dec 23 12:12:21 2021
+-- Date        : Tue Feb  8 10:44:50 2022
 -- Host        : mconsonni-All-Series running 64-bit Ubuntu 20.04.3 LTS
--- Command     : write_vhdl -force -mode funcsim
---               /home/mconsonni/Desktop/Tesi/Projects/TDC_KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_XUS_Virtu_0_0/design_1_AXI4Stream_XUS_Virtu_0_0_sim_netlist.vhdl
--- Design      : design_1_AXI4Stream_XUS_Virtu_0_0
+-- Command     : write_vhdl -force -mode funcsim -rename_top design_1_AXI4Stream_XUS_Virtu_0_0 -prefix
+--               design_1_AXI4Stream_XUS_Virtu_0_0_ design_1_AXI4Stream_XUS_Virtu_0_2_sim_netlist.vhdl
+-- Design      : design_1_AXI4Stream_XUS_Virtu_0_2
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
 -- Device      : xcku040-ffva1156-2-e
@@ -23,8 +23,6 @@ entity design_1_AXI4Stream_XUS_Virtu_0_0_Sampler_TDL is
     ValidPositionTap : in STD_LOGIC_VECTOR ( 5 downto 0 );
     D : in STD_LOGIC_VECTOR ( 1027 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_AXI4Stream_XUS_Virtu_0_0_Sampler_TDL : entity is "Sampler_TDL";
 end design_1_AXI4Stream_XUS_Virtu_0_0_Sampler_TDL;
 
 architecture STRUCTURE of design_1_AXI4Stream_XUS_Virtu_0_0_Sampler_TDL is
@@ -33888,8 +33886,6 @@ entity design_1_AXI4Stream_XUS_Virtu_0_0_XUS_TappedDelayLine_CARRY8 is
     D : out STD_LOGIC_VECTOR ( 1027 downto 0 );
     AsyncInput : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_AXI4Stream_XUS_Virtu_0_0_XUS_TappedDelayLine_CARRY8 : entity is "XUS_TappedDelayLine_CARRY8";
 end design_1_AXI4Stream_XUS_Virtu_0_0_XUS_TappedDelayLine_CARRY8;
 
 architecture STRUCTURE of design_1_AXI4Stream_XUS_Virtu_0_0_XUS_TappedDelayLine_CARRY8 is
@@ -50117,8 +50113,6 @@ entity design_1_AXI4Stream_XUS_Virtu_0_0_AXI4Stream_XUS_VirtualTDLWrapper is
     ValidPositionTap : in STD_LOGIC_VECTOR ( 5 downto 0 );
     reset : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_AXI4Stream_XUS_Virtu_0_0_AXI4Stream_XUS_VirtualTDLWrapper : entity is "AXI4Stream_XUS_VirtualTDLWrapper";
 end design_1_AXI4Stream_XUS_Virtu_0_0_AXI4Stream_XUS_VirtualTDLWrapper;
 
 architecture STRUCTURE of design_1_AXI4Stream_XUS_Virtu_0_0_AXI4Stream_XUS_VirtualTDLWrapper is
@@ -50243,8 +50237,6 @@ entity design_1_AXI4Stream_XUS_Virtu_0_0_AXI4Stream_XUS_VirtualTDL is
     ValidPositionTap : in STD_LOGIC_VECTOR ( 5 downto 0 );
     reset : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_AXI4Stream_XUS_Virtu_0_0_AXI4Stream_XUS_VirtualTDL : entity is "AXI4Stream_XUS_VirtualTDL";
 end design_1_AXI4Stream_XUS_Virtu_0_0_AXI4Stream_XUS_VirtualTDL;
 
 architecture STRUCTURE of design_1_AXI4Stream_XUS_Virtu_0_0_AXI4Stream_XUS_VirtualTDL is
@@ -50277,7 +50269,7 @@ entity design_1_AXI4Stream_XUS_Virtu_0_0 is
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of design_1_AXI4Stream_XUS_Virtu_0_0 : entity is true;
   attribute CHECK_LICENSE_TYPE : string;
-  attribute CHECK_LICENSE_TYPE of design_1_AXI4Stream_XUS_Virtu_0_0 : entity is "design_1_AXI4Stream_XUS_Virtu_0_0,AXI4Stream_XUS_VirtualTDL,{}";
+  attribute CHECK_LICENSE_TYPE of design_1_AXI4Stream_XUS_Virtu_0_0 : entity is "design_1_AXI4Stream_XUS_Virtu_0_2,AXI4Stream_XUS_VirtualTDL,{}";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of design_1_AXI4Stream_XUS_Virtu_0_0 : entity is "yes";
   attribute ip_definition_source : string;
@@ -50292,9 +50284,9 @@ architecture STRUCTURE of design_1_AXI4Stream_XUS_Virtu_0_0 is
   attribute x_interface_parameter : string;
   attribute x_interface_parameter of AsyncInput : signal is "XIL_INTERFACENAME AsyncInput, LAYERED_METADATA undef";
   attribute x_interface_info of clk : signal is "xilinx.com:signal:clock:1.0 clk CLK";
-  attribute x_interface_parameter of clk : signal is "XIL_INTERFACENAME clk, ASSOCIATED_RESET reset, ASSOCIATED_BUSIF M00_AXIS_Undeco, FREQ_HZ 600000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_clk_wiz_0_1_clk_out1, INSERT_VIP 0";
+  attribute x_interface_parameter of clk : signal is "XIL_INTERFACENAME clk, ASSOCIATED_RESET reset, ASSOCIATED_BUSIF M00_AXIS_Undeco, FREQ_HZ 500000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_clk_wiz_0_1_clk_out1, INSERT_VIP 0";
   attribute x_interface_info of m00_axis_undeco_tvalid : signal is "xilinx.com:interface:axis:1.0 M00_AXIS_Undeco TVALID";
-  attribute x_interface_parameter of m00_axis_undeco_tvalid : signal is "XIL_INTERFACENAME M00_AXIS_Undeco, TDATA_NUM_BYTES 512, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 0, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 600000000, PHASE 0.0, CLK_DOMAIN design_1_clk_wiz_0_1_clk_out1, LAYERED_METADATA undef, INSERT_VIP 0";
+  attribute x_interface_parameter of m00_axis_undeco_tvalid : signal is "XIL_INTERFACENAME M00_AXIS_Undeco, TDATA_NUM_BYTES 512, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 0, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 500000000, PHASE 0.0, CLK_DOMAIN design_1_clk_wiz_0_1_clk_out1, LAYERED_METADATA undef, INSERT_VIP 0";
   attribute x_interface_info of reset : signal is "xilinx.com:signal:reset:1.0 reset RST";
   attribute x_interface_parameter of reset : signal is "XIL_INTERFACENAME reset, POLARITY ACTIVE_HIGH, INSERT_VIP 0";
   attribute x_interface_info of ValidNumberOfTdl : signal is "xilinx.com:signal:data:1.0 ValidNumberOfTdl DATA";

@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
 -- Date        : Thu Jan 13 09:43:51 2022
 -- Host        : mconsonni-All-Series running 64-bit Ubuntu 20.04.3 LTS
--- Command     : write_vhdl -force -mode funcsim
---               /home/mconsonni/Desktop/Tesi/Projects/TDC_KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top design_1_clk_wiz_0_1 -prefix
+--               design_1_clk_wiz_0_1_ design_1_clk_wiz_0_1_sim_netlist.vhdl
 -- Design      : design_1_clk_wiz_0_1
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -22,8 +22,6 @@ entity design_1_clk_wiz_0_1_design_1_clk_wiz_0_1_clk_wiz is
     clk_in1_p : in STD_LOGIC;
     clk_in1_n : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_clk_wiz_0_1_design_1_clk_wiz_0_1_clk_wiz : entity is "design_1_clk_wiz_0_1_clk_wiz";
 end design_1_clk_wiz_0_1_design_1_clk_wiz_0_1_clk_wiz;
 
 architecture STRUCTURE of design_1_clk_wiz_0_1_design_1_clk_wiz_0_1_clk_wiz is

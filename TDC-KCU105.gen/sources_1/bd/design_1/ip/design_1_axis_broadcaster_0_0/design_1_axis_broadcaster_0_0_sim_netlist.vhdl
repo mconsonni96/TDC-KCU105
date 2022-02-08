@@ -1,10 +1,10 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
--- Date        : Wed Dec  1 17:01:46 2021
+-- Date        : Wed Dec  1 17:01:45 2021
 -- Host        : mconsonni-All-Series running 64-bit Ubuntu 20.04.3 LTS
--- Command     : write_vhdl -force -mode funcsim
---               /home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_axis_broadcaster_0_0/design_1_axis_broadcaster_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top design_1_axis_broadcaster_0_0 -prefix
+--               design_1_axis_broadcaster_0_0_ design_1_axis_broadcaster_0_0_sim_netlist.vhdl
 -- Design      : design_1_axis_broadcaster_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -94,8 +94,6 @@ entity design_1_axis_broadcaster_0_0_top_design_1_axis_broadcaster_0_0 is
   attribute G_TASK_SEVERITY_INFO of design_1_axis_broadcaster_0_0_top_design_1_axis_broadcaster_0_0 : entity is 0;
   attribute G_TASK_SEVERITY_WARNING : integer;
   attribute G_TASK_SEVERITY_WARNING of design_1_axis_broadcaster_0_0_top_design_1_axis_broadcaster_0_0 : entity is 1;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axis_broadcaster_0_0_top_design_1_axis_broadcaster_0_0 : entity is "top_design_1_axis_broadcaster_0_0";
   attribute P_TPAYLOAD_WIDTH : integer;
   attribute P_TPAYLOAD_WIDTH of design_1_axis_broadcaster_0_0_top_design_1_axis_broadcaster_0_0 : entity is 40;
 end design_1_axis_broadcaster_0_0_top_design_1_axis_broadcaster_0_0;

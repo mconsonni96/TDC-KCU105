@@ -1,4 +1,4 @@
--- (c) Copyright 1995-2021 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 1995-2022 Xilinx, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
 -- of Xilinx, Inc. and is protected under U.S. and
@@ -46,8 +46,8 @@
 -- 
 -- DO NOT MODIFY THIS FILE.
 
--- IP VLNV: DigiLAB:ip:BeltBus_TDCHistogrammer:5.0
--- IP Revision: 21
+-- IP VLNV: DigiLAB:ip:BeltBus_TDCHistogrammer:5.1
+-- IP Revision: 9
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -105,7 +105,8 @@ ARCHITECTURE design_1_BeltBus_TDCHistogrammer_0_0_arch OF design_1_BeltBus_TDCHi
       C_S00_AXI_DATA_WIDTH : INTEGER;
       C_S00_AXI_ADDR_WIDTH : INTEGER;
       C_S00_AXI_BASEADDRESS : STD_LOGIC_VECTOR;
-      BIT_FID : INTEGER
+      BIT_FID : INTEGER;
+      MAX_SYNC_DIVISION : INTEGER
     );
     PORT (
       s00_axi_aclk : IN STD_LOGIC;
@@ -198,7 +199,8 @@ BEGIN
       C_S00_AXI_DATA_WIDTH => 32,
       C_S00_AXI_ADDR_WIDTH => 12,
       C_S00_AXI_BASEADDRESS => X"44A10000",
-      BIT_FID => 1
+      BIT_FID => 2,
+      MAX_SYNC_DIVISION => 16
     )
     PORT MAP (
       s00_axi_aclk => s00_axi_aclk,

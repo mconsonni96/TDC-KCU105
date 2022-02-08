@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Wed Dec  1 16:53:40 2021
-# Process ID: 31420
+# Start of session at: Tue Feb  8 10:42:46 2022
+# Process ID: 10817
 # Current directory: /home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/design_1_BeltBus_TDCHistogrammer_1_0_synth_1
 # Command line: vivado -log design_1_BeltBus_TDCHistogrammer_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_BeltBus_TDCHistogrammer_1_0.tcl
 # Log file: /home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/design_1_BeltBus_TDCHistogrammer_1_0_synth_1/design_1_BeltBus_TDCHistogrammer_1_0.vds

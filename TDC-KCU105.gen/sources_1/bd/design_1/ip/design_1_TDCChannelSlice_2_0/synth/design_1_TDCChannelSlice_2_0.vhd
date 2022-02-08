@@ -1,4 +1,4 @@
--- (c) Copyright 1995-2021 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 1995-2022 Xilinx, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
 -- of Xilinx, Inc. and is protected under U.S. and
@@ -46,8 +46,8 @@
 -- 
 -- DO NOT MODIFY THIS FILE.
 
--- IP VLNV: DigiLAB:ip:TDCChannelSlice:2.1
--- IP Revision: 2
+-- IP VLNV: DigiLAB:ip:TDCChannelSlice:2.2
+-- IP Revision: 1
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -59,7 +59,7 @@ ENTITY design_1_TDCChannelSlice_2_0 IS
     clk_SYS : IN STD_LOGIC;
     clk_BB : IN STD_LOGIC;
     aclk : IN STD_LOGIC;
-    EdgeTrigger : OUT STD_LOGIC;
+    EdgeTrigger : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
     StretchLength : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
     Divider : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
     Gate : OUT STD_LOGIC;
@@ -75,7 +75,7 @@ ENTITY design_1_TDCChannelSlice_2_0 IS
     Calibrated : IN STD_LOGIC;
     s00_axis_period_tvalid : IN STD_LOGIC;
     s00_axis_period_tdata : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
-    write_reg : IN STD_LOGIC_VECTOR(18 DOWNTO 0);
+    write_reg : IN STD_LOGIC_VECTOR(19 DOWNTO 0);
     write_debug_reg : IN STD_LOGIC_VECTOR(73 DOWNTO 0);
     read_reg : OUT STD_LOGIC_VECTOR(64 DOWNTO 0)
   );
@@ -100,7 +100,7 @@ ARCHITECTURE design_1_TDCChannelSlice_2_0_arch OF design_1_TDCChannelSlice_2_0 I
       clk_SYS : IN STD_LOGIC;
       clk_BB : IN STD_LOGIC;
       aclk : IN STD_LOGIC;
-      EdgeTrigger : OUT STD_LOGIC;
+      EdgeTrigger : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
       StretchLength : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
       Divider : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
       Gate : OUT STD_LOGIC;
@@ -116,7 +116,7 @@ ARCHITECTURE design_1_TDCChannelSlice_2_0_arch OF design_1_TDCChannelSlice_2_0 I
       Calibrated : IN STD_LOGIC;
       s00_axis_period_tvalid : IN STD_LOGIC;
       s00_axis_period_tdata : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
-      write_reg : IN STD_LOGIC_VECTOR(18 DOWNTO 0);
+      write_reg : IN STD_LOGIC_VECTOR(19 DOWNTO 0);
       write_debug_reg : IN STD_LOGIC_VECTOR(73 DOWNTO 0);
       read_reg : OUT STD_LOGIC_VECTOR(64 DOWNTO 0)
     );
@@ -172,7 +172,7 @@ ARCHITECTURE design_1_TDCChannelSlice_2_0_arch OF design_1_TDCChannelSlice_2_0 I
   ATTRIBUTE X_INTERFACE_INFO OF clk_BB: SIGNAL IS "xilinx.com:signal:clock:1.0 clk_BB CLK";
   ATTRIBUTE X_INTERFACE_PARAMETER OF clk_SYS: SIGNAL IS "XIL_INTERFACENAME clk_SYS, ASSOCIATED_BUSIF Restart_Calibration:Stop_Calibration:bitTrn_Uncal_addr:bitTrn_Cal_dout:bitTrn_ReqSample:Calibrated, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_clk_wiz_0_1_clk_out1, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF clk_SYS: SIGNAL IS "xilinx.com:signal:clock:1.0 clk_SYS CLK";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF clk_TDC: SIGNAL IS "XIL_INTERFACENAME clk_TDC, ASSOCIATED_BUSIF Gate:ForceCalibrate:ValidPositionTap:ValidNumberOfTdl:subInterpolationMatrix:EdgeTrigger, FREQ_HZ 400000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_clk_wiz_0_1_clk_out1, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF clk_TDC: SIGNAL IS "XIL_INTERFACENAME clk_TDC, ASSOCIATED_BUSIF Gate:ForceCalibrate:ValidPositionTap:ValidNumberOfTdl:subInterpolationMatrix:EdgeTrigger, FREQ_HZ 500000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_clk_wiz_0_1_clk_out1, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF clk_TDC: SIGNAL IS "xilinx.com:signal:clock:1.0 clk_TDC CLK";
 BEGIN
   U0 : TDCChannelSlice

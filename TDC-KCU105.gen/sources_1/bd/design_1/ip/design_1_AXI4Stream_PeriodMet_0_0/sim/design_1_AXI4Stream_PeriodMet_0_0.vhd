@@ -1,4 +1,4 @@
--- (c) Copyright 1995-2021 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 1995-2022 Xilinx, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
 -- of Xilinx, Inc. and is protected under U.S. and
@@ -46,7 +46,7 @@
 -- 
 -- DO NOT MODIFY THIS FILE.
 
--- IP VLNV: DigiLAB:ip:BeltBus_PeriodMeter:3.0
+-- IP VLNV: DigiLAB:ip:BeltBus_PeriodMeter:3.2
 -- IP Revision: 1
 
 LIBRARY ieee;
@@ -78,7 +78,9 @@ ARCHITECTURE design_1_AXI4Stream_PeriodMet_0_0_arch OF design_1_AXI4Stream_Perio
       BIT_NUM_CH : INTEGER;
       BIT_FID : INTEGER;
       BIT_COARSE : INTEGER;
-      BIT_RESOLUTION : INTEGER
+      BIT_RESOLUTION : INTEGER;
+      TIMEOUT_CLK_CYC : INTEGER;
+      TIMEOUT_CNT_WIDTH : INTEGER
     );
     PORT (
       clk : IN STD_LOGIC;
@@ -113,9 +115,11 @@ BEGIN
       FILTER_SEL => "MA",
       BIT_OVERFLOW => 16,
       BIT_NUM_CH => 4,
-      BIT_FID => 1,
+      BIT_FID => 2,
       BIT_COARSE => 8,
-      BIT_RESOLUTION => 16
+      BIT_RESOLUTION => 16,
+      TIMEOUT_CLK_CYC => 1500000000,
+      TIMEOUT_CNT_WIDTH => 32
     )
     PORT MAP (
       clk => clk,

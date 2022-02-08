@@ -1,55 +1,17 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-// Date        : Thu Dec 23 12:12:21 2021
+// Date        : Tue Feb  8 10:44:50 2022
 // Host        : mconsonni-All-Series running 64-bit Ubuntu 20.04.3 LTS
-// Command     : write_verilog -force -mode funcsim
-//               /home/mconsonni/Desktop/Tesi/Projects/TDC_KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_XUS_Virtu_0_0/design_1_AXI4Stream_XUS_Virtu_0_0_sim_netlist.v
-// Design      : design_1_AXI4Stream_XUS_Virtu_0_0
+// Command     : write_verilog -force -mode funcsim -rename_top design_1_AXI4Stream_XUS_Virtu_0_0 -prefix
+//               design_1_AXI4Stream_XUS_Virtu_0_0_ design_1_AXI4Stream_XUS_Virtu_0_2_sim_netlist.v
+// Design      : design_1_AXI4Stream_XUS_Virtu_0_2
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
 // Device      : xcku040-ffva1156-2-e
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "design_1_AXI4Stream_XUS_Virtu_0_0,AXI4Stream_XUS_VirtualTDL,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* ip_definition_source = "package_project" *) 
-(* x_core_info = "AXI4Stream_XUS_VirtualTDL,Vivado 2020.2" *) 
-(* NotValidForBitStream *)
-module design_1_AXI4Stream_XUS_Virtu_0_0
-   (reset,
-    clk,
-    AsyncInput,
-    m00_axis_undeco_tvalid,
-    m00_axis_undeco_tdata,
-    ValidPositionTap,
-    ValidNumberOfTdl);
-  (* x_interface_info = "xilinx.com:signal:reset:1.0 reset RST" *) (* x_interface_parameter = "XIL_INTERFACENAME reset, POLARITY ACTIVE_HIGH, INSERT_VIP 0" *) input reset;
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 clk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME clk, ASSOCIATED_RESET reset, ASSOCIATED_BUSIF M00_AXIS_Undeco, FREQ_HZ 600000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_clk_wiz_0_1_clk_out1, INSERT_VIP 0" *) input clk;
-  (* x_interface_info = "xilinx.com:signal:data:1.0 AsyncInput DATA" *) (* x_interface_parameter = "XIL_INTERFACENAME AsyncInput, LAYERED_METADATA undef" *) input AsyncInput;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 M00_AXIS_Undeco TVALID" *) (* x_interface_parameter = "XIL_INTERFACENAME M00_AXIS_Undeco, TDATA_NUM_BYTES 512, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 0, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 600000000, PHASE 0.0, CLK_DOMAIN design_1_clk_wiz_0_1_clk_out1, LAYERED_METADATA undef, INSERT_VIP 0" *) output m00_axis_undeco_tvalid;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 M00_AXIS_Undeco TDATA" *) output [4095:0]m00_axis_undeco_tdata;
-  (* x_interface_info = "xilinx.com:signal:data:1.0 ValidPositionTap DATA" *) (* x_interface_parameter = "XIL_INTERFACENAME ValidPositionTap, LAYERED_METADATA undef" *) input [31:0]ValidPositionTap;
-  (* x_interface_info = "xilinx.com:signal:data:1.0 ValidNumberOfTdl DATA" *) (* x_interface_parameter = "XIL_INTERFACENAME ValidNumberOfTdl, LAYERED_METADATA undef" *) input [31:0]ValidNumberOfTdl;
-
-  wire AsyncInput;
-  wire [31:0]ValidNumberOfTdl;
-  wire [31:0]ValidPositionTap;
-  wire clk;
-  wire [4095:0]m00_axis_undeco_tdata;
-  wire m00_axis_undeco_tvalid;
-  wire reset;
-
-  design_1_AXI4Stream_XUS_Virtu_0_0_AXI4Stream_XUS_VirtualTDL U0
-       (.AsyncInput(AsyncInput),
-        .ValidNumberOfTdl(ValidNumberOfTdl[1:0]),
-        .ValidPositionTap(ValidPositionTap[5:0]),
-        .clk(clk),
-        .m00_axis_undeco_tdata(m00_axis_undeco_tdata),
-        .m00_axis_undeco_tvalid(m00_axis_undeco_tvalid),
-        .reset(reset));
-endmodule
-
-(* ORIG_REF_NAME = "AXI4Stream_XUS_VirtualTDL" *) 
 module design_1_AXI4Stream_XUS_Virtu_0_0_AXI4Stream_XUS_VirtualTDL
    (m00_axis_undeco_tdata,
     m00_axis_undeco_tvalid,
@@ -84,7 +46,6 @@ module design_1_AXI4Stream_XUS_Virtu_0_0_AXI4Stream_XUS_VirtualTDL
         .reset(reset));
 endmodule
 
-(* ORIG_REF_NAME = "AXI4Stream_XUS_VirtualTDLWrapper" *) 
 module design_1_AXI4Stream_XUS_Virtu_0_0_AXI4Stream_XUS_VirtualTDLWrapper
    (m00_axis_undeco_tdata,
     m00_axis_undeco_tvalid,
@@ -168,7 +129,6 @@ module design_1_AXI4Stream_XUS_Virtu_0_0_AXI4Stream_XUS_VirtualTDLWrapper
         .D({\CO_Taps_TDL[3]_7 ,\CO_Taps_preTDL[3]_6 [96],\CO_Taps_preTDL[3]_6 [64],\CO_Taps_preTDL[3]_6 [32],\CO_Taps_preTDL[3]_6 [0]}));
 endmodule
 
-(* ORIG_REF_NAME = "Sampler_TDL" *) 
 module design_1_AXI4Stream_XUS_Virtu_0_0_Sampler_TDL
    (Valid_SampledTaps_TDL,
     m00_axis_undeco_tdata,
@@ -25629,7 +25589,6 @@ module design_1_AXI4Stream_XUS_Virtu_0_0_Sampler_TDL_4
         .O(m00_axis_undeco_tvalid_INST_0_i_7_n_0));
 endmodule
 
-(* ORIG_REF_NAME = "XUS_TappedDelayLine_CARRY8" *) 
 module design_1_AXI4Stream_XUS_Virtu_0_0_XUS_TappedDelayLine_CARRY8
    (D,
     AsyncInput);
@@ -36047,6 +36006,43 @@ module design_1_AXI4Stream_XUS_Virtu_0_0_XUS_TappedDelayLine_CARRY8_5
         .DI({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .O({\Inst_Imp.Init_CARRY8_TDL_n_8 ,\Inst_Imp.Init_CARRY8_TDL_n_9 ,\Inst_Imp.Init_CARRY8_TDL_n_10 ,\Inst_Imp.Init_CARRY8_TDL_n_11 ,\Inst_Imp.Init_CARRY8_TDL_n_12 ,\Inst_Imp.Init_CARRY8_TDL_n_13 ,\Inst_Imp.Init_CARRY8_TDL_n_14 ,\Inst_Imp.Init_CARRY8_TDL_n_15 }),
         .S({1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1}));
+endmodule
+
+(* CHECK_LICENSE_TYPE = "design_1_AXI4Stream_XUS_Virtu_0_2,AXI4Stream_XUS_VirtualTDL,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* ip_definition_source = "package_project" *) 
+(* x_core_info = "AXI4Stream_XUS_VirtualTDL,Vivado 2020.2" *) 
+(* NotValidForBitStream *)
+module design_1_AXI4Stream_XUS_Virtu_0_0
+   (reset,
+    clk,
+    AsyncInput,
+    m00_axis_undeco_tvalid,
+    m00_axis_undeco_tdata,
+    ValidPositionTap,
+    ValidNumberOfTdl);
+  (* x_interface_info = "xilinx.com:signal:reset:1.0 reset RST" *) (* x_interface_parameter = "XIL_INTERFACENAME reset, POLARITY ACTIVE_HIGH, INSERT_VIP 0" *) input reset;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 clk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME clk, ASSOCIATED_RESET reset, ASSOCIATED_BUSIF M00_AXIS_Undeco, FREQ_HZ 500000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_clk_wiz_0_1_clk_out1, INSERT_VIP 0" *) input clk;
+  (* x_interface_info = "xilinx.com:signal:data:1.0 AsyncInput DATA" *) (* x_interface_parameter = "XIL_INTERFACENAME AsyncInput, LAYERED_METADATA undef" *) input AsyncInput;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 M00_AXIS_Undeco TVALID" *) (* x_interface_parameter = "XIL_INTERFACENAME M00_AXIS_Undeco, TDATA_NUM_BYTES 512, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 0, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 500000000, PHASE 0.0, CLK_DOMAIN design_1_clk_wiz_0_1_clk_out1, LAYERED_METADATA undef, INSERT_VIP 0" *) output m00_axis_undeco_tvalid;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 M00_AXIS_Undeco TDATA" *) output [4095:0]m00_axis_undeco_tdata;
+  (* x_interface_info = "xilinx.com:signal:data:1.0 ValidPositionTap DATA" *) (* x_interface_parameter = "XIL_INTERFACENAME ValidPositionTap, LAYERED_METADATA undef" *) input [31:0]ValidPositionTap;
+  (* x_interface_info = "xilinx.com:signal:data:1.0 ValidNumberOfTdl DATA" *) (* x_interface_parameter = "XIL_INTERFACENAME ValidNumberOfTdl, LAYERED_METADATA undef" *) input [31:0]ValidNumberOfTdl;
+
+  wire AsyncInput;
+  wire [31:0]ValidNumberOfTdl;
+  wire [31:0]ValidPositionTap;
+  wire clk;
+  wire [4095:0]m00_axis_undeco_tdata;
+  wire m00_axis_undeco_tvalid;
+  wire reset;
+
+  design_1_AXI4Stream_XUS_Virtu_0_0_AXI4Stream_XUS_VirtualTDL U0
+       (.AsyncInput(AsyncInput),
+        .ValidNumberOfTdl(ValidNumberOfTdl[1:0]),
+        .ValidPositionTap(ValidPositionTap[5:0]),
+        .clk(clk),
+        .m00_axis_undeco_tdata(m00_axis_undeco_tdata),
+        .m00_axis_undeco_tvalid(m00_axis_undeco_tvalid),
+        .reset(reset));
 endmodule
 `ifndef GLBL
 `define GLBL

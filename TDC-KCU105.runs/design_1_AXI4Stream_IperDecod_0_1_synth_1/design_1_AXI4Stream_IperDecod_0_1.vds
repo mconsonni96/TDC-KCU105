@@ -2,17 +2,17 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu Dec 23 12:15:34 2021
-# Process ID: 39403
-# Current directory: /home/mconsonni/Desktop/Tesi/Projects/TDC_KCU105/TDC-KCU105.runs/design_1_AXI4Stream_IperDecod_0_1_synth_1
+# Start of session at: Tue Feb  8 11:20:05 2022
+# Process ID: 25837
+# Current directory: /home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/design_1_AXI4Stream_IperDecod_0_1_synth_1
 # Command line: vivado -log design_1_AXI4Stream_IperDecod_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_AXI4Stream_IperDecod_0_1.tcl
-# Log file: /home/mconsonni/Desktop/Tesi/Projects/TDC_KCU105/TDC-KCU105.runs/design_1_AXI4Stream_IperDecod_0_1_synth_1/design_1_AXI4Stream_IperDecod_0_1.vds
-# Journal file: /home/mconsonni/Desktop/Tesi/Projects/TDC_KCU105/TDC-KCU105.runs/design_1_AXI4Stream_IperDecod_0_1_synth_1/vivado.jou
+# Log file: /home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/design_1_AXI4Stream_IperDecod_0_1_synth_1/design_1_AXI4Stream_IperDecod_0_1.vds
+# Journal file: /home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/design_1_AXI4Stream_IperDecod_0_1_synth_1/vivado.jou
 #-----------------------------------------------------------
 source design_1_AXI4Stream_IperDecod_0_1.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/mconsonni/Utility_Ip_Core'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2020.2/data/ip'.
-INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_AXI4Stream_IperDecod_0_1, cache-ID = 10902bbcdd507bda.
-config_ip_cache: Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 2425.996 ; gain = 0.000 ; free physical = 6315 ; free virtual = 10338
-INFO: [Common 17-206] Exiting Vivado at Thu Dec 23 12:15:59 2021...
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_AXI4Stream_IperDecod_0_1, cache-ID = ff8e0db31d245e38.
+config_ip_cache: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 2425.996 ; gain = 0.000 ; free physical = 8357 ; free virtual = 11656
+INFO: [Common 17-206] Exiting Vivado at Tue Feb  8 11:20:24 2022...

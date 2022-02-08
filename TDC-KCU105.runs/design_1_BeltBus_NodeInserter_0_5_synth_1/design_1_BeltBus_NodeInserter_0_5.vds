@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Wed Dec  1 16:48:25 2021
-# Process ID: 29561
+# Start of session at: Tue Feb  8 10:46:23 2022
+# Process ID: 12250
 # Current directory: /home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/design_1_BeltBus_NodeInserter_0_5_synth_1
 # Command line: vivado -log design_1_BeltBus_NodeInserter_0_5.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_BeltBus_NodeInserter_0_5.tcl
 # Log file: /home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/design_1_BeltBus_NodeInserter_0_5_synth_1/design_1_BeltBus_NodeInserter_0_5.vds
@@ -21,16 +21,16 @@ INFO: [Common 17-1540] The version limit for your license is '2021.05' and has e
 INFO: [Device 21-403] Loading part xcku040-ffva1156-2-e
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 29621
+INFO: [Synth 8-7075] Helper process launched with PID 12404
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2602.922 ; gain = 175.688 ; free physical = 3334 ; free virtual = 8792
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2602.887 ; gain = 168.719 ; free physical = 7657 ; free virtual = 10648
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_1_BeltBus_NodeInserter_0_5' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_BeltBus_NodeInserter_0_5/synth/design_1_BeltBus_NodeInserter_0_5.vhd:71]
 	Parameter NUM_CH bound to: 2 - type: integer 
 	Parameter NUM_NODE bound to: 2 - type: integer 
 	Parameter PASS_THROUGH bound to: Belt-Bus - type: string 
 	Parameter BIT_NUM_CH bound to: 4 - type: integer 
-	Parameter BIT_FID bound to: 1 - type: integer 
+	Parameter BIT_FID bound to: 2 - type: integer 
 	Parameter BIT_COARSE bound to: 8 - type: integer 
 	Parameter BIT_RESOLUTION bound to: 16 - type: integer 
 	Parameter RETAIN_SINGLE_NODE bound to: 1 - type: integer 
@@ -38,7 +38,7 @@ INFO: [Synth 8-638] synthesizing module 'design_1_BeltBus_NodeInserter_0_5' [/ho
 	Parameter HOLD_ON_MIN_MOD bound to: 1 - type: integer 
 	Parameter HOLD_ON_INTEGRAL bound to: 5 - type: integer 
 	Parameter INJECT_CYCLES bound to: 15 - type: integer 
-INFO: [Synth 8-3491] module 'BeltBus_NodeInserter' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ipshared/110c/hdl/BeltBus_NodeInserter.vhd:68' bound to instance 'U0' of component 'BeltBus_NodeInserter' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_BeltBus_NodeInserter_0_5/synth/design_1_BeltBus_NodeInserter_0_5.vhd:128]
+INFO: [Synth 8-3491] module 'BeltBus_NodeInserter' declared at '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ipshared/c6f6/hdl/BeltBus_NodeInserter.vhd:68' bound to instance 'U0' of component 'BeltBus_NodeInserter' [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_BeltBus_NodeInserter_0_5/synth/design_1_BeltBus_NodeInserter_0_5.vhd:128]
 INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_sync' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1947]
 INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
 	Parameter COMMON_CLOCK bound to: 1 - type: integer 
@@ -48,13 +48,13 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base' [/opt/Xilinx/Vivado/202
 	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
 	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
 	Parameter FIFO_WRITE_DEPTH bound to: 32 - type: integer 
-	Parameter WRITE_DATA_WIDTH bound to: 31 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter WR_DATA_COUNT_WIDTH bound to: 1 - type: integer 
 	Parameter PROG_FULL_THRESH bound to: 8 - type: integer 
 	Parameter USE_ADV_FEATURES bound to: 1008 - type: string 
 	Parameter READ_MODE bound to: 1 - type: integer 
 	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
-	Parameter READ_DATA_WIDTH bound to: 31 - type: integer 
+	Parameter READ_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter RD_DATA_COUNT_WIDTH bound to: 1 - type: integer 
 	Parameter PROG_EMPTY_THRESH bound to: 8 - type: integer 
 	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
@@ -71,7 +71,7 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base' [/opt/Xilinx/Vivado/202
 	Parameter RD_MODE bound to: 1 - type: integer 
 	Parameter ENABLE_ECC bound to: 0 - type: integer 
 	Parameter FIFO_READ_DEPTH bound to: 32 - type: integer 
-	Parameter FIFO_SIZE bound to: 992 - type: integer 
+	Parameter FIFO_SIZE bound to: 1024 - type: integer 
 	Parameter WR_WIDTH_LOG bound to: 5 - type: integer 
 	Parameter WR_DEPTH_LOG bound to: 5 - type: integer 
 	Parameter WR_PNTR_WIDTH bound to: 5 - type: integer 
@@ -107,7 +107,7 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn' [/opt/Xilinx/Vivado/
 INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn' (1#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
 	Parameter MEMORY_TYPE bound to: 1 - type: integer 
-	Parameter MEMORY_SIZE bound to: 992 - type: integer 
+	Parameter MEMORY_SIZE bound to: 1024 - type: integer 
 	Parameter MEMORY_PRIMITIVE bound to: 1 - type: integer 
 	Parameter CLOCKING_MODE bound to: 0 - type: integer 
 	Parameter ECC_MODE bound to: 0 - type: integer 
@@ -124,32 +124,32 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [/opt/Xilinx/Vivado/2
 	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
 	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
 	Parameter WRITE_PROTECT bound to: 1 - type: integer 
-	Parameter WRITE_DATA_WIDTH_A bound to: 31 - type: integer 
-	Parameter READ_DATA_WIDTH_A bound to: 31 - type: integer 
-	Parameter BYTE_WRITE_WIDTH_A bound to: 31 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 32 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 32 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 32 - type: integer 
 	Parameter ADDR_WIDTH_A bound to: 5 - type: integer 
 	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
 	Parameter READ_LATENCY_A bound to: 2 - type: integer 
 	Parameter WRITE_MODE_A bound to: 2 - type: integer 
 	Parameter RST_MODE_A bound to: SYNC - type: string 
-	Parameter WRITE_DATA_WIDTH_B bound to: 31 - type: integer 
-	Parameter READ_DATA_WIDTH_B bound to: 31 - type: integer 
-	Parameter BYTE_WRITE_WIDTH_B bound to: 31 - type: integer 
+	Parameter WRITE_DATA_WIDTH_B bound to: 32 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 32 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 32 - type: integer 
 	Parameter ADDR_WIDTH_B bound to: 5 - type: integer 
 	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
 	Parameter READ_LATENCY_B bound to: 2 - type: integer 
 	Parameter WRITE_MODE_B bound to: 1 - type: integer 
 	Parameter RST_MODE_B bound to: SYNC - type: string 
 	Parameter P_MEMORY_PRIMITIVE bound to: distributed - type: string 
-	Parameter P_MIN_WIDTH_DATA_A bound to: 31 - type: integer 
-	Parameter P_MIN_WIDTH_DATA_B bound to: 31 - type: integer 
-	Parameter P_MIN_WIDTH_DATA bound to: 31 - type: integer 
-	Parameter P_MIN_WIDTH_DATA_ECC bound to: 31 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 32 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 32 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 32 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 32 - type: integer 
 	Parameter P_MAX_DEPTH_DATA bound to: 32 - type: integer 
 	Parameter P_ECC_MODE bound to: no_ecc - type: string 
 	Parameter P_MEMORY_OPT bound to: yes - type: string 
-	Parameter P_WIDTH_COL_WRITE_A bound to: 31 - type: integer 
-	Parameter P_WIDTH_COL_WRITE_B bound to: 31 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 32 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 32 - type: integer 
 	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
 	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
 	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
@@ -171,7 +171,7 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [/opt/Xilinx/Vivado/2
 	Parameter rstb_loop_iter bound to: 32 - type: integer 
 	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
 	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
-	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 31 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 32 - type: integer 
 	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (2#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
 INFO: [Synth 8-226] default block is never used [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1204]
@@ -205,18 +205,18 @@ INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base' (5#1) [/opt/Xilinx
 INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_sync' (6#1) [/opt/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1947]
 INFO: [Synth 8-256] done synthesizing module 'design_1_BeltBus_NodeInserter_0_5' (12#1) [/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.gen/sources_1/bd/design_1/ip/design_1_BeltBus_NodeInserter_0_5/synth/design_1_BeltBus_NodeInserter_0_5.vhd:71]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2650.828 ; gain = 223.594 ; free physical = 3904 ; free virtual = 9363
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2651.793 ; gain = 217.625 ; free physical = 8433 ; free virtual = 11425
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2666.672 ; gain = 239.438 ; free physical = 3949 ; free virtual = 9407
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2666.637 ; gain = 232.469 ; free physical = 8442 ; free virtual = 11434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2666.672 ; gain = 239.438 ; free physical = 3949 ; free virtual = 9407
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2666.637 ; gain = 232.469 ; free physical = 8442 ; free virtual = 11434
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2666.672 ; gain = 0.000 ; free physical = 3936 ; free virtual = 9394
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2666.637 ; gain = 0.000 ; free physical = 8435 ; free virtual = 11428
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -230,13 +230,13 @@ Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_Bel
 INFO: [Project 1-1715] 1 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2805.406 ; gain = 0.000 ; free physical = 3835 ; free virtual = 9293
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2836.387 ; gain = 0.000 ; free physical = 8383 ; free virtual = 11375
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2808.375 ; gain = 2.969 ; free physical = 3836 ; free virtual = 9295
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2836.387 ; gain = 0.000 ; free physical = 8383 ; free virtual = 11375
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2808.375 ; gain = 381.141 ; free physical = 4005 ; free virtual = 9464
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2836.387 ; gain = 402.219 ; free physical = 8426 ; free virtual = 11418
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -244,7 +244,7 @@ Start Loading Part and Timing Information
 Loading part: xcku040-ffva1156-2-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2808.375 ; gain = 381.141 ; free physical = 4005 ; free virtual = 9464
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2836.387 ; gain = 402.219 ; free physical = 8426 ; free virtual = 11418
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -252,7 +252,7 @@ Start Applying 'set_property' XDC Constraints
 Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/design_1_BeltBus_NodeInserter_0_5_synth_1/dont_touch.xdc, line 9).
 Applied set_property KEEP_HIERARCHY = SOFT for U0/Inst_BeltBus_NodeInserterWrapper_BB/\GenBB.Delay_Synchronizator_inst /xpm_fifo_sync_inst. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2808.375 ; gain = 381.141 ; free physical = 4005 ; free virtual = 9464
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2836.387 ; gain = 402.219 ; free physical = 8426 ; free virtual = 11418
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base'
 ---------------------------------------------------------------------------------------------------
@@ -265,7 +265,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_re
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2808.375 ; gain = 381.141 ; free physical = 3998 ; free virtual = 9458
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2836.387 ; gain = 402.219 ; free physical = 8420 ; free virtual = 11413
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -279,16 +279,16 @@ Detailed RTL Component Info :
 	   4 Input    5 Bit       Adders := 4     
 	   4 Input    2 Bit       Adders := 1     
 +---Registers : 
-	               31 Bit    Registers := 2     
-	               29 Bit    Registers := 2     
-	               25 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	               30 Bit    Registers := 2     
+	               26 Bit    Registers := 1     
 	                6 Bit    Registers := 3     
 	                5 Bit    Registers := 4     
 	                3 Bit    Registers := 1     
 	                2 Bit    Registers := 2     
 	                1 Bit    Registers := 17    
 +---Muxes : 
-	   2 Input   29 Bit        Muxes := 3     
+	   2 Input   30 Bit        Muxes := 3     
 	   2 Input    2 Bit        Muxes := 31    
 	   4 Input    2 Bit        Muxes := 7     
 	   4 Input    1 Bit        Muxes := 2     
@@ -309,7 +309,7 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2808.375 ; gain = 381.141 ; free physical = 3981 ; free virtual = 9444
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2836.387 ; gain = 402.219 ; free physical = 8401 ; free virtual = 11398
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -319,7 +319,7 @@ Distributed RAM: Preliminary Mapping	Report (see note below)
 +-------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+---------------+
 |Module Name                                                                                                                                      | RTL Object                       | Inference      | Size (Depth x Width) | Primitives    | 
 +-------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+---------------+
-|U0/\Inst_BeltBus_NodeInserterWrapper_BB/GenBB.Delay_Synchronizator_inst/xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 31              | RAM32M16 x 3	 | 
+|U0/\Inst_BeltBus_NodeInserterWrapper_BB/GenBB.Delay_Synchronizator_inst/xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 32              | RAM32M16 x 3	 | 
 +-------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+---------------+
 
 Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
@@ -330,13 +330,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 2859.219 ; gain = 431.984 ; free physical = 3850 ; free virtual = 9320
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 2859.074 ; gain = 424.906 ; free physical = 9195 ; free virtual = 12193
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 2889.258 ; gain = 462.023 ; free physical = 3838 ; free virtual = 9309
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 2890.113 ; gain = 455.945 ; free physical = 9138 ; free virtual = 12136
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -346,7 +346,7 @@ Distributed RAM: Final Mapping	Report
 +-------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+---------------+
 |Module Name                                                                                                                                      | RTL Object                       | Inference      | Size (Depth x Width) | Primitives    | 
 +-------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+---------------+
-|U0/\Inst_BeltBus_NodeInserterWrapper_BB/GenBB.Delay_Synchronizator_inst/xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 31              | RAM32M16 x 3	 | 
+|U0/\Inst_BeltBus_NodeInserterWrapper_BB/GenBB.Delay_Synchronizator_inst/xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 32              | RAM32M16 x 3	 | 
 +-------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+---------------+
 
 ---------------------------------------------------------------------------------
@@ -356,7 +356,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 2889.258 ; gain = 462.023 ; free physical = 3841 ; free virtual = 9312
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 2890.113 ; gain = 455.945 ; free physical = 9121 ; free virtual = 12119
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -374,37 +374,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 2892.227 ; gain = 464.992 ; free physical = 3825 ; free virtual = 9296
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 2893.082 ; gain = 458.914 ; free physical = 8997 ; free virtual = 11995
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 2892.227 ; gain = 464.992 ; free physical = 3825 ; free virtual = 9296
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 2893.082 ; gain = 458.914 ; free physical = 8997 ; free virtual = 11995
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 2892.227 ; gain = 464.992 ; free physical = 3825 ; free virtual = 9295
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 2893.082 ; gain = 458.914 ; free physical = 8994 ; free virtual = 11992
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 2892.227 ; gain = 464.992 ; free physical = 3825 ; free virtual = 9295
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 2893.082 ; gain = 458.914 ; free physical = 8994 ; free virtual = 11992
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 2892.227 ; gain = 464.992 ; free physical = 3825 ; free virtual = 9295
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 2893.082 ; gain = 458.914 ; free physical = 8994 ; free virtual = 11992
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 2892.227 ; gain = 464.992 ; free physical = 3825 ; free virtual = 9295
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 2893.082 ; gain = 458.914 ; free physical = 8994 ; free virtual = 11992
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -422,29 +422,29 @@ Report Cell Usage:
 +------+---------+------+
 |1     |CARRY8   |     8|
 |2     |LUT1     |     4|
-|3     |LUT2     |     7|
+|3     |LUT2     |     8|
 |4     |LUT3     |    69|
-|5     |LUT4     |    88|
-|6     |LUT5     |    21|
-|7     |LUT6     |    47|
+|5     |LUT4     |    92|
+|6     |LUT5     |    22|
+|7     |LUT6     |    44|
 |8     |RAM32M16 |     3|
-|9     |FDCE     |    69|
-|10    |FDRE     |   117|
+|9     |FDCE     |    71|
+|10    |FDRE     |   120|
 |11    |FDSE     |     8|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 2892.227 ; gain = 464.992 ; free physical = 3825 ; free virtual = 9295
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 2893.082 ; gain = 458.914 ; free physical = 8994 ; free virtual = 11992
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:27 . Memory (MB): peak = 2892.227 ; gain = 323.289 ; free physical = 3845 ; free virtual = 9316
-Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 2892.234 ; gain = 464.992 ; free physical = 3845 ; free virtual = 9316
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 2893.082 ; gain = 289.164 ; free physical = 9014 ; free virtual = 12013
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 2893.090 ; gain = 458.914 ; free physical = 9014 ; free virtual = 12012
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2900.164 ; gain = 0.000 ; free physical = 3932 ; free virtual = 9403
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2901.020 ; gain = 0.000 ; free physical = 9086 ; free virtual = 12084
 INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2916.039 ; gain = 0.000 ; free physical = 3888 ; free virtual = 9359
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2949.879 ; gain = 0.000 ; free physical = 9025 ; free virtual = 12023
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 3 instances were transformed.
   RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 3 instances
@@ -452,11 +452,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 49 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 2916.039 ; gain = 496.977 ; free physical = 4034 ; free virtual = 9505
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 2949.879 ; gain = 523.883 ; free physical = 9153 ; free virtual = 12151
 INFO: [Common 17-1381] The checkpoint '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/design_1_BeltBus_NodeInserter_0_5_synth_1/design_1_BeltBus_NodeInserter_0_5.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_BeltBus_NodeInserter_0_5, cache-ID = aadfb67789eb9041
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_BeltBus_NodeInserter_0_5, cache-ID = 03f891f64291ec8d
 INFO: [Coretcl 2-1174] Renamed 15 cell refs.
 INFO: [Common 17-1381] The checkpoint '/home/mconsonni/Desktop/Tesi/Projects/TDC-KCU105/TDC-KCU105.runs/design_1_BeltBus_NodeInserter_0_5_synth_1/design_1_BeltBus_NodeInserter_0_5.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_BeltBus_NodeInserter_0_5_utilization_synth.rpt -pb design_1_BeltBus_NodeInserter_0_5_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Dec  1 16:49:12 2021...
+INFO: [Common 17-206] Exiting Vivado at Tue Feb  8 10:46:58 2022...

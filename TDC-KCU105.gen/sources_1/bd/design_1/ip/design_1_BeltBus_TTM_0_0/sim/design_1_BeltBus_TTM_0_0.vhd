@@ -1,4 +1,4 @@
--- (c) Copyright 1995-2021 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 1995-2022 Xilinx, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
 -- of Xilinx, Inc. and is protected under U.S. and
@@ -46,7 +46,7 @@
 -- 
 -- DO NOT MODIFY THIS FILE.
 
--- IP VLNV: DigiLAB:ip:BeltBus_TTM:2.0
+-- IP VLNV: DigiLAB:ip:BeltBus_TTM:2.2
 -- IP Revision: 1
 
 LIBRARY ieee;
@@ -134,7 +134,8 @@ ARCHITECTURE design_1_BeltBus_TTM_0_0_arch OF design_1_BeltBus_TTM_0_0 IS
       C_S00_AXI_BUSER_WIDTH : INTEGER;
       TTM_BIT_NUM_CH : INTEGER;
       LOSS_COUNTER_W : INTEGER;
-      COLLAPSE_SYNC : BOOLEAN
+      COLLAPSE_SYNC : BOOLEAN;
+      INCLUDE_EDGE_BIT : BOOLEAN
     );
     PORT (
       s00_bb_clk : IN STD_LOGIC;
@@ -239,7 +240,7 @@ BEGIN
     GENERIC MAP (
       BIT_RESOLUTION => 16,
       BIT_COARSE => 8,
-      BIT_FID => 1,
+      BIT_FID => 2,
       BIT_NUM_CH => 4,
       NUM_CH => 3,
       BELTBUS_EXTENDED_W => 64,
@@ -267,7 +268,8 @@ BEGIN
       C_S00_AXI_BUSER_WIDTH => 0,
       TTM_BIT_NUM_CH => 2,
       LOSS_COUNTER_W => 64,
-      COLLAPSE_SYNC => true
+      COLLAPSE_SYNC => true,
+      INCLUDE_EDGE_BIT => true
     )
     PORT MAP (
       s00_bb_clk => s00_bb_clk,

@@ -1,4 +1,4 @@
-// (c) Copyright 1995-2021 Xilinx, Inc. All rights reserved.
+// (c) Copyright 1995-2022 Xilinx, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of Xilinx, Inc. and is protected under U.S. and
@@ -52,20 +52,20 @@
 
 (* X_CORE_INFO = "xlslice_v1_0_2_xlslice,Vivado 2020.2" *)
 (* CHECK_LICENSE_TYPE = "design_1_xlslice_1_0,xlslice_v1_0_2_xlslice,{}" *)
-(* CORE_GENERATION_INFO = "design_1_xlslice_1_0,xlslice_v1_0_2_xlslice,{x_ipProduct=Vivado 2020.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=xlslice,x_ipVersion=1.0,x_ipCoreRevision=2,x_ipLanguage=VHDL,x_ipSimLanguage=VHDL,DIN_WIDTH=57,DIN_FROM=37,DIN_TO=19}" *)
+(* CORE_GENERATION_INFO = "design_1_xlslice_1_0,xlslice_v1_0_2_xlslice,{x_ipProduct=Vivado 2020.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=xlslice,x_ipVersion=1.0,x_ipCoreRevision=2,x_ipLanguage=VHDL,x_ipSimLanguage=VHDL,DIN_WIDTH=60,DIN_FROM=39,DIN_TO=20}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_xlslice_1_0 (
   Din,
   Dout
 );
 
-input wire [56 : 0] Din;
-output wire [18 : 0] Dout;
+input wire [59 : 0] Din;
+output wire [19 : 0] Dout;
 
   xlslice_v1_0_2_xlslice #(
-    .DIN_WIDTH(57),
-    .DIN_FROM(37),
-    .DIN_TO(19)
+    .DIN_WIDTH(60),
+    .DIN_FROM(39),
+    .DIN_TO(20)
   ) inst (
     .Din(Din),
     .Dout(Dout)

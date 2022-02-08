@@ -84,6 +84,10 @@ architecture STRUCTURE of bd_cd85_wrapper is
     interconnect_aresetn : in STD_LOGIC;
     Packetfetcher_error_code : out STD_LOGIC_VECTOR ( 2 downto 0 );
     Packetizer_packet_error : out STD_LOGIC;
+    M_AXIS_tvalid : out STD_LOGIC;
+    M_AXIS_tready : in STD_LOGIC;
+    M_AXIS_tdata : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    M_AXIS_tlast : out STD_LOGIC;
     PTE_OUTPUT_tvalid : out STD_LOGIC_VECTOR ( 0 to 0 );
     PTE_OUTPUT_tready : in STD_LOGIC_VECTOR ( 0 to 0 );
     PTE_OUTPUT_tdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -102,10 +106,6 @@ architecture STRUCTURE of bd_cd85_wrapper is
     S_AXIS_AUX_tdata : in STD_LOGIC_VECTOR ( 55 downto 0 );
     S_AXIS_AUX_tvalid : in STD_LOGIC;
     S_AXIS_AUX_tready : out STD_LOGIC;
-    M_AXIS_tvalid : out STD_LOGIC;
-    M_AXIS_tready : in STD_LOGIC;
-    M_AXIS_tdata : out STD_LOGIC_VECTOR ( 7 downto 0 );
-    M_AXIS_tlast : out STD_LOGIC;
     S_AXIS_tdata : in STD_LOGIC_VECTOR ( 7 downto 0 );
     S_AXIS_tvalid : in STD_LOGIC;
     S_AXIS_tready : out STD_LOGIC;
